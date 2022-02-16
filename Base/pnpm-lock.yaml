@@ -7,6 +7,7 @@ specifiers:
   '@typescript-eslint/parser': ^5.12.0
   '@vitejs/plugin-vue': ^2.2.0
   '@vue/compiler-sfc': ^3.2.31
+  '@vueuse/core': ^7.6.2
   autoprefixer: ^10.4.2
   eslint: ^8.9.0
   eslint-config-airbnb-base: ^15.0.0
@@ -17,6 +18,7 @@ specifiers:
   sass: ^1.49.7
   tailwindcss: ^3.0.22
   typescript: ^4.5.5
+  unplugin-auto-import: ^0.5.11
   unplugin-icons: ^0.13.1
   unplugin-vue-components: ^0.17.18
   vite: ^2.8.3
@@ -27,6 +29,7 @@ specifiers:
 
 dependencies:
   '@iconify/json': registry.npmmirror.com/@iconify/json/2.1.1
+  '@vueuse/core': registry.npmmirror.com/@vueuse/core/7.6.2_vue@3.2.31
   pinia: registry.npmmirror.com/pinia/2.0.11_typescript@4.5.5+vue@3.2.31
   vue: registry.npmmirror.com/vue/3.2.31
   vue-router: registry.npmmirror.com/vue-router/4.0.12_vue@3.2.31
@@ -46,6 +49,7 @@ devDependencies:
   sass: registry.npmmirror.com/sass/1.49.7
   tailwindcss: registry.npmmirror.com/tailwindcss/3.0.22_autoprefixer@10.4.2
   typescript: registry.npmmirror.com/typescript/4.5.5
+  unplugin-auto-import: registry.npmmirror.com/unplugin-auto-import/0.5.11_@vueuse+core@7.6.2+vite@2.8.3
   unplugin-icons: registry.npmmirror.com/unplugin-icons/0.13.1_4665a7dff141ed5abe40721656aa4949
   unplugin-vue-components: registry.npmmirror.com/unplugin-vue-components/0.17.18_vite@2.8.3+vue@3.2.31
   vite: registry.npmmirror.com/vite/2.8.3_sass@1.49.7
@@ -444,6 +448,43 @@ packages:
     resolution: {integrity: sha512-ymN2pj6zEjiKJZbrf98UM2pfDd6F2H7ksKw7NDt/ZZ1fh5Ei39X5tABugtT03ZRlWd9imccoK0hE8hpjpU7irQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/shared/-/shared-3.2.31.tgz}
     name: '@vue/shared'
     version: 3.2.31
+
+  registry.npmmirror.com/@vueuse/core/7.6.2_vue@3.2.31:
+    resolution: {integrity: sha512-bjAbXJVJO6aElMaZtDz2B70C0L6jFk/jGVqJxWZS5huffxA6dW5DN6tQQJwzOnx9B9rDhePHJIFKsix0qZIH2Q==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/core/-/core-7.6.2.tgz}
+    id: registry.npmmirror.com/@vueuse/core/7.6.2
+    name: '@vueuse/core'
+    version: 7.6.2
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      '@vueuse/shared': registry.npmmirror.com/@vueuse/shared/7.6.2_vue@3.2.31
+      vue: registry.npmmirror.com/vue/3.2.31
+      vue-demi: registry.npmmirror.com/vue-demi/0.12.1_vue@3.2.31
+    dev: false
+
+  registry.npmmirror.com/@vueuse/shared/7.6.2_vue@3.2.31:
+    resolution: {integrity: sha512-ThDld4Mx501tahRuHV6qJGkwCr17GknZrOzlD02Na9qJcH7Pq0quNTLx5cNDou7b1CKNvE3BXi2w/hz9KuPNTQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/shared/-/shared-7.6.2.tgz}
+    id: registry.npmmirror.com/@vueuse/shared/7.6.2
+    name: '@vueuse/shared'
+    version: 7.6.2
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      vue: registry.npmmirror.com/vue/3.2.31
+      vue-demi: registry.npmmirror.com/vue-demi/0.12.1_vue@3.2.31
+    dev: false
 
   registry.npmmirror.com/acorn-jsx/5.3.2_acorn@8.7.0:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz}
@@ -3139,6 +3180,32 @@ packages:
     name: universalify
     version: 2.0.0
     engines: {node: '>= 10.0.0'}
+    dev: true
+
+  registry.npmmirror.com/unplugin-auto-import/0.5.11_@vueuse+core@7.6.2+vite@2.8.3:
+    resolution: {integrity: sha512-MJ3POLe/IysRHF4yd32FkKDoxqSRoiuIHm89ys67B8FLuz2Pvh9poeqTVe6IhJsNxwv0+GSdFfj5Dpq24lhm4g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/unplugin-auto-import/-/unplugin-auto-import-0.5.11.tgz}
+    id: registry.npmmirror.com/unplugin-auto-import/0.5.11
+    name: unplugin-auto-import
+    version: 0.5.11
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@vueuse/core': '*'
+    peerDependenciesMeta:
+      '@vueuse/core':
+        optional: true
+    dependencies:
+      '@antfu/utils': registry.npmmirror.com/@antfu/utils/0.4.0
+      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/4.1.2
+      '@vueuse/core': registry.npmmirror.com/@vueuse/core/7.6.2_vue@3.2.31
+      local-pkg: registry.npmmirror.com/local-pkg/0.4.1
+      magic-string: registry.npmmirror.com/magic-string/0.25.7
+      resolve: registry.npmmirror.com/resolve/1.22.0
+      unplugin: registry.npmmirror.com/unplugin/0.3.2_vite@2.8.3
+    transitivePeerDependencies:
+      - esbuild
+      - rollup
+      - vite
+      - webpack
     dev: true
 
   registry.npmmirror.com/unplugin-icons/0.13.1_4665a7dff141ed5abe40721656aa4949:

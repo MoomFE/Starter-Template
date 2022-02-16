@@ -8,6 +8,7 @@ import { createHtmlPlugin } from 'vite-plugin-html';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import Components from 'unplugin-vue-components/vite';
+import AutoImport from 'unplugin-auto-import/vite';
 import settings from './src/settings';
 
 
@@ -47,6 +48,17 @@ export default defineConfig(({ mode }) => {
           // 自动导入图标组件
           IconsResolver({ prefix: false })
         ]
+      }),
+      // API 自动加载
+      AutoImport({
+        imports: [
+          'vue',
+          'vue-router',
+          '@vueuse/core'
+        ],
+        eslintrc: {
+          enabled: true
+        }
       })
     ]
   };
