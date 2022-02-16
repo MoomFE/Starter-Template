@@ -2,6 +2,62 @@
   "folders": [
     {
       "path": "."
+    },
+    {
+      "path": "src\\assets",
+      "name": "Assets"
+    },
+    {
+      "path": "src\\styles",
+      "name": "Styles"
+    },
+    {
+      "path": "src\\shared",
+      "name": "Shared"
+    },
+    {
+      "path": "src\\libs",
+      "name": "Libs"
+    },
+    {
+      "path": "src\\utils",
+      "name": "Utils"
+    },
+    {
+      "path": "src\\plugins",
+      "name": "Plugins"
+    },
+    {
+      "path": "src\\workers",
+      "name": "Workers"
+    },
+    {
+      "path": "src\\router",
+      "name": "Router"
+    },
+    {
+      "path": "src\\store",
+      "name": "Store"
+    },
+    {
+      "path": "src\\composables",
+      "name": "Composables"
+    },
+    {
+      "path": "src\\components",
+      "name": "Components"
+    },
+    {
+      "path": "src\\components-private",
+      "name": "Components Private"
+    },
+    {
+      "path": "src\\layouts",
+      "name": "Layouts"
+    },
+    {
+      "path": "src\\pages",
+      "name": "Pages"
     }
   ],
   "settings": {
@@ -11,7 +67,21 @@
     },
     "files.exclude": {
       "*.code-workspace": true,
-      "node_modules": true
+      "node_modules": true,
+      "src/assets": true,
+      "src/components": true,
+      "src/components-private": true,
+      "src/composables": true,
+      "src/layouts": true,
+      "src/libs": true,
+      "src/pages": true,
+      "src/plugins": true,
+      "src/router": true,
+      "src/shared": true,
+      "src/store": true,
+      "src/styles": true,
+      "src/utils": true,
+      "src/workers": true
     }
   }
 }
