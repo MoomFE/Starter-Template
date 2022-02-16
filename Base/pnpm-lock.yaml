@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@iconify/json': ^2.1.1
+  '@intlify/vite-plugin-vue-i18n': ^3.3.0
   '@moomfe/eslint-config': ^1.8.1
   '@types/node': ^17.0.18
   '@typescript-eslint/parser': ^5.12.0
@@ -25,6 +26,7 @@ specifiers:
   vite-plugin-html: ^3.0.6
   vue: ^3.2.31
   vue-eslint-parser: ^8.2.0
+  vue-i18n: ^9.1.9
   vue-router: ^4.0.12
 
 dependencies:
@@ -32,9 +34,11 @@ dependencies:
   '@vueuse/core': registry.npmmirror.com/@vueuse/core/7.6.2_vue@3.2.31
   pinia: registry.npmmirror.com/pinia/2.0.11_typescript@4.5.5+vue@3.2.31
   vue: registry.npmmirror.com/vue/3.2.31
+  vue-i18n: registry.npmmirror.com/vue-i18n/9.1.9_vue@3.2.31
   vue-router: registry.npmmirror.com/vue-router/4.0.12_vue@3.2.31
 
 devDependencies:
+  '@intlify/vite-plugin-vue-i18n': registry.npmmirror.com/@intlify/vite-plugin-vue-i18n/3.3.0_vite@2.8.3+vue-i18n@9.1.9
   '@moomfe/eslint-config': registry.npmmirror.com/@moomfe/eslint-config/1.8.1
   '@types/node': registry.npmmirror.com/@types/node/17.0.18
   '@typescript-eslint/parser': registry.npmmirror.com/@typescript-eslint/parser/5.12.0_eslint@8.9.0+typescript@4.5.5
@@ -189,6 +193,144 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  registry.npmmirror.com/@intlify/bundle-utils/2.2.0_vue-i18n@9.1.9:
+    resolution: {integrity: sha512-qVuN7+c84UB6rlLHSued2J9R86LG1rHg6ZibCghGMyPXnW0nOuIfkUFf1F7tXIqfMXjIPeJzlbpmzjWTI2z9Kw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/bundle-utils/-/bundle-utils-2.2.0.tgz}
+    id: registry.npmmirror.com/@intlify/bundle-utils/2.2.0
+    name: '@intlify/bundle-utils'
+    version: 2.2.0
+    engines: {node: '>= 12'}
+    peerDependencies:
+      petite-vue-i18n: '*'
+      vue-i18n: '*'
+    peerDependenciesMeta:
+      petite-vue-i18n:
+        optional: true
+      vue-i18n:
+        optional: true
+    dependencies:
+      '@intlify/message-compiler': registry.npmmirror.com/@intlify/message-compiler/9.2.0-beta.30
+      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.2.0-beta.30
+      jsonc-eslint-parser: registry.npmmirror.com/jsonc-eslint-parser/1.4.1
+      source-map: registry.npmmirror.com/source-map/0.6.1
+      vue-i18n: registry.npmmirror.com/vue-i18n/9.1.9_vue@3.2.31
+      yaml-eslint-parser: registry.npmmirror.com/yaml-eslint-parser/0.3.2
+    dev: true
+
+  registry.npmmirror.com/@intlify/core-base/9.1.9:
+    resolution: {integrity: sha512-x5T0p/Ja0S8hs5xs+ImKyYckVkL4CzcEXykVYYV6rcbXxJTe2o58IquSqX9bdncVKbRZP7GlBU1EcRaQEEJ+vw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/core-base/-/core-base-9.1.9.tgz}
+    name: '@intlify/core-base'
+    version: 9.1.9
+    engines: {node: '>= 10'}
+    dependencies:
+      '@intlify/devtools-if': registry.npmmirror.com/@intlify/devtools-if/9.1.9
+      '@intlify/message-compiler': registry.npmmirror.com/@intlify/message-compiler/9.1.9
+      '@intlify/message-resolver': registry.npmmirror.com/@intlify/message-resolver/9.1.9
+      '@intlify/runtime': registry.npmmirror.com/@intlify/runtime/9.1.9
+      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.1.9
+      '@intlify/vue-devtools': registry.npmmirror.com/@intlify/vue-devtools/9.1.9
+    dev: false
+
+  registry.npmmirror.com/@intlify/devtools-if/9.1.9:
+    resolution: {integrity: sha512-oKSMKjttG3Ut/1UGEZjSdghuP3fwA15zpDPcjkf/1FjlOIm6uIBGMNS5jXzsZy593u+P/YcnrZD6cD3IVFz9vQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/devtools-if/-/devtools-if-9.1.9.tgz}
+    name: '@intlify/devtools-if'
+    version: 9.1.9
+    engines: {node: '>= 10'}
+    dependencies:
+      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.1.9
+    dev: false
+
+  registry.npmmirror.com/@intlify/message-compiler/9.1.9:
+    resolution: {integrity: sha512-6YgCMF46Xd0IH2hMRLCssZI3gFG4aywidoWQ3QP4RGYQXQYYfFC54DxhSgfIPpVoPLQ+4AD29eoYmhiHZ+qLFQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/message-compiler/-/message-compiler-9.1.9.tgz}
+    name: '@intlify/message-compiler'
+    version: 9.1.9
+    engines: {node: '>= 10'}
+    dependencies:
+      '@intlify/message-resolver': registry.npmmirror.com/@intlify/message-resolver/9.1.9
+      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.1.9
+      source-map: registry.npmmirror.com/source-map/0.6.1
+    dev: false
+
+  registry.npmmirror.com/@intlify/message-compiler/9.2.0-beta.30:
+    resolution: {integrity: sha512-2kj/0nLIFrgiO86f9VifcUUcV8LdzXt4YYPIujx/LkTEQOuSFUo/bNiMaG1hyfiU/8mfq6tsaWKjoOZjeao1eQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/message-compiler/-/message-compiler-9.2.0-beta.30.tgz}
+    name: '@intlify/message-compiler'
+    version: 9.2.0-beta.30
+    engines: {node: '>= 12'}
+    dependencies:
+      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.2.0-beta.30
+      source-map: registry.npmmirror.com/source-map/0.6.1
+    dev: true
+
+  registry.npmmirror.com/@intlify/message-resolver/9.1.9:
+    resolution: {integrity: sha512-Lx/DBpigeK0sz2BBbzv5mu9/dAlt98HxwbG7xLawC3O2xMF9MNWU5FtOziwYG6TDIjNq0O/3ZbOJAxwITIWXEA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/message-resolver/-/message-resolver-9.1.9.tgz}
+    name: '@intlify/message-resolver'
+    version: 9.1.9
+    engines: {node: '>= 10'}
+    dev: false
+
+  registry.npmmirror.com/@intlify/runtime/9.1.9:
+    resolution: {integrity: sha512-XgPw8+UlHCiie3fI41HPVa/VDJb3/aSH7bLhY1hJvlvNV713PFtb4p4Jo+rlE0gAoMsMCGcsiT982fImolSltg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/runtime/-/runtime-9.1.9.tgz}
+    name: '@intlify/runtime'
+    version: 9.1.9
+    engines: {node: '>= 10'}
+    dependencies:
+      '@intlify/message-compiler': registry.npmmirror.com/@intlify/message-compiler/9.1.9
+      '@intlify/message-resolver': registry.npmmirror.com/@intlify/message-resolver/9.1.9
+      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.1.9
+    dev: false
+
+  registry.npmmirror.com/@intlify/shared/9.1.9:
+    resolution: {integrity: sha512-xKGM1d0EAxdDFCWedcYXOm6V5Pfw/TMudd6/qCdEb4tv0hk9EKeg7lwQF1azE0dP2phvx0yXxrt7UQK+IZjNdw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/shared/-/shared-9.1.9.tgz}
+    name: '@intlify/shared'
+    version: 9.1.9
+    engines: {node: '>= 10'}
+    dev: false
+
+  registry.npmmirror.com/@intlify/shared/9.2.0-beta.30:
+    resolution: {integrity: sha512-E1WHRTIlUEse3d/6t1pAagSXRxmeVeNIhx5kT80dfpYxw8lOnCWV9wLve2bq9Fkv+3TD2I5j+CdN7jvSl3LdsA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/shared/-/shared-9.2.0-beta.30.tgz}
+    name: '@intlify/shared'
+    version: 9.2.0-beta.30
+    engines: {node: '>= 12'}
+    dev: true
+
+  registry.npmmirror.com/@intlify/vite-plugin-vue-i18n/3.3.0_vite@2.8.3+vue-i18n@9.1.9:
+    resolution: {integrity: sha512-RxtqVe8ia/5eEH+RFzRKMhO6eyYRGssNpVcaxOoocgKDJuA+1QHF5jZGnioIQpZcIwFxLUlf42C4YdAatIJFEw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/vite-plugin-vue-i18n/-/vite-plugin-vue-i18n-3.3.0.tgz}
+    id: registry.npmmirror.com/@intlify/vite-plugin-vue-i18n/3.3.0
+    name: '@intlify/vite-plugin-vue-i18n'
+    version: 3.3.0
+    engines: {node: '>= 12'}
+    peerDependencies:
+      petite-vue-i18n: ^9.0.0
+      vite: ^2.0.0
+      vue-i18n: ^9.0.0
+    peerDependenciesMeta:
+      petite-vue-i18n:
+        optional: true
+      vue-i18n:
+        optional: true
+    dependencies:
+      '@intlify/bundle-utils': registry.npmmirror.com/@intlify/bundle-utils/2.2.0_vue-i18n@9.1.9
+      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.2.0-beta.30
+      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/4.1.2
+      debug: registry.npmmirror.com/debug/4.3.3
+      fast-glob: registry.npmmirror.com/fast-glob/3.2.11
+      source-map: registry.npmmirror.com/source-map/0.6.1
+      vite: registry.npmmirror.com/vite/2.8.3_sass@1.49.7
+      vue-i18n: registry.npmmirror.com/vue-i18n/9.1.9_vue@3.2.31
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  registry.npmmirror.com/@intlify/vue-devtools/9.1.9:
+    resolution: {integrity: sha512-YPehH9uL4vZcGXky4Ev5qQIITnHKIvsD2GKGXgqf+05osMUI6WSEQHaN9USRa318Rs8RyyPCiDfmA0hRu3k7og==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/vue-devtools/-/vue-devtools-9.1.9.tgz}
+    name: '@intlify/vue-devtools'
+    version: 9.1.9
+    engines: {node: '>= 10'}
+    dependencies:
+      '@intlify/message-resolver': registry.npmmirror.com/@intlify/message-resolver/9.1.9
+      '@intlify/runtime': registry.npmmirror.com/@intlify/runtime/9.1.9
+      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.1.9
+    dev: false
 
   registry.npmmirror.com/@moomfe/eslint-config/1.8.1:
     resolution: {integrity: sha512-Xujxb1OIpXaoXzfvDH1+a5O4ZZbt5K+HWl3I2bFy2yh1y5LwtSRy618dmGZfy3ard7jeIQW7w61pLL6TinKAew==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@moomfe/eslint-config/-/eslint-config-1.8.1.tgz}
@@ -485,6 +627,17 @@ packages:
       vue: registry.npmmirror.com/vue/3.2.31
       vue-demi: registry.npmmirror.com/vue-demi/0.12.1_vue@3.2.31
     dev: false
+
+  registry.npmmirror.com/acorn-jsx/5.3.2_acorn@7.4.1:
+    resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz}
+    id: registry.npmmirror.com/acorn-jsx/5.3.2
+    name: acorn-jsx
+    version: 5.3.2
+    peerDependencies:
+      acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      acorn: registry.npmmirror.com/acorn/7.4.1
+    dev: true
 
   registry.npmmirror.com/acorn-jsx/5.3.2_acorn@8.7.0:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz}
@@ -1494,6 +1647,15 @@ packages:
       estraverse: registry.npmmirror.com/estraverse/5.3.0
     dev: true
 
+  registry.npmmirror.com/eslint-utils/2.1.0:
+    resolution: {integrity: sha512-w94dQYoauyvlDc43XnGB8lU3Zt713vNChgt4EWwhXAP2XkBvndfxF0AgIqKOOasjPIPzj9JqgwkwbCYD0/V3Zg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/eslint-utils/-/eslint-utils-2.1.0.tgz}
+    name: eslint-utils
+    version: 2.1.0
+    engines: {node: '>=6'}
+    dependencies:
+      eslint-visitor-keys: registry.npmmirror.com/eslint-visitor-keys/1.3.0
+    dev: true
+
   registry.npmmirror.com/eslint-utils/3.0.0_eslint@8.9.0:
     resolution: {integrity: sha512-uuQC43IGctw68pJA1RgbQS8/NP7rch6Cwd4j3ZBtgo4/8Flj4eGE7ZYSZRN3iq5pVUv6GPdW5Z1RFleo84uLDA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/eslint-utils/-/eslint-utils-3.0.0.tgz}
     id: registry.npmmirror.com/eslint-utils/3.0.0
@@ -1505,6 +1667,13 @@ packages:
     dependencies:
       eslint: registry.npmmirror.com/eslint/8.9.0
       eslint-visitor-keys: registry.npmmirror.com/eslint-visitor-keys/2.1.0
+    dev: true
+
+  registry.npmmirror.com/eslint-visitor-keys/1.3.0:
+    resolution: {integrity: sha512-6J72N8UNa462wa/KFODt/PJ3IU60SDpC3QXC1Hjc1BXXpfL2C9R5+AU7jhe0F6GREqVMh4Juu+NY7xn+6dipUQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/eslint-visitor-keys/-/eslint-visitor-keys-1.3.0.tgz}
+    name: eslint-visitor-keys
+    version: 1.3.0
+    engines: {node: '>=4'}
     dev: true
 
   registry.npmmirror.com/eslint-visitor-keys/2.1.0:
@@ -1565,6 +1734,17 @@ packages:
       v8-compile-cache: registry.npmmirror.com/v8-compile-cache/2.3.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  registry.npmmirror.com/espree/6.2.1:
+    resolution: {integrity: sha512-ysCxRQY3WaXJz9tdbWOwuWr5Y/XrPTGX9Kiz3yoUXwW0VZ4w30HTkQLaGx/+ttFjF8i+ACbArnB4ce68a9m5hw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/espree/-/espree-6.2.1.tgz}
+    name: espree
+    version: 6.2.1
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      acorn: registry.npmmirror.com/acorn/7.4.1
+      acorn-jsx: registry.npmmirror.com/acorn-jsx/5.3.2_acorn@7.4.1
+      eslint-visitor-keys: registry.npmmirror.com/eslint-visitor-keys/1.3.0
     dev: true
 
   registry.npmmirror.com/espree/9.3.1:
@@ -2207,6 +2387,19 @@ packages:
     hasBin: true
     dependencies:
       minimist: registry.npmmirror.com/minimist/1.2.5
+    dev: true
+
+  registry.npmmirror.com/jsonc-eslint-parser/1.4.1:
+    resolution: {integrity: sha512-hXBrvsR1rdjmB2kQmUjf1rEIa+TqHBGMge8pwi++C+Si1ad7EjZrJcpgwym+QGK/pqTx+K7keFAtLlVNdLRJOg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jsonc-eslint-parser/-/jsonc-eslint-parser-1.4.1.tgz}
+    name: jsonc-eslint-parser
+    version: 1.4.1
+    engines: {node: '>=8.10.0'}
+    dependencies:
+      acorn: registry.npmmirror.com/acorn/7.4.1
+      eslint-utils: registry.npmmirror.com/eslint-utils/2.1.0
+      eslint-visitor-keys: registry.npmmirror.com/eslint-visitor-keys/1.3.0
+      espree: registry.npmmirror.com/espree/6.2.1
+      semver: registry.npmmirror.com/semver/6.3.0
     dev: true
 
   registry.npmmirror.com/jsonfile/6.1.0:
@@ -3415,6 +3608,22 @@ packages:
       - supports-color
     dev: true
 
+  registry.npmmirror.com/vue-i18n/9.1.9_vue@3.2.31:
+    resolution: {integrity: sha512-JeRdNVxS2OGp1E+pye5XB6+M6BBkHwAv9C80Q7+kzoMdUDGRna06tjC0vCB/jDX9aWrl5swxOMFcyAr7or8XTA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-i18n/-/vue-i18n-9.1.9.tgz}
+    id: registry.npmmirror.com/vue-i18n/9.1.9
+    name: vue-i18n
+    version: 9.1.9
+    engines: {node: '>= 10'}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      '@intlify/core-base': registry.npmmirror.com/@intlify/core-base/9.1.9
+      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.1.9
+      '@intlify/vue-devtools': registry.npmmirror.com/@intlify/vue-devtools/9.1.9
+      '@vue/devtools-api': registry.npmmirror.com/@vue/devtools-api/6.0.12
+      vue: registry.npmmirror.com/vue/3.2.31
+    dev: false
+
   registry.npmmirror.com/vue-router/4.0.12_vue@3.2.31:
     resolution: {integrity: sha512-CPXvfqe+mZLB1kBWssssTiWg4EQERyqJZes7USiqfW9B5N2x+nHlnsM1D3b5CaJ6qgCvMmYJnz+G0iWjNCvXrg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-router/-/vue-router-4.0.12.tgz}
     id: registry.npmmirror.com/vue-router/4.0.12
@@ -3491,6 +3700,16 @@ packages:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/yallist/-/yallist-4.0.0.tgz}
     name: yallist
     version: 4.0.0
+    dev: true
+
+  registry.npmmirror.com/yaml-eslint-parser/0.3.2:
+    resolution: {integrity: sha512-32kYO6kJUuZzqte82t4M/gB6/+11WAuHiEnK7FreMo20xsCKPeFH5tDBU7iWxR7zeJpNnMXfJyXwne48D0hGrg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/yaml-eslint-parser/-/yaml-eslint-parser-0.3.2.tgz}
+    name: yaml-eslint-parser
+    version: 0.3.2
+    dependencies:
+      eslint-visitor-keys: registry.npmmirror.com/eslint-visitor-keys/1.3.0
+      lodash: registry.npmmirror.com/lodash/4.17.21
+      yaml: registry.npmmirror.com/yaml/1.10.2
     dev: true
 
   registry.npmmirror.com/yaml/1.10.2:

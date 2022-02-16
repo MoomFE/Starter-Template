@@ -89,7 +89,11 @@
       "*.scss": "postcss",
       "*.sass": "postcss",
       "*.less": "postcss"
-    }
+    },
+    "i18n-ally.displayLanguage": "zh-CN",
+    "i18n-ally.keystyle": "nested",
+    "i18n-ally.localesPaths": "locales",
+    "i18n-ally.sortKeys": true
   },
   "extensions": {
     "recommendations": [
