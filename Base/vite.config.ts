@@ -71,6 +71,20 @@ export default defineConfig(({ mode }) => {
           path.resolve(__dirname, 'locales/**')
         ]
       })
-    ]
+    ],
+    // 依赖预构建优化选项
+    optimizeDeps: {
+      entries: [
+        'src/**/*.{js,ts,vue}'
+      ],
+      include: [
+        'vue',
+        'vue-router',
+        '@vueuse/core',
+      ],
+      exclude: [
+        'vue-demi'
+      ]
+    }
   };
 });
