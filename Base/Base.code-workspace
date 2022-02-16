@@ -82,6 +82,12 @@
       "src/styles": true,
       "src/utils": true,
       "src/workers": true
+    },
+    "files.associations": {
+      "*.css": "postcss",
+      "*.scss": "postcss",
+      "*.sass": "postcss",
+      "*.less": "postcss"
     }
   },
   "extensions": {
