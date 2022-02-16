@@ -4,6 +4,10 @@
       "path": "."
     },
     {
+      "path": "locales",
+      "name": "Locales"
+    },
+    {
       "path": "src\\assets",
       "name": "Assets"
     },
@@ -68,6 +72,7 @@
     },
     "files.exclude": {
       "*.code-workspace": true,
+      "locales": true,
       "node_modules": true,
       "src/assets": true,
       "src/components": true,
@@ -75,8 +80,8 @@
       "src/composables": true,
       "src/layouts": true,
       "src/libs": true,
-      "src/pages": true,
       "src/modules": true,
+      "src/pages": true,
       "src/router": true,
       "src/shared": true,
       "src/store": true,
