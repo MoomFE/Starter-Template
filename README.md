@@ -26,7 +26,7 @@
   - **shared**: 公用变量
   - **lib**: 外部依赖库 ( 不满足需求需要重构时或者外部依赖库有 BUG 时, 从 node_modules 移至这里 )
   - **utils**: 工具方法
-  - **plugins**: 项目依赖类库的配置
+  - **modules**: 项目依赖类库的配置
   - **workers**: 存放独立的 Web Worker 应用
   - **router**: 路由配置
   - **store**: 存储状态

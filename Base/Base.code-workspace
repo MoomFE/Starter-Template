@@ -24,8 +24,8 @@
       "name": "Utils"
     },
     {
-      "path": "src\\plugins",
-      "name": "Plugins"
+      "path": "src\\modules",
+      "name": "Modules"
     },
     {
       "path": "src\\workers",
@@ -76,7 +76,7 @@
       "src/layouts": true,
       "src/libs": true,
       "src/pages": true,
-      "src/plugins": true,
+      "src/modules": true,
       "src/router": true,
       "src/shared": true,
       "src/store": true,
