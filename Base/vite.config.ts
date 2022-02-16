@@ -5,6 +5,9 @@ import path from 'path';
 import { defineConfig } from 'vite';
 import Vue from '@vitejs/plugin-vue';
 import { createHtmlPlugin } from 'vite-plugin-html';
+import Icons from 'unplugin-icons/vite';
+import IconsResolver from 'unplugin-icons/resolver';
+import Components from 'unplugin-vue-components/vite';
 import settings from './src/settings';
 
 
@@ -31,6 +34,19 @@ export default defineConfig(({ mode }) => {
             ...settings
           }
         }
+      }),
+      // 将图标作为图标组件可进行导入
+      Icons({
+        scale: 1,
+        compiler: 'vue3'
+      }),
+      // 自动导入使用到的组件
+      Components({
+        dts: true,
+        resolvers: [
+          // 自动导入图标组件
+          IconsResolver({ prefix: false })
+        ]
       })
     ]
   };
