@@ -3,5 +3,7 @@
 node_modules
 dist
 
+components.d.ts
+
 *.local
 *.log
