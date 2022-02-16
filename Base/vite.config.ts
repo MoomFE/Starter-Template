@@ -1,4 +1,7 @@
-import path from 'path'
+/* eslint-disable import/no-extraneous-dependencies */
+
+
+import path from 'path';
 import { defineConfig } from 'vite';
 import Vue from '@vitejs/plugin-vue';
 import { createHtmlPlugin } from 'vite-plugin-html';
@@ -30,5 +33,5 @@ export default defineConfig(({ mode }) => {
         }
       })
     ]
-  }
-})
+  };
+});
