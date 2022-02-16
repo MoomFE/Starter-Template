@@ -83,5 +83,17 @@
       "src/utils": true,
       "src/workers": true
     }
+  },
+  "extensions": {
+    "recommendations": [
+      "johnsoncodehk.volar",
+      "antfu.iconify",
+      "dbaeumer.vscode-eslint",
+      "csstools.postcss",
+      "bradlc.vscode-tailwindcss"
+    ],
+    "unwantedRecommendations": [
+      "octref.vetur"
+    ]
   }
 }
