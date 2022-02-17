@@ -21,7 +21,7 @@ specifiers:
   sass: ^1.49.7
   tailwindcss: ^3.0.22
   typescript: ^4.5.5
-  unplugin-auto-import: ^0.5.11
+  unplugin-auto-import: ^0.6.0
   unplugin-icons: ^0.13.1
   unplugin-vue-components: ^0.17.18
   vite: ^2.8.3
@@ -59,7 +59,7 @@ devDependencies:
   sass: registry.npmmirror.com/sass/1.49.7
   tailwindcss: registry.npmmirror.com/tailwindcss/3.0.22_autoprefixer@10.4.2
   typescript: registry.npmmirror.com/typescript/4.5.5
-  unplugin-auto-import: registry.npmmirror.com/unplugin-auto-import/0.5.11_@vueuse+core@7.6.2+vite@2.8.3
+  unplugin-auto-import: registry.npmmirror.com/unplugin-auto-import/0.6.0_@vueuse+core@7.6.2+vite@2.8.3
   unplugin-icons: registry.npmmirror.com/unplugin-icons/0.13.1_4665a7dff141ed5abe40721656aa4949
   unplugin-vue-components: registry.npmmirror.com/unplugin-vue-components/0.17.18_vite@2.8.3+vue@3.2.31
   vite: registry.npmmirror.com/vite/2.8.3_sass@1.49.7
@@ -3531,11 +3531,11 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  registry.npmmirror.com/unplugin-auto-import/0.5.11_@vueuse+core@7.6.2+vite@2.8.3:
-    resolution: {integrity: sha512-MJ3POLe/IysRHF4yd32FkKDoxqSRoiuIHm89ys67B8FLuz2Pvh9poeqTVe6IhJsNxwv0+GSdFfj5Dpq24lhm4g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/unplugin-auto-import/-/unplugin-auto-import-0.5.11.tgz}
-    id: registry.npmmirror.com/unplugin-auto-import/0.5.11
+  registry.npmmirror.com/unplugin-auto-import/0.6.0_@vueuse+core@7.6.2+vite@2.8.3:
+    resolution: {integrity: sha512-joItLHCozByEsKawhFTfterlZOp8EYIAOpuWKx5xq0SdLOQtvbEcfkdhLxWIsMOH9yXNY5vnXYRONW0XxjVDlg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/unplugin-auto-import/-/unplugin-auto-import-0.6.0.tgz}
+    id: registry.npmmirror.com/unplugin-auto-import/0.6.0
     name: unplugin-auto-import
-    version: 0.5.11
+    version: 0.6.0
     engines: {node: '>=14'}
     peerDependencies:
       '@vueuse/core': '*'
@@ -3543,7 +3543,7 @@ packages:
       '@vueuse/core':
         optional: true
     dependencies:
-      '@antfu/utils': registry.npmmirror.com/@antfu/utils/0.4.0
+      '@antfu/utils': registry.npmmirror.com/@antfu/utils/0.5.0
       '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/4.1.2
       '@vueuse/core': registry.npmmirror.com/@vueuse/core/7.6.2_vue@3.2.31
       local-pkg: registry.npmmirror.com/local-pkg/0.4.1
