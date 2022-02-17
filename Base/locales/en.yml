@@ -1,1 +1,8 @@
-home: Home
+button:
+  home: Home
+  back: Back
+  toogle-dark-mode: Toggle dark mode
+  change-languages: Change languages
+index:
+  title: Base Starter Template
+not-found: Not found

@@ -2,14 +2,19 @@
   <div class="footer flex justify-center text-2xl text-center mt-6">
 
     <!-- 回到首页 -->
-    <button @click="router.push({ name: 'Index' })">
+    <button :title="t('button.home')" @click="router.push({ name: 'Index' })">
       <vaadin-home-o />
     </button>
 
     <!-- 切换深色模式 -->
-    <button @click="theme.toggleDark()">
+    <button :title="t('index.toogle-dark-mode')" @click="theme.toggleDark()">
       <ic-outline-wb-sunny v-if="theme.dark" />
       <ph-moon v-else />
+    </button>
+
+    <!-- 切换多语言 -->
+    <button :title="t('index.change-languages')" @click="toggleLocales">
+      <mdi-translate />
     </button>
 
   </div>
@@ -20,6 +25,11 @@
 
   const router = useRouter();
   const theme = useThemeStore();
+  const { t, locale, availableLocales: locales } = useI18n();
+
+  function toggleLocales() {
+    locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length];
+  }
 </script>
 
 <style lang="scss">

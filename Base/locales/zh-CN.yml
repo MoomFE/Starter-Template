@@ -1,1 +1,8 @@
-home: 首页
+button:
+  home: 首页
+  back: 返回
+  toogle-dark-mode: 切换暗色模式
+  change-languages: 切换语言
+index:
+  title: 基础项目模板
+not-found: 未找到页面

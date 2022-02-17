@@ -2,12 +2,12 @@
   <Logo />
 
   <div class="mt-2">
-    Base Starter Template
+    {{ t('index.title') }}
   </div>
 </template>
 
 <script lang="ts" setup>
-
+  const { t } = useI18n();
 </script>
 
 <route lang="yaml">

@@ -5,7 +5,7 @@
     </div>
 
     <div class="mt-1">
-      Not found
+      {{ t('not-found') }}
     </div>
 
     <div class="mt-6">
@@ -17,7 +17,7 @@
         "
         @click="router.back()"
       >
-        返回
+        {{ t('button.back') }}
       </button>
     </div>
   </div>
@@ -25,4 +25,5 @@
 
 <script lang="ts" setup>
   const router = useRouter();
+  const { t } = useI18n();
 </script>
