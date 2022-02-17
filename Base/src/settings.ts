@@ -1,4 +1,4 @@
-import type { Settings } from "./shims";
+import type { Settings } from './shims';
 
 
 export default defineSettings({
