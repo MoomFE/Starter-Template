@@ -10,6 +10,8 @@ import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import Components from 'unplugin-vue-components/vite';
 import AutoImport from 'unplugin-auto-import/vite';
+import Pages from 'vite-plugin-pages';
+import Layouts from 'vite-plugin-vue-layouts';
 import settings from './src/settings';
 
 
@@ -28,6 +30,12 @@ export default defineConfig(({ mode }) => {
     plugins: [
       // Vue 3 支持
       Vue(),
+      // 以文件系统为基础的路由
+      Pages({
+        dirs: path.resolve(__dirname, './src/pages'),
+      }),
+      // 页面布局系统
+      Layouts(),
       // 使 index.html 可以使用 ejs 语法
       createHtmlPlugin({
         minify: !isDev,

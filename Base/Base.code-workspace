@@ -36,10 +36,6 @@
       "name": "Workers"
     },
     {
-      "path": "src\\router",
-      "name": "Router"
-    },
-    {
       "path": "src\\store",
       "name": "Store"
     },

@@ -37,6 +37,8 @@
     "unplugin-vue-components": "^0.17.18",
     "vite": "^2.8.3",
     "vite-plugin-html": "^3.0.6",
+    "vite-plugin-pages": "^0.20.2",
+    "vite-plugin-vue-layouts": "^0.6.0",
     "vue-eslint-parser": "^8.2.0"
   }
 }
