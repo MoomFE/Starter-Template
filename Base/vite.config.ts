@@ -56,7 +56,12 @@ export default defineConfig(({ mode }) => {
         dts: path.resolve(__dirname, './src/components.d.ts'),
         resolvers: [
           // 自动导入图标组件
-          IconsResolver({ prefix: false })
+          IconsResolver({ prefix: false }),
+          // 自动导入 vue-router 的路由组件
+          {
+            type: 'component',
+            resolve: (importName) => (['RouterLink', 'RouterView'].includes(importName) ? { importName, path: 'vue-router' } : null)
+          }
         ]
       }),
       // API 自动加载
