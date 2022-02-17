@@ -18,8 +18,22 @@
 
 <br>
 
+## 开发工具
+
+- [pnpm](https://pnpm.js.org/) - 快, 节省磁盘空间的包管理器
+- [VS Code](https://code.visualstudio.com/)- IDE
+- VS Code 扩展
+  - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) - Vue 3 `<script setup>` IDE 支持
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - 代码风格检查及修正
+  - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - Tailwind CSS 样式提示及自动补全
+  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Iconify 图标提示及自动补全
+  - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - 多合一的 I18n 支持
+
+<br>
+
 ## 项目目录结构
 
+- **\*\*\*.code-workspace**: VsCode 工作区文件, 使用这个打开项目
 - **public**: 打包后需要放到根目录的文件
 - **locales**: 国际化文件
 - **dist**: 打包后的代码
@@ -31,7 +45,6 @@
   - **utils**: 工具方法
   - **modules**: 项目依赖类库的配置
   - **workers**: 存放独立的 Web Worker 应用
-  - **router**: 路由配置
   - **store**: 存储状态
   - **composables**: 组合式函数
   - **components**: 公共组件 ( 相对独立的组件, 离开当前项目也能使用的组件 )
