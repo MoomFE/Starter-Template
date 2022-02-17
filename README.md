@@ -1,6 +1,6 @@
-<p align="center">
+<h1 align="center">
   前端项目快速启动模板
-</p>
+</h1>
 
 <br>
 
@@ -10,7 +10,7 @@
 - 🗂 [基于文件的路由](https://github.com/hannoeru/vite-plugin-pages)
 - 📑 [布局系统](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
 - 🎨 [Tailwind CSS](https://tailwindcss.com) - 实用的原子 CSS 框架
-- 😃 [100+ 图标集, 10000+ 图标为你所用, 从不妥协](https://github.com/antfu/unplugin-icons)
+- 😃 [100+ 图标集, 10000+ 图标为你所用, 从不妥协](https://github.com/antfu/unplugin-icons) - 使用 [Icônes](https://icones.netlify.app/) 或 [iconify](https://icon-sets.iconify.design/) 查看或搜索图标
 - 🍍 [使用 Pinia 的状态管理](https://pinia.esm.dev/)
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
