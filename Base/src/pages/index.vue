@@ -15,7 +15,7 @@
   </div>
 
   <div class="mt-3">
-    <Button @click="go">
+    <Button :disabled="!name" @click="go">
       {{ t('button.go') }}
     </Button>
   </div>
