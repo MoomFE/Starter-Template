@@ -3,6 +3,7 @@ import App from './App.vue';
 import router from '@/modules/router';
 import pinia from '@/modules/pinia';
 import i18n from '@/modules/i18n';
+import '@/modules/nprogress';
 import '@/styles/styles.scss';
 
 
