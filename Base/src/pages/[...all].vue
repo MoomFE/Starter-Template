@@ -9,16 +9,9 @@
     </div>
 
     <div class="mt-6">
-      <button
-        class="
-          px-4 py-1 rounded
-          text-white
-          bg-primary hover:bg-primary-hover active:bg-primary-active
-        "
-        @click="router.back()"
-      >
+      <Button @click="router.back()">
         {{ t('button.back') }}
-      </button>
+      </Button>
     </div>
   </div>
 </template>

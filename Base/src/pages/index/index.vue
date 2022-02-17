@@ -15,16 +15,9 @@
   </div>
 
   <div class="mt-3">
-    <button
-      class="
-        px-4 py-1 rounded
-        text-white
-        bg-primary hover:bg-primary-hover active:bg-primary-active
-      "
-      @click="go"
-    >
+    <Button @click="go">
       {{ t('button.go') }}
-    </button>
+    </Button>
   </div>
 </template>
 
