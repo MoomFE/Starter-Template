@@ -7,13 +7,13 @@
     </button>
 
     <!-- 切换深色模式 -->
-    <button :title="t('index.toogle-dark-mode')" @click="theme.toggleDark()">
+    <button :title="t('button.toogle-dark-mode')" @click="theme.toggleDark()">
       <ic-outline-wb-sunny v-if="theme.dark" />
       <ph-moon v-else />
     </button>
 
     <!-- 切换多语言 -->
-    <button :title="t('index.change-languages')" @click="toggleLocales">
+    <button :title="t('button.change-languages')" @click="toggleLocales">
       <mdi-translate />
     </button>
 
