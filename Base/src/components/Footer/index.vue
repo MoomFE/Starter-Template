@@ -8,8 +8,8 @@
 
     <!-- 切换深色模式 -->
     <button :title="t('button.toogle-dark-mode')" @click="theme.toggleDark()">
-      <ic-outline-wb-sunny v-if="theme.dark" />
-      <ph-moon v-else />
+      <ph-moon v-if="theme.dark" />
+      <ic-outline-wb-sunny v-else />
     </button>
 
     <!-- 切换多语言 -->
