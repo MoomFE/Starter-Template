@@ -7,5 +7,16 @@ module.exports = {
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: '@typescript-eslint/parser'
-  }
+  },
+  overrides: [
+    {
+      files: ['*.vue'],
+      globals: {
+        defineProps: 'readonly',
+        defineEmits: 'readonly',
+        defineExpose: 'readonly',
+        withDefaults: 'readonly'
+      }
+    }
+  ]
 };
