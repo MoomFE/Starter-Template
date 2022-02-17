@@ -34,6 +34,9 @@ module.exports = {
     extend: {
       // 颜色
       colors: {
+        // 动态颜色
+        'dynamic-text': 'var(--dynamic-text)',
+        'dynamic-bg': 'var(--dynamic-bg)',
         // Primary
         'primary': '#2080f0',
         'primary-hover': '#4098fc',
