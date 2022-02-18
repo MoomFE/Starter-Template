@@ -24,6 +24,7 @@ specifiers:
   unplugin-auto-import: ^0.5.11
   unplugin-icons: ^0.13.1
   unplugin-vue-components: ^0.17.18
+  vant: ^3.4.5
   vite: ^2.8.3
   vite-plugin-html: ^3.0.6
   vite-plugin-pages: ^0.20.2
@@ -38,6 +39,7 @@ dependencies:
   '@vueuse/core': registry.npmmirror.com/@vueuse/core/7.6.2_vue@3.2.31
   nprogress: registry.npmmirror.com/nprogress/0.2.0
   pinia: registry.npmmirror.com/pinia/2.0.11_typescript@4.5.5+vue@3.2.31
+  vant: registry.npmmirror.com/vant/3.4.5_vue@3.2.31
   vue: registry.npmmirror.com/vue/3.2.31
   vue-i18n: registry.npmmirror.com/vue-i18n/9.1.9_vue@3.2.31
   vue-router: registry.npmmirror.com/vue-router/4.0.12_vue@3.2.31
@@ -373,6 +375,12 @@ packages:
       fastq: registry.npmmirror.com/fastq/1.13.0
     dev: true
 
+  registry.npmmirror.com/@popperjs/core/2.11.2:
+    resolution: {integrity: sha512-92FRmppjjqz29VMJ2dn+xdyXZBrMlE42AV6Kq6BwjWV7CNUW1hs2FtxSNLQE+gJhaZ6AAmYuO9y8dshhcBl7vA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@popperjs/core/-/core-2.11.2.tgz}
+    name: '@popperjs/core'
+    version: 2.11.2
+    dev: false
+
   registry.npmmirror.com/@rollup/pluginutils/4.1.2:
     resolution: {integrity: sha512-ROn4qvkxP9SyPeHaf7uQC/GPFY6L/OWy9+bd9AwcjOAWQwxRscoEyAUD8qCY5o5iL4jqQwoLk2kaTKJPb/HwzQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@rollup/pluginutils/-/pluginutils-4.1.2.tgz}
     name: '@rollup/pluginutils'
@@ -486,6 +494,26 @@ packages:
       '@typescript-eslint/types': registry.npmmirror.com/@typescript-eslint/types/5.12.0
       eslint-visitor-keys: registry.npmmirror.com/eslint-visitor-keys/3.3.0
     dev: true
+
+  registry.npmmirror.com/@vant/icons/1.7.3:
+    resolution: {integrity: sha512-tW4EqzxN4kXw1rnlnQJQHofEifPbt/gECOWiibomht8QLyvoGuE4iUmDFS288dJ07ZjuTy0bhdABj0SENo2fmQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vant/icons/-/icons-1.7.3.tgz}
+    name: '@vant/icons'
+    version: 1.7.3
+    dev: false
+
+  registry.npmmirror.com/@vant/popperjs/1.1.0:
+    resolution: {integrity: sha512-8MD1gz146awV/uPxYjz4pet22f7a9YVKqk7T+gFkWFwT9mEcrIUEg/xPrdOnWKLP9puXyYtm7oVfSDSefZ/p/w==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vant/popperjs/-/popperjs-1.1.0.tgz}
+    name: '@vant/popperjs'
+    version: 1.1.0
+    dependencies:
+      '@popperjs/core': registry.npmmirror.com/@popperjs/core/2.11.2
+    dev: false
+
+  registry.npmmirror.com/@vant/use/1.3.5:
+    resolution: {integrity: sha512-S4rfMQT+71quUbSY9sF7vJTEADVWqHxn8zUbpEl4vzI2CCJx67ri/ZHV911LpXIaZVgSSGPLE5xLV8javmbU0Q==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vant/use/-/use-1.3.5.tgz}
+    name: '@vant/use'
+    version: 1.3.5
+    dev: false
 
   registry.npmmirror.com/@vitejs/plugin-vue/2.2.0_vite@2.8.3+vue@3.2.31:
     resolution: {integrity: sha512-wXigM1EwN2G7rZcwG6kLk9ivvIMhx2363tCEvMBiXcTu5nePM/12hUPVzPb83Uugt6U+zom1gTpJopi/Ow/jwg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vitejs/plugin-vue/-/plugin-vue-2.2.0.tgz}
@@ -3671,6 +3699,20 @@ packages:
     name: v8-compile-cache
     version: 2.3.0
     dev: true
+
+  registry.npmmirror.com/vant/3.4.5_vue@3.2.31:
+    resolution: {integrity: sha512-3an2v6ejW9pijKmaDbSCW7Hs1R45tqtTIcedfI8hEAA5zC2Bp8cXU6Z4gUCK6/RAGOJsB+vcyLINLb1cGS/SzQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vant/-/vant-3.4.5.tgz}
+    id: registry.npmmirror.com/vant/3.4.5
+    name: vant
+    version: 3.4.5
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      '@vant/icons': registry.npmmirror.com/@vant/icons/1.7.3
+      '@vant/popperjs': registry.npmmirror.com/@vant/popperjs/1.1.0
+      '@vant/use': registry.npmmirror.com/@vant/use/1.3.5
+      vue: registry.npmmirror.com/vue/3.2.31
+    dev: false
 
   registry.npmmirror.com/vite-plugin-html/3.0.6_vite@2.8.3:
     resolution: {integrity: sha512-B6ZAufvqUqdfPhcV+El8NNI3qV0d3ZntIur2UnP4tcHBV/O2d+6wHF79bJWuqR4WsvmsV7dejCNS3rAYFCisWw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite-plugin-html/-/vite-plugin-html-3.0.6.tgz}

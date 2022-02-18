@@ -9,6 +9,7 @@ import { createHtmlPlugin } from 'vite-plugin-html';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import Components from 'unplugin-vue-components/vite';
+import { VantResolver } from 'unplugin-vue-components/resolvers';
 import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
@@ -61,7 +62,12 @@ export default defineConfig(({ mode }) => {
           {
             type: 'component',
             resolve: (importName) => (['RouterLink', 'RouterView'].includes(importName) ? { importName, path: 'vue-router' } : null)
-          }
+          },
+          // 自动导入 Vant 组件
+          VantResolver({
+            // 在 main.ts 中引入 CSS, 否则可能会和 Tailwind 样式冲突
+            importStyle: false
+          })
         ]
       }),
       // API 自动加载
