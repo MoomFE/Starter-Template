@@ -91,10 +91,12 @@
       "*.sass": "postcss",
       "*.less": "postcss"
     },
+    "i18n-ally.enabledFrameworks": ["vue"],
     "i18n-ally.displayLanguage": "zh-CN",
-    "i18n-ally.keystyle": "nested",
-    "i18n-ally.localesPaths": "locales",
-    "i18n-ally.sortKeys": true
+    "i18n-ally.localesPaths": [
+      "locales",
+      "../../locales"
+    ]
   },
   "extensions": {
     "recommendations": [
@@ -102,7 +104,8 @@
       "antfu.iconify",
       "dbaeumer.vscode-eslint",
       "csstools.postcss",
-      "bradlc.vscode-tailwindcss"
+      "bradlc.vscode-tailwindcss",
+      "lokalise.i18n-ally"
     ],
     "unwantedRecommendations": [
       "octref.vetur"
