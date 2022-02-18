@@ -8,7 +8,7 @@
   <div class="mt-6">
     <input
       v-model="name"
-      class="w-62.5 border border-gray-400 rounded-md outline-none text-center bg-transparent px-3 py-1.5"
+      class="w-62.5 max-w-full border border-gray-400 rounded-md outline-none text-center bg-transparent px-3 py-1.5"
       :placeholder="t('intro.whats-your-name')"
       @keydown.enter="go"
     />
