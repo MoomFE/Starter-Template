@@ -4,6 +4,7 @@ specifiers:
   '@iconify/json': ^2.1.1
   '@intlify/vite-plugin-vue-i18n': ^3.3.0
   '@moomfe/eslint-config': ^1.8.1
+  '@moomfe/small-utils': ^3.0.0
   '@types/node': ^17.0.18
   '@types/nprogress': ^0.2.0
   '@typescript-eslint/parser': ^5.12.0
@@ -35,6 +36,7 @@ specifiers:
 
 dependencies:
   '@iconify/json': registry.npmmirror.com/@iconify/json/2.1.1
+  '@moomfe/small-utils': registry.npmmirror.com/@moomfe/small-utils/3.0.0_vue@3.2.31
   '@vueuse/core': registry.npmmirror.com/@vueuse/core/7.6.2_vue@3.2.31
   nprogress: registry.npmmirror.com/nprogress/0.2.0
   pinia: registry.npmmirror.com/pinia/2.0.11_typescript@4.5.5+vue@3.2.31
@@ -345,6 +347,21 @@ packages:
     name: '@moomfe/eslint-config'
     version: 1.8.1
     dev: true
+
+  registry.npmmirror.com/@moomfe/small-utils/3.0.0_vue@3.2.31:
+    resolution: {integrity: sha512-0AP3ud9AoVcdahCGde5jSfTLDFpK1C1CXxeTuZaF1ICJ+dS32znY+0ypK6z9bPZNFflOY73oqax2fYHVigGmMg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@moomfe/small-utils/-/small-utils-3.0.0.tgz}
+    id: registry.npmmirror.com/@moomfe/small-utils/3.0.0
+    name: '@moomfe/small-utils'
+    version: 3.0.0
+    dependencies:
+      '@vueuse/core': registry.npmmirror.com/@vueuse/core/7.6.2_vue@3.2.31
+      overlayscrollbars: registry.npmmirror.com/overlayscrollbars/1.13.1
+      overlayscrollbars-vue: registry.npmmirror.com/overlayscrollbars-vue/0.2.2_b7af9339918886603b5e8dfa7c5c77f5
+      vue-demi: registry.npmmirror.com/vue-demi/0.12.1_vue@3.2.31
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: false
 
   registry.npmmirror.com/@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz}
@@ -2863,6 +2880,25 @@ packages:
       type-check: registry.npmmirror.com/type-check/0.4.0
       word-wrap: registry.npmmirror.com/word-wrap/1.2.3
     dev: true
+
+  registry.npmmirror.com/overlayscrollbars-vue/0.2.2_b7af9339918886603b5e8dfa7c5c77f5:
+    resolution: {integrity: sha512-JpDkM+fkNp7YbZxZNf9cbSWCa1tylaSUkmdhux+qtVFekH4zpZpM8+GRtOgs7YDDWyVNPkUBQ8FnMRMoBNfoJw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/overlayscrollbars-vue/-/overlayscrollbars-vue-0.2.2.tgz}
+    id: registry.npmmirror.com/overlayscrollbars-vue/0.2.2
+    name: overlayscrollbars-vue
+    version: 0.2.2
+    peerDependencies:
+      overlayscrollbars: ^1.10.0
+      vue: ^2.6.0
+    dependencies:
+      overlayscrollbars: registry.npmmirror.com/overlayscrollbars/1.13.1
+      vue: registry.npmmirror.com/vue/3.2.31
+    dev: false
+
+  registry.npmmirror.com/overlayscrollbars/1.13.1:
+    resolution: {integrity: sha512-gIQfzgGgu1wy80EB4/6DaJGHMEGmizq27xHIESrzXq0Y/J0Ay1P3DWk6tuVmEPIZH15zaBlxeEJOqdJKmowHCQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/overlayscrollbars/-/overlayscrollbars-1.13.1.tgz}
+    name: overlayscrollbars
+    version: 1.13.1
+    dev: false
 
   registry.npmmirror.com/p-limit/1.3.0:
     resolution: {integrity: sha512-vvcXsLAJ9Dr5rQOPk7toZQZJApBl2K4J6dANSsEuh6QI41JYcsS/qhTGa9ErIUUgK3WNQoJYvylxvjqmiqEA9Q==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/p-limit/-/p-limit-1.3.0.tgz}
