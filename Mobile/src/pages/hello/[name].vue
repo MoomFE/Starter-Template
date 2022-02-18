@@ -14,9 +14,9 @@
   </p>
 
   <div class="mt-6">
-    <Button @click="router.back()">
+    <van-button type="primary" size="small" @click="router.back()">
       {{ t('button.back') }}
-    </Button>
+    </van-button>
   </div>
 </template>
 

@@ -6,18 +6,15 @@
   </p>
 
   <div class="mt-6">
-    <input
-      v-model="name"
-      class="w-62.5 max-w-full border border-gray-400 rounded-md outline-none text-center bg-transparent px-3 py-1.5"
-      :placeholder="t('intro.whats-your-name')"
-      @keydown.enter="go"
-    />
+    <div class="w-62.5 max-w-full border border-gray-400 rounded-md overflow-hidden mx-auto">
+      <van-field v-model="name" :placeholder="t('intro.whats-your-name')" :border="false" input-align="center" />
+    </div>
   </div>
 
   <div class="mt-3">
-    <Button :disabled="!name" @click="go">
+    <van-button type="primary" size="small" :disabled="!name" @click="go">
       {{ t('button.go') }}
-    </Button>
+    </van-button>
   </div>
 </template>
 
