@@ -1,0 +1,114 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "locales",
+      "name": "Locales"
+    },
+    {
+      "path": "src\\assets",
+      "name": "Assets"
+    },
+    {
+      "path": "src\\styles",
+      "name": "Styles"
+    },
+    {
+      "path": "src\\shared",
+      "name": "Shared"
+    },
+    {
+      "path": "src\\libs",
+      "name": "Libs"
+    },
+    {
+      "path": "src\\utils",
+      "name": "Utils"
+    },
+    {
+      "path": "src\\modules",
+      "name": "Modules"
+    },
+    {
+      "path": "src\\workers",
+      "name": "Workers"
+    },
+    {
+      "path": "src\\store",
+      "name": "Store"
+    },
+    {
+      "path": "src\\composables",
+      "name": "Composables"
+    },
+    {
+      "path": "src\\components",
+      "name": "Components"
+    },
+    {
+      "path": "src\\components-private",
+      "name": "Components Private"
+    },
+    {
+      "path": "src\\layouts",
+      "name": "Layouts"
+    },
+    {
+      "path": "src\\pages",
+      "name": "Pages"
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "files.exclude": {
+      "*.code-workspace": true,
+      "locales": true,
+      "node_modules": true,
+      "src/assets": true,
+      "src/components": true,
+      "src/components-private": true,
+      "src/composables": true,
+      "src/layouts": true,
+      "src/libs": true,
+      "src/modules": true,
+      "src/pages": true,
+      "src/router": true,
+      "src/shared": true,
+      "src/store": true,
+      "src/styles": true,
+      "src/utils": true,
+      "src/workers": true
+    },
+    "files.associations": {
+      "*.css": "postcss",
+      "*.scss": "postcss",
+      "*.sass": "postcss",
+      "*.less": "postcss"
+    },
+    "i18n-ally.enabledFrameworks": ["vue"],
+    "i18n-ally.displayLanguage": "zh-CN",
+    "i18n-ally.localesPaths": [
+      "locales",
+      "../../locales"
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "johnsoncodehk.volar",
+      "antfu.iconify",
+      "dbaeumer.vscode-eslint",
+      "csstools.postcss",
+      "bradlc.vscode-tailwindcss",
+      "lokalise.i18n-ally"
+    ],
+    "unwantedRecommendations": [
+      "octref.vetur"
+    ]
+  }
+}
