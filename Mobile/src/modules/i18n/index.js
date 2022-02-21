@@ -14,7 +14,7 @@ const messages = Object.fromEntries(
 
 const i18n = createI18n({
   legacy: false,
-  locale: 'zh-CN',
+  locale: import.meta.env.APP_DEFAULT_LOCALE,
   messages
 });
 
