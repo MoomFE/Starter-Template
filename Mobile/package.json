@@ -5,7 +5,7 @@
     "dev": "pnpm run serve",
     "serve": "pnpm install && vite --host",
     "build": "pnpm install && vite build",
-    "preview": "pnpm install && vite preview"
+    "preview": "pnpm install && vite build && vite preview"
   },
   "dependencies": {
     "@iconify/json": "^2.1.1",
