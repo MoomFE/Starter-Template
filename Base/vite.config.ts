@@ -2,7 +2,7 @@
 
 
 import path from 'path';
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import Vue from '@vitejs/plugin-vue';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import { createHtmlPlugin } from 'vite-plugin-html';
@@ -18,8 +18,11 @@ import settings from './src/settings';
 export default defineConfig(({ mode }) => {
   /** 是否是开发模式 */
   const isDev = mode === 'development';
+  /** 环境变量 */
+  const env = loadEnv(mode, process.cwd(), ['VITE_', 'APP_']);
 
   return {
+    envPrefix: 'APP_',
     resolve: {
       alias: {
         '~': path.resolve(__dirname, './src'),
