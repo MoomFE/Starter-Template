@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+  --dynamic-text: #333639;
+  --dynamic-bg: #FFF;
+
+  &.dark{
+    --dynamic-text: #E8E8E8;
+    --dynamic-bg: #101014;
+  }
+
+  @apply text-dynamic-text bg-dynamic-bg;
+  @apply transition-colors duration-colors;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a:focus,
+a:active {
+  @apply outline-none;
+}
+
+a,
+a:focus,
+a:hover {
+  @apply cursor-pointer text-primary underline;
+}
+
+div:focus {
+  @apply outline-none;
+}
