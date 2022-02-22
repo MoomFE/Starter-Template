@@ -6,7 +6,9 @@
 
 > [Base](./Base/): 最基础的项目模板
 
-> [Mobile](./Mobile/): 基于 [Base](./Base/) 创建的移动端项目模板, 新增 [Vant](https://vant-contrib.gitee.io/vant/#/zh-CN) 作为组件库 
+> [Mobile](./Mobile/): 基于 [Base](./Base/) 创建的移动端项目模板
+>   - 新增 [Vant](https://vant-contrib.gitee.io/vant/#/zh-CN) 作为组件库
+>   - 移除主题切换, 如有需要可自行封装
 
 <br>
 
