@@ -4,14 +4,6 @@
 
 <br>
 
-> [Base](./Base/): 最基础的项目模板
-
-> [Mobile](./Mobile/): 基于 [Base](./Base/) 创建的移动端项目模板
->   - 新增 [Vant](https://vant-contrib.gitee.io/vant/#/zh-CN) 作为组件库
->   - 移除主题切换, 如有需要可自行封装
-
-<br>
-
 ## 特性
 
 - ⚡️ [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [Vue 3](https://github.com/vuejs/vue-next) 优先 - 就是快！
@@ -23,6 +15,16 @@
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 - 🦾 TypeScript 支持
+
+<br>
+
+## 版本说明
+
+> [Base](./Base/): 最基础的项目模板
+
+> [Mobile](./Mobile/): 基于 [Base](./Base/) 创建的移动端项目模板
+>   - 新增 [Vant](https://vant-contrib.gitee.io/vant/#/zh-CN) 作为组件库
+>   - 移除主题切换, 如有需要可自行封装
 
 <br>
 
