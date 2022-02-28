@@ -26,8 +26,6 @@
 >   - 新增 [Vant](https://vant-contrib.gitee.io/vant/#/zh-CN) 作为组件库
 >   - 移除主题切换, 如有需要可自行封装
 
-> [Base Vue2](./Base-Vue2): [Base](./Base/) 的 Vue2 版本
-
 <br>
 
 ## 开发工具
