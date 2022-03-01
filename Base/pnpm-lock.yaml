@@ -27,7 +27,7 @@ specifiers:
   unplugin-vue-components: ^0.17.21
   vite: ^2.8.5
   vite-plugin-html: ^3.1.0
-  vite-plugin-pages: ^0.20.2
+  vite-plugin-pages: ^0.21.0
   vite-plugin-vue-layouts: ^0.6.0
   vue: ^3.2.31
   vue-eslint-parser: ^8.3.0
@@ -66,7 +66,7 @@ devDependencies:
   unplugin-vue-components: registry.npmmirror.com/unplugin-vue-components/0.17.21_vite@2.8.5+vue@3.2.31
   vite: registry.npmmirror.com/vite/2.8.5_sass@1.49.9
   vite-plugin-html: registry.npmmirror.com/vite-plugin-html/3.1.0_vite@2.8.5
-  vite-plugin-pages: registry.npmmirror.com/vite-plugin-pages/0.20.2_0651a65608edf7f8616691216c0e1983
+  vite-plugin-pages: registry.npmmirror.com/vite-plugin-pages/0.21.0_0651a65608edf7f8616691216c0e1983
   vite-plugin-vue-layouts: registry.npmmirror.com/vite-plugin-vue-layouts/0.6.0_d19c0dfa00041263a18e45e980f25206
   vue-eslint-parser: registry.npmmirror.com/vue-eslint-parser/8.3.0_eslint@8.10.0
 
@@ -3777,11 +3777,11 @@ packages:
       vite: registry.npmmirror.com/vite/2.8.5_sass@1.49.9
     dev: true
 
-  registry.npmmirror.com/vite-plugin-pages/0.20.2_0651a65608edf7f8616691216c0e1983:
-    resolution: {integrity: sha512-A/N6Pez9sMzt7ZEfd1H7P9tmP6LrZwXMexV8xSiRahnUeNw+gz0W2dsPLJDZBvcixDZqoK8ggKdmyxgVBuTAfg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite-plugin-pages/-/vite-plugin-pages-0.20.2.tgz}
-    id: registry.npmmirror.com/vite-plugin-pages/0.20.2
+  registry.npmmirror.com/vite-plugin-pages/0.21.0_0651a65608edf7f8616691216c0e1983:
+    resolution: {integrity: sha512-O7en6RcLaWvKkKDIpB2Y1tjZIvvzK5AKG382yzG5vw7C+2ZP7lCNYjYg59O3+/BwTiS50IlFv5QPnD8Z8Iyi8w==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite-plugin-pages/-/vite-plugin-pages-0.21.0.tgz}
+    id: registry.npmmirror.com/vite-plugin-pages/0.21.0
     name: vite-plugin-pages
-    version: 0.20.2
+    version: 0.21.0
     peerDependencies:
       '@vue/compiler-sfc': '>=3'
       vite: '>=2'
@@ -3795,6 +3795,7 @@ packages:
       fast-glob: registry.npmmirror.com/fast-glob/3.2.11
       json5: registry.npmmirror.com/json5/2.2.0
       local-pkg: registry.npmmirror.com/local-pkg/0.4.1
+      picocolors: registry.npmmirror.com/picocolors/1.0.0
       vite: registry.npmmirror.com/vite/2.8.5_sass@1.49.9
       yaml: registry.npmmirror.com/yaml/2.0.0-10
     transitivePeerDependencies:
