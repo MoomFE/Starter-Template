@@ -64,6 +64,11 @@ export default defineConfig(({ mode }) => {
           {
             type: 'component',
             resolve: (importName) => (['RouterLink', 'RouterView'].includes(importName) ? { importName, path: 'vue-router' } : null)
+          },
+          // 自动导入 @moomfe/small-utils 的组件
+          {
+            type: 'component',
+            resolve: (name) => (name.match(/^S[A-Z]/) ? { importName: name, path: `@moomfe/small-utils/components/${name}/index` } : null)
           }
         ]
       }),
