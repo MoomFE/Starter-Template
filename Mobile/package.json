@@ -8,7 +8,7 @@
     "preview": "pnpm install && vite build && vite preview"
   },
   "dependencies": {
-    "@iconify/json": "^2.1.8",
+    "@iconify/json": "^2.1.10",
     "@moomfe/small-utils": "^3.3.0",
     "@vueuse/core": "^7.7.0",
     "nprogress": "^0.2.0",
@@ -38,9 +38,9 @@
     "unplugin-auto-import": "^0.5.11",
     "unplugin-icons": "^0.13.2",
     "unplugin-vue-components": "^0.17.21",
-    "vite": "^2.8.5",
+    "vite": "^2.8.6",
     "vite-plugin-html": "^3.1.0",
-    "vite-plugin-pages": "^0.21.0",
+    "vite-plugin-pages": "^0.21.2",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vue-eslint-parser": "^8.3.0"
   }

@@ -5,6 +5,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     Button: typeof import('./components/Button/index.vue')['default']
+    BxMessageAltX: typeof import('~icons/bx/message-alt-x')['default']
     CarbonTemplate: typeof import('~icons/carbon/template')['default']
     Footer: typeof import('./components/Footer/index.vue')['default']
     IconoirPeopleRounded: typeof import('~icons/iconoir/people-rounded')['default']
