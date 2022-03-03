@@ -85,12 +85,6 @@
       "src/utils": true,
       "src/workers": true
     },
-    "files.associations": {
-      "*.css": "postcss",
-      "*.scss": "postcss",
-      "*.sass": "postcss",
-      "*.less": "postcss"
-    },
     "i18n-ally.enabledFrameworks": ["vue"],
     "i18n-ally.displayLanguage": "zh-CN",
     "i18n-ally.localesPaths": [
