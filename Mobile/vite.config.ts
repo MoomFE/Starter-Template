@@ -105,9 +105,6 @@ export default defineConfig(({ mode }) => {
         'vue-router',
         '@vueuse/core',
         'vant/es'
-      ],
-      exclude: [
-        'vue-demi'
       ]
     }
   };

@@ -98,9 +98,6 @@ export default defineConfig(({ mode }) => {
         'vue',
         'vue-router',
         '@vueuse/core',
-      ],
-      exclude: [
-        'vue-demi'
       ]
     }
   };
