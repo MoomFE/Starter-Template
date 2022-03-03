@@ -10,7 +10,7 @@ const array481 = Array(481).fill().map((_, index) => index);
 
 module.exports = {
   content: [
-    './src/**/*.{js,ts,vue,scss}',
+    './src/**/*.{js,ts,vue}',
     './index.html'
   ],
   important: true,
