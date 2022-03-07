@@ -58,6 +58,10 @@ export default defineConfig(({ mode }) => {
       // 自动导入使用到的组件
       Components({
         dts: path.resolve(__dirname, './src/components.d.ts'),
+        dirs: [
+          path.resolve(__dirname, './src/components'),
+          path.resolve(__dirname, './src/components-private'),
+        ],
         resolvers: [
           // 自动导入图标组件
           IconsResolver({ prefix: false }),
