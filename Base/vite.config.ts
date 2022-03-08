@@ -56,7 +56,7 @@ export default defineConfig(({ mode }) => {
       }),
       // 自动导入使用到的组件
       Components({
-        dts: path.resolve(__dirname, './src/components.d.ts'),
+        dts: path.resolve(__dirname, './types/components.d.ts'),
         dirs: [
           path.resolve(__dirname, './src/components'),
           path.resolve(__dirname, './src/components-private'),
@@ -78,7 +78,7 @@ export default defineConfig(({ mode }) => {
       }),
       // API 自动加载
       AutoImport({
-        dts: path.resolve(__dirname, './src/auto-imports.d.ts'),
+        dts: path.resolve(__dirname, './types/auto-imports.d.ts'),
         imports: [
           'vue',
           'vue-router',
