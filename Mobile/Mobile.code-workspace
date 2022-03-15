@@ -61,11 +61,17 @@
     }
   ],
   "settings": {
-    "typescript.tsdk": "node_modules/typescript/lib",
     "editor.tabSize": 2,
+    "editor.detectIndentation": false,
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll": false,
+      "source.fixAll.eslint": true,
+      "source.organizeImports": false
     },
+    "editor.guides.bracketPairs": "active",
+    "editor.renderWhitespace": "boundary",
+    "editor.accessibilitySupport": "off",
+    "editor.cursorSmoothCaretAnimation": true,
     "files.exclude": {
       "*.code-workspace": true,
       "locales": true,
@@ -85,6 +91,7 @@
       "src/utils": true,
       "src/workers": true
     },
+    "typescript.tsdk": "node_modules/typescript/lib",
     "i18n-ally.enabledFrameworks": ["vue"],
     "i18n-ally.displayLanguage": "zh-CN",
     "i18n-ally.localesPaths": [
