@@ -15,7 +15,6 @@
 </template>
 
 <script lang="ts" setup>
-
   const router = useRouter();
   const { t, locale, availableLocales: locales } = useI18n();
 
