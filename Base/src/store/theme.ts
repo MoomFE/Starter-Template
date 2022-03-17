@@ -4,10 +4,8 @@ import { defineStore } from 'pinia';
 const darkStorage = useLocalStorage('dark', false);
 
 // 初始化深色模式状态
-if (darkStorage.value) {
+if (darkStorage.value)
   document.documentElement.classList.add('dark');
-}
-
 
 export const useThemeStore = defineStore('theme', {
   state: () => ({
@@ -24,6 +22,6 @@ export const useThemeStore = defineStore('theme', {
     /** 切换深色模式状态 */
     toggleDark() {
       this.setDark(!this.dark);
-    }
-  }
+    },
+  },
 });

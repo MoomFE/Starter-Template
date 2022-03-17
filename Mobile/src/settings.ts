@@ -3,13 +3,12 @@
  */
 
 export default defineSettings({
-  title: 'Mobile'
+  title: 'Mobile',
 });
-
 
 export interface Settings{
   /** 项目名称 */
-  title: string;
+  title: string
 }
 
 function defineSettings(settings: Settings) {

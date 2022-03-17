@@ -28,14 +28,14 @@
     router.push({
       name: 'Hello',
       params: {
-        name: encodeURIComponent(name.value)
-      }
+        name: encodeURIComponent(name.value),
+      },
     });
   }
 </script>
 
 <route lang="yaml">
-  name: Index
-  meta:
-    layout: home
+name: Index
+meta:
+  layout: home
 </route>

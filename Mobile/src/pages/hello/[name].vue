@@ -25,7 +25,7 @@
   const { t } = useI18n();
 
   interface Props{
-    name: string;
+    name: string
   }
 
   const props = defineProps<Props>();
@@ -36,8 +36,8 @@
 </script>
 
 <route lang="yaml">
-  name: Hello
-  meta:
-    layout: home
-    title: Hello
+name: Hello
+meta:
+  layout: home
+  title: Hello
 </route>

@@ -1,6 +1,5 @@
 <template>
   <div class="footer flex justify-center text-2xl text-center mt-6">
-
     <!-- 回到首页 -->
     <button :title="t('button.home')" @click="router.push({ name: 'Index' })">
       <vaadin-home-o />
@@ -10,7 +9,6 @@
     <button :title="t('button.change-languages')" @click="toggleLocales">
       <mdi-translate />
     </button>
-
   </div>
 </template>
 

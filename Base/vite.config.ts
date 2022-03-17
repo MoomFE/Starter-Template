@@ -1,6 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
-
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import Vue from '@vitejs/plugin-vue';
@@ -14,7 +13,6 @@ import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
 import settings from './src/settings';
 
-
 export default defineConfig(({ mode }) => {
   /** 是否是开发模式 */
   const isDev = mode === 'development';
@@ -27,8 +25,8 @@ export default defineConfig(({ mode }) => {
       alias: {
         '~': path.resolve(__dirname, './src'),
         '@': path.resolve(__dirname, './src'),
-        '@@': path.resolve(__dirname, './')
-      }
+        '@@': path.resolve(__dirname, './'),
+      },
     },
     plugins: [
       // Vue 3 支持
@@ -45,14 +43,14 @@ export default defineConfig(({ mode }) => {
         inject: {
           data: {
             isDev,
-            ...settings
-          }
-        }
+            ...settings,
+          },
+        },
       }),
       // 将图标作为图标组件可进行导入
       Icons({
         scale: 1,
-        compiler: 'vue3'
+        compiler: 'vue3',
       }),
       // 自动导入使用到的组件
       Components({
@@ -67,14 +65,14 @@ export default defineConfig(({ mode }) => {
           // 自动导入 vue-router 的路由组件
           {
             type: 'component',
-            resolve: (importName) => (['RouterLink', 'RouterView'].includes(importName) ? { importName, path: 'vue-router' } : null)
+            resolve: importName => (['RouterLink', 'RouterView'].includes(importName) ? { importName, path: 'vue-router' } : null),
           },
           // 自动导入 @moomfe/small-utils 的组件
           {
             type: 'component',
-            resolve: (name) => (name.match(/^S[A-Z]/) ? { importName: name, path: `@moomfe/small-utils/components/${name}/index` } : null)
-          }
-        ]
+            resolve: name => (name.match(/^S[A-Z]/) ? { importName: name, path: `@moomfe/small-utils/components/${name}/index` } : null),
+          },
+        ],
       }),
       // API 自动加载
       AutoImport({
@@ -83,31 +81,31 @@ export default defineConfig(({ mode }) => {
           'vue',
           'vue-router',
           'vue-i18n',
-          '@vueuse/core'
+          '@vueuse/core',
         ],
         eslintrc: {
-          enabled: true
-        }
+          enabled: true,
+        },
       }),
       // i18n 国际化
       VueI18n({
         runtimeOnly: true,
         compositionOnly: true,
         include: [
-          path.resolve(__dirname, 'locales/**')
-        ]
-      })
+          path.resolve(__dirname, 'locales/**'),
+        ],
+      }),
     ],
     // 依赖预构建优化选项
     optimizeDeps: {
       entries: [
-        'src/**/*.{js,ts,vue}'
+        'src/**/*.{js,ts,vue}',
       ],
       include: [
         'vue',
         'vue-router',
         '@vueuse/core',
-      ]
-    }
+      ],
+    },
   };
 });

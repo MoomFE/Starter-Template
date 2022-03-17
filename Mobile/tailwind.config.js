@@ -1,17 +1,15 @@
 /* eslint-disable object-property-newline */
 /* eslint-disable object-curly-newline */
 
-
 const array24 = Array(24).fill().map((_, index) => index);
 const array100 = Array(100).fill().map((_, index) => index);
 const array241 = Array(241).fill().map((_, index) => index);
 const array481 = Array(481).fill().map((_, index) => index);
 
-
 module.exports = {
   content: [
     './src/**/*.{js,ts,vue}',
-    './index.html'
+    './index.html',
   ],
   important: true,
   darkMode: 'class',
@@ -21,7 +19,7 @@ module.exports = {
       // 默认字体
       default: ['ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
       // 等宽字体
-      monospace: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace']
+      monospace: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
     },
     // 断点
     screens: {
@@ -29,7 +27,7 @@ module.exports = {
       'xl': { max: '1279px' },
       'lg': { max: '1023px' },
       'md': { max: '767px' },
-      'sm': { max: '575px' }
+      'sm': { max: '575px' },
     },
     extend: {
       // 颜色
@@ -64,38 +62,38 @@ module.exports = {
           return {
             // 0 ~ 240
             [key]: Object.assign(
-              ...array241.map((_, index) => ({ [index]: `${index * 0.25}rem` }))
-            )
+              ...array241.map((_, index) => ({ [index]: `${index * 0.25}rem` })),
+            ),
           };
-        })
+        }),
       ),
       // 透明度
       opacity: Object.assign(
         ...array100.map((_, index) => ({
-          [index]: `${index / 100}`
-        }))
+          [index]: `${index / 100}`,
+        })),
       ),
       // 间距
       spacing: {
         // 0 ~ 240 ( 0.5 Gap )
         ...Object.assign(
-          ...array481.map((_, index) => ({ [index * 0.5]: `${index * 0.125}rem` }))
+          ...array481.map((_, index) => ({ [index * 0.5]: `${index * 0.125}rem` })),
         ),
         // -0.5 ~ -240 ( 0.5 Gap )
         ...Object.assign(
-          ...array481.map((_, index) => (index ? { [-index * 0.5]: `-${index * 0.125}rem` } : {}))
-        )
+          ...array481.map((_, index) => (index ? { [-index * 0.5]: `-${index * 0.125}rem` } : {})),
+        ),
       },
       // Grid Template Columns
       gridTemplateColumns: {
         // grid-cols-{ 1 ~ 24 }
         ...Object.assign(
-          ...array24.map((_, index) => ({ [index + 1]: `repeat(${index + 1}, minmax(0, 1fr))` }))
+          ...array24.map((_, index) => ({ [index + 1]: `repeat(${index + 1}, minmax(0, 1fr))` })),
         ),
         // grid-cols-{ 1 ~ 24 }-auto
         ...Object.assign(
-          ...array24.map((_, index) => ({ [`${index + 1}-auto`]: `repeat(${index + 1}, auto)` }))
-        )
+          ...array24.map((_, index) => ({ [`${index + 1}-auto`]: `repeat(${index + 1}, auto)` })),
+        ),
       },
       // 过渡属性
       transitionProperty: {
@@ -103,7 +101,7 @@ module.exports = {
         'bg-color': 'background-color',
         'bbg-colors': 'border, background-color',
         'width': 'width',
-        'height': 'height'
+        'height': 'height',
       },
       // 过渡持续时间
       transitionDuration: {
@@ -114,20 +112,20 @@ module.exports = {
         900: '900ms',
         1000: '1000ms',
         1100: '1100ms',
-        1200: '1200ms'
+        1200: '1200ms',
       },
       // 边框宽度
       borderWidth: {
         3: '3px',
         5: '5px',
         6: '6px',
-        7: '7px'
-      }
-    }
+        7: '7px',
+      },
+    },
   },
   variants: {},
   corePlugins: {
-    container: false
+    container: false,
   },
-  plugins: []
+  plugins: [],
 };

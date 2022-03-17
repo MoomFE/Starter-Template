@@ -11,7 +11,7 @@
       class="w-62.5 max-w-full border border-gray-400 rounded-md outline-none text-center bg-transparent px-3 py-1.5"
       :placeholder="t('intro.whats-your-name')"
       @keydown.enter="go"
-    />
+    >
   </div>
 
   <div class="mt-3">
@@ -31,14 +31,14 @@
     router.push({
       name: 'Hello',
       params: {
-        name: encodeURIComponent(name.value)
-      }
+        name: encodeURIComponent(name.value),
+      },
     });
   }
 </script>
 
 <route lang="yaml">
-  name: Index
-  meta:
-    layout: home
+name: Index
+meta:
+  layout: home
 </route>
