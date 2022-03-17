@@ -6,7 +6,7 @@
     "serve": "pnpm install && vite --host",
     "build": "pnpm install && vite build",
     "preview": "pnpm install && vite build && vite preview",
-    "lint": "eslint ."
+    "lint": "eslint . --fix"
   },
   "dependencies": {
     "@iconify/json": "^2.1.16",
