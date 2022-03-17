@@ -1,6 +1,6 @@
 {
   "private": true,
-  "author": "Wei Zhang<https://github.com/Zhang-Wei-666>",
+  "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "scripts": {
     "dev": "pnpm run serve",
     "serve": "pnpm install && vite --host",
