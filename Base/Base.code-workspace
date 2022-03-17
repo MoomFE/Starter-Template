@@ -99,6 +99,19 @@
     "i18n-ally.localesPaths": [
       "locales",
       "../../locales"
+    ],
+    "eslint.quiet": true,
+    "eslint.validate": [
+      "javascript",
+      "typescript",
+      "javascriptreact",
+      "typescriptreact",
+      "vue",
+      "html",
+      "markdown",
+      "json",
+      "jsonc",
+      "json5"
     ]
   },
   "extensions": {
