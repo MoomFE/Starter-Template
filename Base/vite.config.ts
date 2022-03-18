@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
   /** 是否是开发模式 */
   const isDev = mode === 'development';
   /** 环境变量 */
-  const env = loadEnv(mode, process.cwd(), ['VITE_', 'APP_']);
+  const env = loadEnv(mode, process.cwd(), ['VITE_', 'APP_']); // eslint-disable-line @typescript-eslint/no-unused-vars
 
   return {
     envPrefix: 'APP_',
