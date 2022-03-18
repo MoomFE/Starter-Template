@@ -9,7 +9,7 @@
 - ⚡️ [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [Vue 3](https://github.com/vuejs/vue-next) 优先 - 就是快！
 - 🗂 [基于文件的路由](https://github.com/hannoeru/vite-plugin-pages)
 - 📑 [布局系统](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
-- 🎨 [Tailwind CSS](https://tailwindcss.com) - 实用的原子 CSS 框架
+- 🎨 [UnoCSS](https://github.com/unocss/unocss) - 原子化 CSS 引擎
 - 😃 [100+ 图标集, 100000+ 图标为你所用, 从不妥协](https://github.com/antfu/unplugin-icons) - 使用 [Icônes](https://icones.netlify.app/) 或 [iconify](https://icon-sets.iconify.design/) 查看或搜索图标
 - 🍍 [使用 Pinia 的状态管理](https://pinia.esm.dev/)
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
@@ -35,7 +35,7 @@
 - VS Code 扩展
   - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) - Vue 3 `<script setup>` IDE 支持
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - 代码风格检查及修正
-  - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - Tailwind CSS 样式提示及自动补全
+  - [UnoCSS](https://marketplace.visualstudio.com/items?itemName=antfu.unocss) - UnoCSS 样式提示及自动补全
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Iconify 图标提示及自动补全
   - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - 多合一的 I18n 支持
 
