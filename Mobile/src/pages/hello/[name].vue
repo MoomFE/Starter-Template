@@ -1,6 +1,6 @@
 <template>
   <div class="text-5xl">
-    <iconoir-people-rounded class="inline-block" />
+    <i-iconoir-people-rounded class="inline-block" />
   </div>
 
   <p class="mt-1">

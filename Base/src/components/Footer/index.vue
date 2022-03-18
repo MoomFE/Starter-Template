@@ -2,18 +2,18 @@
   <div class="footer flex justify-center text-2xl text-center mt-6">
     <!-- 回到首页 -->
     <button :title="t('button.home')" @click="router.push({ name: 'Index' })">
-      <vaadin-home-o />
+      <i-vaadin-home-o />
     </button>
 
     <!-- 切换深色模式 -->
     <button :title="t('button.toogle-dark-mode')" @click="theme.toggleDark()">
-      <ph-moon v-if="theme.dark" />
-      <ic-outline-wb-sunny v-else />
+      <i-ph-moon v-if="theme.dark" />
+      <i-ic-outline-wb-sunny v-else />
     </button>
 
     <!-- 切换多语言 -->
     <button :title="t('button.change-languages')" @click="toggleLocales">
-      <mdi-translate />
+      <i-mdi-translate />
     </button>
   </div>
 </template>

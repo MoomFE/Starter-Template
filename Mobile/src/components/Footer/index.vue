@@ -2,12 +2,12 @@
   <div class="footer flex justify-center text-2xl text-center mt-6">
     <!-- 回到首页 -->
     <button :title="t('button.home')" @click="router.push({ name: 'Index' })">
-      <vaadin-home-o />
+      <i-vaadin-home-o />
     </button>
 
     <!-- 切换多语言 -->
     <button :title="t('button.change-languages')" @click="toggleLocales">
-      <mdi-translate />
+      <i-mdi-translate />
     </button>
   </div>
 </template>
