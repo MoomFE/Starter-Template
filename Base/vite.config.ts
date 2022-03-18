@@ -5,6 +5,7 @@ import { defineConfig, loadEnv } from 'vite';
 import Vue from '@vitejs/plugin-vue';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import { createHtmlPlugin } from 'vite-plugin-html';
+import Unocss from 'unocss/vite';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import Components from 'unplugin-vue-components/vite';
@@ -47,6 +48,8 @@ export default defineConfig(({ mode }) => {
           },
         },
       }),
+      // 原子化 CSS 引擎
+      Unocss(),
       // 将图标作为图标组件可进行导入
       Icons({
         scale: 1,

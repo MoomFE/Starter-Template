@@ -4,6 +4,9 @@ import router from '@/modules/router';
 import pinia from '@/modules/pinia';
 import i18n from '@/modules/i18n';
 import '@/modules/nprogress';
+
+import '@unocss/reset/tailwind.css';
+import 'uno.css';
 import '@/styles/styles.scss';
 import 'vant/lib/index.css';
 
