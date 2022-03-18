@@ -118,9 +118,9 @@
     "recommendations": [
       "johnsoncodehk.volar",
       "antfu.iconify",
+      "antfu.unocss",
       "dbaeumer.vscode-eslint",
       "csstools.postcss",
-      "bradlc.vscode-tailwindcss",
       "lokalise.i18n-ally"
     ],
     "unwantedRecommendations": [
