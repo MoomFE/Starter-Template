@@ -1,5 +1,7 @@
 import {
   defineConfig,
+  presetAttributify,
+  presetIcons,
   presetUno,
   transformerDirectives,
   transformerVariantGroup,
@@ -49,10 +51,17 @@ export default defineConfig({
     },
   },
   presets: [
+    // 默认预设, 和 Tailwind 类似
     presetUno(),
+    // 属性模式
+    presetAttributify(),
+    // 图标预设
+    presetIcons(),
   ],
   transformers: [
+    // 在 CSS 中使用 @apply 指令
     transformerDirectives(),
+    // 变体组功能
     transformerVariantGroup(),
   ],
 });
