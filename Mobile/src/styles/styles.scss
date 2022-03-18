@@ -1,17 +1,7 @@
-html{
-  --dynamic-text: #333639;
-  --dynamic-bg: #F7F8FA;
-
-  &.dark{
-    --dynamic-text: #E8E8E8;
-    --dynamic-bg: #101014;
-  }
-
-  @apply text-dynamic-text bg-dynamic-bg;
-  @apply transition-colors duration-colors;
-}
-
 body {
+  @apply text-dynamic bg-dynamic;
+  @apply transition-colors duration-colors;
+
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
