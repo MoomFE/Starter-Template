@@ -1,21 +1,16 @@
-import { createApp } from 'vue';
+import { ViteSSG } from 'vite-ssg';
 import App from './App.vue';
-import router from '@/modules/router';
-import pinia from '@/modules/pinia';
-import i18n from '@/modules/i18n';
-import '@/modules/nprogress';
+import routes from '@/modules/router/routes';
 
 import '@unocss/reset/tailwind.css';
 import 'uno.css';
 import '@/styles/styles.scss';
 import 'vant/lib/index.css';
 
-const app = createApp(App);
-
-app.use(router);
-app.use(pinia);
-app.use(i18n);
-
-router.isReady().then(() => {
-  app.mount('#app');
-});
+export const createApp = ViteSSG(
+  App,
+  { routes },
+  (ctx) => {
+    Object.values(import.meta.globEager('./modules/**/index.ts')).forEach(m => m.install?.(ctx));
+  },
+);

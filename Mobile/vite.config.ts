@@ -91,6 +91,7 @@ export default defineConfig(({ mode }) => {
           'vue-router',
           'vue-i18n',
           '@vueuse/core',
+          '@vueuse/head',
         ],
         eslintrc: {
           enabled: true,
@@ -114,6 +115,7 @@ export default defineConfig(({ mode }) => {
         'vue',
         'vue-router',
         '@vueuse/core',
+        '@vueuse/head',
         'vant/es',
       ],
     },
