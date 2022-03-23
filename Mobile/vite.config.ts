@@ -22,7 +22,9 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), ['VITE_', 'APP_']); // eslint-disable-line @typescript-eslint/no-unused-vars
 
   return {
+    // 环境变量前缀
     envPrefix: 'APP_',
+    // 路径别名
     resolve: {
       alias: {
         '~': path.resolve(__dirname, './src'),
@@ -30,6 +32,7 @@ export default defineConfig(({ mode }) => {
         '@@': path.resolve(__dirname, './'),
       },
     },
+    // 插件
     plugins: [
       // Vue 3 支持
       Vue(),
@@ -125,6 +128,14 @@ export default defineConfig(({ mode }) => {
         '@vueuse/head',
         'vant/es',
       ],
+    },
+    // 开发服务器选项
+    server: {
+      port: 666,
+    },
+    // 预览选项
+    preview: {
+      port: 888,
     },
   };
 });
