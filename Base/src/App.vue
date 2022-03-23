@@ -6,6 +6,6 @@
   import settings from '@/settings';
 
   useHead({
-    title: `${settings.title}666`,
+    title: settings.title,
   });
 </script>
