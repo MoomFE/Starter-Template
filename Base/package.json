@@ -4,8 +4,8 @@
   "scripts": {
     "dev": "pnpm run serve",
     "serve": "pnpm install && vite --host",
-    "build": "pnpm install && vite-ssg build",
-    "preview": "pnpm install && vite-ssg build && vite preview",
+    "build": "pnpm install && cross-env SSG=true vite-ssg build",
+    "preview": "pnpm install && cross-env SSG=true vite-ssg build && vite preview",
     "lint": "eslint . --fix"
   },
   "dependencies": {
@@ -28,6 +28,7 @@
     "@unocss/reset": "^0.29.5",
     "@vitejs/plugin-vue": "^2.2.4",
     "@vue/compiler-sfc": "^3.2.31",
+    "cross-env": "^7.0.3",
     "eslint": "^8.11.0",
     "sass": "^1.49.9",
     "typescript": "^4.6.2",

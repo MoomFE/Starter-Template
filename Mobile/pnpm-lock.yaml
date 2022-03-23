@@ -12,6 +12,7 @@ specifiers:
   '@vue/compiler-sfc': ^3.2.31
   '@vueuse/core': ^8.1.2
   '@vueuse/head': ^0.7.5
+  cross-env: ^7.0.3
   eslint: ^8.11.0
   nprogress: ^0.2.0
   pinia: ^2.0.12
@@ -52,6 +53,7 @@ devDependencies:
   '@unocss/reset': registry.npmmirror.com/@unocss/reset/0.29.5
   '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/2.2.4_vite@2.8.6+vue@3.2.31
   '@vue/compiler-sfc': registry.npmmirror.com/@vue/compiler-sfc/3.2.31
+  cross-env: registry.npmmirror.com/cross-env/7.0.3
   eslint: registry.npmmirror.com/eslint/8.11.0
   sass: registry.npmmirror.com/sass/1.49.9
   typescript: registry.npmmirror.com/typescript/4.6.2
@@ -1532,6 +1534,16 @@ packages:
     resolution: {integrity: sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/consola/-/consola-2.15.3.tgz}
     name: consola
     version: 2.15.3
+    dev: true
+
+  registry.npmmirror.com/cross-env/7.0.3:
+    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/cross-env/-/cross-env-7.0.3.tgz}
+    name: cross-env
+    version: 7.0.3
+    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
+    hasBin: true
+    dependencies:
+      cross-spawn: registry.npmmirror.com/cross-spawn/7.0.3
     dev: true
 
   registry.npmmirror.com/cross-spawn/7.0.3:
