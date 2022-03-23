@@ -100,6 +100,7 @@ export default defineConfig(({ mode }) => {
         ],
       }),
     ],
+    // Vite SSG 选项
     ssgOptions: {
       script: 'async',
       dirStyle: 'nested',
