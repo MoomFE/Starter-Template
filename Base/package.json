@@ -5,7 +5,7 @@
     "dev": "pnpm run serve",
     "serve": "pnpm install && vite --host",
     "build": "pnpm install && cross-env SSG=true vite-ssg build",
-    "preview": "pnpm install && cross-env SSG=true vite-ssg build && vite preview",
+    "preview": "pnpm install && cross-env SSG=true vite-ssg build && vite preview --host",
     "lint": "eslint . --fix"
   },
   "dependencies": {
