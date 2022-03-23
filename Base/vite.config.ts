@@ -100,6 +100,12 @@ export default defineConfig(({ mode }) => {
         ],
       }),
     ],
+    ssgOptions: {
+      script: 'async',
+      dirStyle: 'nested',
+      formatting: 'minify',
+      includedRoutes: paths => paths.filter(path => !path.includes(':')),
+    },
     // 依赖预构建优化选项
     optimizeDeps: {
       entries: [
