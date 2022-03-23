@@ -4,16 +4,18 @@
   "scripts": {
     "dev": "pnpm run serve",
     "serve": "pnpm install && vite --host",
-    "build": "pnpm install && vite build",
-    "preview": "pnpm install && vite build && vite preview",
+    "build": "pnpm install && vite-ssg build",
+    "preview": "pnpm install && vite-ssg build && vite preview",
     "lint": "eslint . --fix"
   },
   "dependencies": {
     "@iconify/json": "^2.1.18",
     "@moomfe/small-utils": "^3.6.0",
     "@vueuse/core": "^8.1.2",
+    "@vueuse/head": "^0.7.5",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.12",
+    "vite-ssg": "^0.19.0",
     "vue": "^3.2.31",
     "vue-i18n": "^9.1.9",
     "vue-router": "^4.0.14"
