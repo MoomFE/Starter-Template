@@ -33,6 +33,10 @@
   const name = computed(() => {
     return decodeURIComponent(props.name);
   });
+
+  useHead({
+    title: computed(() => t('intro.hi', { name: name.value })),
+  });
 </script>
 
 <route lang="yaml">
