@@ -28,6 +28,7 @@ specifiers:
   vite-plugin-pages: ^0.22.0
   vite-plugin-vue-layouts: ^0.6.0
   vite-ssg: ^0.19.0
+  vite-ssg-sitemap: ^0.2.0
   vue: ^3.2.31
   vue-i18n: ^9.1.9
   vue-router: ^4.0.14
@@ -65,6 +66,7 @@ devDependencies:
   vite-plugin-html: registry.npmmirror.com/vite-plugin-html/3.2.0_vite@2.8.6
   vite-plugin-pages: registry.npmmirror.com/vite-plugin-pages/0.22.0_5dbb0cc878f3ab9caa0bd7b169eded43
   vite-plugin-vue-layouts: registry.npmmirror.com/vite-plugin-vue-layouts/0.6.0_da2b5bfcc9ee38bfd25c98b31b35c29d
+  vite-ssg-sitemap: registry.npmmirror.com/vite-ssg-sitemap/0.2.0
 
 packages:
 
@@ -310,8 +312,8 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/message-compiler': registry.npmmirror.com/@intlify/message-compiler/9.2.0-beta.32
-      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.2.0-beta.32
+      '@intlify/message-compiler': registry.npmmirror.com/@intlify/message-compiler/9.2.0-beta.33
+      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.2.0-beta.33
       jsonc-eslint-parser: registry.npmmirror.com/jsonc-eslint-parser/1.4.1
       source-map: registry.npmmirror.com/source-map/0.6.1
       vue-i18n: registry.npmmirror.com/vue-i18n/9.1.9_vue@3.2.31
@@ -352,13 +354,13 @@ packages:
       source-map: registry.npmmirror.com/source-map/0.6.1
     dev: false
 
-  registry.npmmirror.com/@intlify/message-compiler/9.2.0-beta.32:
-    resolution: {integrity: sha512-7OOHIhOmOM4nqe3KfEuE65xLwawwBGg/pCFByzayf0jARoHkeaA7v/eKsUJVJMEakeF2pNstx06AvfecijgPzg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/message-compiler/-/message-compiler-9.2.0-beta.32.tgz}
+  registry.npmmirror.com/@intlify/message-compiler/9.2.0-beta.33:
+    resolution: {integrity: sha512-+SICjFlnHSbRLZT+sNdBvOAQfcNX+fESyMmgPxC8HHWu4GLN2CoVQS4ACXb3QBZDKLVJBFhFGMnl+UXyJrno6g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/message-compiler/-/message-compiler-9.2.0-beta.33.tgz}
     name: '@intlify/message-compiler'
-    version: 9.2.0-beta.32
+    version: 9.2.0-beta.33
     engines: {node: '>= 12'}
     dependencies:
-      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.2.0-beta.32
+      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.2.0-beta.33
       source-map: registry.npmmirror.com/source-map/0.6.1
     dev: true
 
@@ -387,10 +389,10 @@ packages:
     engines: {node: '>= 10'}
     dev: false
 
-  registry.npmmirror.com/@intlify/shared/9.2.0-beta.32:
-    resolution: {integrity: sha512-lVaHnKFNg16eWlfDLzDFLapurrf0WK7xLWEkz8DMYNIXJshRQOZCkH7sQaqtONPoOT0LqjyPo1+sV0Wq85/HRQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/shared/-/shared-9.2.0-beta.32.tgz}
+  registry.npmmirror.com/@intlify/shared/9.2.0-beta.33:
+    resolution: {integrity: sha512-HldlkV66vMt1vQsuUz4zjQ202C5KW6aHeIQhx7RxBO11i3E8V84dp5MG9epr9GZXVsrCAR56Ekj0HaTqksIRJA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@intlify/shared/-/shared-9.2.0-beta.33.tgz}
     name: '@intlify/shared'
-    version: 9.2.0-beta.32
+    version: 9.2.0-beta.33
     engines: {node: '>= 12'}
     dev: true
 
@@ -411,7 +413,7 @@ packages:
         optional: true
     dependencies:
       '@intlify/bundle-utils': registry.npmmirror.com/@intlify/bundle-utils/2.2.1_vue-i18n@9.1.9
-      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.2.0-beta.32
+      '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.2.0-beta.33
       '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/4.2.0
       debug: registry.npmmirror.com/debug/4.3.4
       fast-glob: registry.npmmirror.com/fast-glob/3.2.11
@@ -5225,6 +5227,12 @@ packages:
       vue-router: registry.npmmirror.com/vue-router/4.0.14_vue@3.2.31
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  registry.npmmirror.com/vite-ssg-sitemap/0.2.0:
+    resolution: {integrity: sha512-A//oCANsy/W3ueG8tMRwk3JsdtjTHquLE3lLsRoQArer5sFPD1Tl72hlhKqpRIudVTZp3Z9IvtWAhJv/2dhoeQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite-ssg-sitemap/-/vite-ssg-sitemap-0.2.0.tgz}
+    name: vite-ssg-sitemap
+    version: 0.2.0
     dev: true
 
   registry.npmmirror.com/vite-ssg/0.19.0_ae019cd7b4f401fe90b85d88eaf2d274:

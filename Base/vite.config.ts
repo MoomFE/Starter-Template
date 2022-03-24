@@ -12,13 +12,14 @@ import Components from 'unplugin-vue-components/vite';
 import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
+import generateSitemap from 'vite-ssg-sitemap';
 import settings from './src/settings';
 
 export default defineConfig(({ mode }) => {
   /** 是否是开发模式 */
   const isDev = mode === 'development';
   /** 环境变量 */
-  const env = loadEnv(mode, process.cwd(), ['VITE_', 'APP_']); // eslint-disable-line @typescript-eslint/no-unused-vars
+  const env = loadEnv(mode, process.cwd(), ['VITE_', 'APP_']);
 
   return {
     // 环境变量前缀
@@ -109,6 +110,10 @@ export default defineConfig(({ mode }) => {
       dirStyle: 'nested',
       formatting: 'minify',
       includedRoutes: paths => paths.filter(path => !path.includes(':')),
+      onFinished: () => {
+        // 生成站点地图
+        generateSitemap({ hostname: env.APP_HOSTNAME });
+      },
     },
     // 依赖预构建优化选项
     optimizeDeps: {

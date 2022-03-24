@@ -39,6 +39,7 @@
     "vite": "^2.8.6",
     "vite-plugin-html": "^3.2.0",
     "vite-plugin-pages": "^0.22.0",
-    "vite-plugin-vue-layouts": "^0.6.0"
+    "vite-plugin-vue-layouts": "^0.6.0",
+    "vite-ssg-sitemap": "^0.2.0"
   }
 }
