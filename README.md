@@ -10,10 +10,12 @@
 - 🗂 [基于文件的路由](https://github.com/hannoeru/vite-plugin-pages)
 - 📑 [布局系统](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
 - 🎨 [UnoCSS](https://github.com/unocss/unocss) - 原子化 CSS 引擎
-- 😃 [100+ 图标集, 100000+ 图标为你所用, 从不妥协](https://github.com/antfu/unplugin-icons) - 使用 [Icônes](https://icones.netlify.app/) 或 [iconify](https://icon-sets.iconify.design/) 查看或搜索图标
+- 😃 [各种图标集为你所用](https://github.com/iconify/icon-sets) - 110+ 图标集, 110000+ 图标为你所用, 从不妥协
 - 🍍 [使用 Pinia 的状态管理](https://pinia.esm.dev/)
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
+- 📲 [组件自动导入](https://github.com/antfu/unplugin-icons)
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
+- 🖨 使用 [Vite SSG](https://github.com/antfu/vite-ssg) 进行服务端生成 ( SSG )
 - 🦾 TypeScript 支持
 
 <br>
@@ -25,6 +27,18 @@
 > [Mobile](./Mobile/): 基于 [Base](./Base/) 创建的移动端项目模板
 >   - 新增 [Vant](https://vant-contrib.gitee.io/vant/#/zh-CN) 作为组件库
 >   - 移除主题切换, 如有需要可自行封装
+
+<br>
+
+## 预配置
+
+### UI 框架
+  - [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
+
+### Icons
+  - [Iconify](https://iconify.design/) - 使用任意的图标集, 使用 [Icônes](https://icones.netlify.app/) 或 [iconify](https://icon-sets.iconify.design/) 查看或搜索图标
+    - [用组件的方式使用图标](https://github.com/antfu/unplugin-icons)
+    - [用 CSS 的方式使用图标](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
 <br>
 
