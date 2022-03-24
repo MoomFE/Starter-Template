@@ -4,7 +4,8 @@ specifiers:
   '@iconify/json': ^2.1.19
   '@intlify/vite-plugin-vue-i18n': ^3.3.1
   '@moomfe/eslint-config': ^2.0.1
-  '@moomfe/small-utils': ^3.6.0
+  '@moomfe/small-utils': ^3.7.0
+  '@types/lodash-es': ^4.17.6
   '@types/node': ^17.0.23
   '@types/nprogress': ^0.2.0
   '@unocss/reset': ^0.29.6
@@ -14,6 +15,7 @@ specifiers:
   '@vueuse/head': ^0.7.5
   cross-env: ^7.0.3
   eslint: ^8.11.0
+  lodash-es: ^4.17.21
   nprogress: ^0.2.0
   pinia: ^2.0.12
   sass: ^1.49.9
@@ -35,10 +37,11 @@ specifiers:
 
 dependencies:
   '@iconify/json': registry.npmmirror.com/@iconify/json/2.1.19
-  '@moomfe/small-utils': registry.npmmirror.com/@moomfe/small-utils/3.6.0_vue@3.2.31
+  '@moomfe/small-utils': registry.npmmirror.com/@moomfe/small-utils/3.7.0_vue@3.2.31
   '@unocss/reset': registry.npmmirror.com/@unocss/reset/0.29.6
   '@vueuse/core': registry.npmmirror.com/@vueuse/core/8.1.2_vue@3.2.31
   '@vueuse/head': registry.npmmirror.com/@vueuse/head/0.7.5_vue@3.2.31
+  lodash-es: registry.npmmirror.com/lodash-es/4.17.21
   nprogress: registry.npmmirror.com/nprogress/0.2.0
   pinia: registry.npmmirror.com/pinia/2.0.12_typescript@4.6.2+vue@3.2.31
   vant: registry.npmmirror.com/vant/3.4.6_vue@3.2.31
@@ -50,6 +53,7 @@ dependencies:
 devDependencies:
   '@intlify/vite-plugin-vue-i18n': registry.npmmirror.com/@intlify/vite-plugin-vue-i18n/3.3.1_vite@2.8.6+vue-i18n@9.1.9
   '@moomfe/eslint-config': registry.npmmirror.com/@moomfe/eslint-config/2.0.1_eslint@8.11.0+typescript@4.6.2
+  '@types/lodash-es': registry.npmmirror.com/@types/lodash-es/4.17.6
   '@types/node': registry.npmmirror.com/@types/node/17.0.23
   '@types/nprogress': registry.npmmirror.com/@types/nprogress/0.2.0
   '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/2.2.4_vite@2.8.6+vue@3.2.31
@@ -450,11 +454,11 @@ packages:
       - typescript
     dev: true
 
-  registry.npmmirror.com/@moomfe/small-utils/3.6.0_vue@3.2.31:
-    resolution: {integrity: sha512-aXVDBYjA/Fomof7Ex9eopIwsVh5QFkH82LFjSvTZU2m1/zdMuytJo1BzH0W0iBV+cys8Ip0DWEU8Wl5oNdDGgg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@moomfe/small-utils/-/small-utils-3.6.0.tgz}
-    id: registry.npmmirror.com/@moomfe/small-utils/3.6.0
+  registry.npmmirror.com/@moomfe/small-utils/3.7.0_vue@3.2.31:
+    resolution: {integrity: sha512-r7Cvr+m3AmKFsg5ArbA9WP5/j2K5x3XyOxpKFEX5/ct/fZlM7a9lSl3ELqScwtbLIDUpcYsap4zatvLy8p0xZA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@moomfe/small-utils/-/small-utils-3.7.0.tgz}
+    id: registry.npmmirror.com/@moomfe/small-utils/3.7.0
     name: '@moomfe/small-utils'
-    version: 3.6.0
+    version: 3.7.0
     peerDependencies:
       '@vue/composition-api': ^1.0.0-rc.1
       vue: ^2.0.0 || >=3.0.0
@@ -466,7 +470,6 @@ packages:
       axios: registry.npmmirror.com/axios/0.26.1
       css-render: registry.npmmirror.com/css-render/0.15.9
       overlayscrollbars: registry.npmmirror.com/overlayscrollbars/1.13.1
-      type-fest: registry.npmmirror.com/type-fest/2.12.1
       vue: registry.npmmirror.com/vue/3.2.31
       vue-demi: registry.npmmirror.com/vue-demi/0.12.4_vue@3.2.31
     transitivePeerDependencies:
@@ -539,6 +542,20 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/json5/-/json5-0.0.29.tgz}
     name: '@types/json5'
     version: 0.0.29
+    dev: true
+
+  registry.npmmirror.com/@types/lodash-es/4.17.6:
+    resolution: {integrity: sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/lodash-es/-/lodash-es-4.17.6.tgz}
+    name: '@types/lodash-es'
+    version: 4.17.6
+    dependencies:
+      '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.180
+    dev: true
+
+  registry.npmmirror.com/@types/lodash/4.14.180:
+    resolution: {integrity: sha512-XOKXa1KIxtNXgASAnwj7cnttJxS4fksBRywK/9LzRV5YxrF80BXZIGeQSuoESQ/VkUj30Ae0+YcuHc15wJCB2g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/lodash/-/lodash-4.14.180.tgz}
+    name: '@types/lodash'
+    version: 4.14.180
     dev: true
 
   registry.npmmirror.com/@types/mdast/3.0.10:
@@ -3625,6 +3642,12 @@ packages:
       p-locate: registry.npmmirror.com/p-locate/5.0.0
     dev: true
 
+  registry.npmmirror.com/lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lodash-es/-/lodash-es-4.17.21.tgz}
+    name: lodash-es
+    version: 4.17.21
+    dev: false
+
   registry.npmmirror.com/lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lodash.merge/-/lodash.merge-4.6.2.tgz}
     name: lodash.merge
@@ -4879,13 +4902,6 @@ packages:
     version: 0.8.1
     engines: {node: '>=8'}
     dev: true
-
-  registry.npmmirror.com/type-fest/2.12.1:
-    resolution: {integrity: sha512-AiknQSEqKVGDDjtZqeKrUoTlcj7FKhupmnVUgz6KoOKtvMwRGE6hUNJ/nVear+h7fnUPO1q/htSkYKb1pyntkQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/type-fest/-/type-fest-2.12.1.tgz}
-    name: type-fest
-    version: 2.12.1
-    engines: {node: '>=12.20'}
-    dev: false
 
   registry.npmmirror.com/typescript/4.6.2:
     resolution: {integrity: sha512-HM/hFigTBHZhLXshn9sN37H085+hQGeJHJ/X7LpBWLID/fbc2acUMfU+lGD98X81sKP+pFa9f0DZmCwB9GnbAg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typescript/-/typescript-4.6.2.tgz}
