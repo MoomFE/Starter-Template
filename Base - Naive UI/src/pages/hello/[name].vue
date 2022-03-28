@@ -14,9 +14,9 @@
   </p>
 
   <div class="mt-6">
-    <Button @click="router.back()">
+    <NButton type="primary" @click="router.back()">
       {{ t('button.back') }}
-    </Button>
+    </NButton>
   </div>
 </template>
 
