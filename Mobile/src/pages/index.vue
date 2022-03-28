@@ -7,7 +7,7 @@
 
   <div class="mt-6">
     <div class="w-62.5 max-w-full border border-gray-400 rounded-md overflow-hidden mx-auto">
-      <van-field v-model="name" :placeholder="t('intro.whats-your-name')" :border="false" input-align="center" autocomplete="off" />
+      <van-field v-model="name" :placeholder="t('intro.whats-your-name')" :border="false" input-align="center" autocomplete="off" @keydown.enter="go" />
     </div>
   </div>
 
