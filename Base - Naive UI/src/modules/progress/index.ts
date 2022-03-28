@@ -1,19 +1,14 @@
-import NProgress from 'nprogress';
-import './index.scss';
 import type { UserModule } from '@/types';
+import { AppLoadingBar, app } from '@/shared/env';
 
 export const install: UserModule = ({ isClient, router }) => {
   if (isClient) {
-    NProgress.configure({
-      showSpinner: false,
-    });
-
     router.beforeEach(() => {
-      NProgress.start();
+      app[AppLoadingBar]?.start();
     });
 
     router.afterEach(() => {
-      NProgress.done();
+      app[AppLoadingBar]?.finish();
     });
   }
 };
