@@ -6,6 +6,9 @@ import '@unocss/reset/tailwind.css';
 import 'uno.css';
 import '@/styles/styles.scss';
 
+// 修复 Naive UI 和 Tailwind Reset 的样式冲突
+document.head.insertAdjacentHTML('beforeend', '<meta name="naive-ui-style" />');
+
 export const createApp = ViteSSG(
   App,
   { routes },
