@@ -13,7 +13,7 @@
   import { useLoadingBar } from 'naive-ui';
   import { useNaiveTheme } from '@/composables/useNaiveTheme';
   import { AppLoadingBar, app } from '@/shared/env';
-  import settings from '@/settings';
+  import { settings } from '@/settings';
 
   /** 主题相关 */
   const { theme, themeOverrides, zhCN, dateZhCN } = useNaiveTheme();

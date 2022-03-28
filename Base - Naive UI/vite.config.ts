@@ -14,7 +14,7 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
 import generateSitemap from 'vite-ssg-sitemap';
-import settings from './src/settings';
+import { settings } from './src/settings';
 
 export default defineConfig(({ mode }) => {
   /** 是否是开发模式 */
