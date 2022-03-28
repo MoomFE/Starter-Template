@@ -9,6 +9,7 @@ import Unocss from 'unocss/vite';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import Components from 'unplugin-vue-components/vite';
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
@@ -79,6 +80,8 @@ export default defineConfig(({ mode }) => {
             type: 'component',
             resolve: name => (name.match(/^S[A-Z]/) ? { importName: name, path: `@moomfe/small-utils/components/${name}/index` } : null),
           },
+          // 自动导入 Naive UI 组件
+          NaiveUiResolver(),
         ],
       }),
       // API 自动加载
@@ -125,6 +128,7 @@ export default defineConfig(({ mode }) => {
         'vue-router',
         '@vueuse/core',
         '@vueuse/head',
+        'naive-ui',
       ],
     },
     // 开发服务器选项
