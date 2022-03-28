@@ -11,26 +11,25 @@ export type UserModule = (ctx: ViteSSGContext) => void;
 export interface Settings{
   /** 项目名称 */
   title: string
-
   /** 项目主题色 */
   colors: {
-    // Primary
+    // Primary 颜色
     'primary': string
     'primary-hover': string
     'primary-active': string
-    // Info
+    // Info 颜色
     'info': string
     'info-hover': string
     'info-active': string
-    // Success
+    // Success 颜色
     'success': string
     'success-hover': string
     'success-active': string
-    // Warning
+    // Warning 颜色
     'warning': string
     'warning-hover': string
     'warning-active': string
-    // Error
+    // Error 颜色
     'error': string
     'error-hover': string
     'error-active': string
