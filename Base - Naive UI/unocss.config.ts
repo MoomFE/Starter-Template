@@ -1,11 +1,7 @@
-import {
-  defineConfig,
-  presetAttributify,
-  presetIcons,
-  presetUno,
-  transformerDirectives,
-  transformerVariantGroup,
-} from 'unocss';
+import { resolve } from 'path';
+import { defineConfig, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss';
+import { outputFileSync } from 'fs-extra';
+import { dataToEsm } from '@rollup/pluginutils';
 import { settings } from './src/settings';
 
 export default defineConfig({
@@ -50,4 +46,11 @@ export default defineConfig({
     // 变体组功能
     transformerVariantGroup(),
   ],
+  extendTheme: (theme) => {
+    // 始终生成一个 UnoCSS 主题样式配置文件, 方便在 JS 中引用
+    outputFileSync(
+      resolve(__dirname, './src/shared/unocss.theme.ts'),
+      dataToEsm(theme),
+    );
+  },
 });

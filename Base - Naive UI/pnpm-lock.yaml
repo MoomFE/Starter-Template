@@ -5,6 +5,8 @@ specifiers:
   '@intlify/vite-plugin-vue-i18n': ^3.3.1
   '@moomfe/eslint-config': ^2.0.2
   '@moomfe/small-utils': ^3.8.0
+  '@rollup/pluginutils': ^4.2.0
+  '@types/fs-extra': ^9.0.13
   '@types/lodash-es': ^4.17.6
   '@types/node': ^17.0.23
   '@unocss/reset': ^0.30.8
@@ -14,6 +16,7 @@ specifiers:
   '@vueuse/head': ^0.7.5
   cross-env: ^7.0.3
   eslint: ^8.12.0
+  fs-extra: ^10.0.1
   lodash-es: ^4.17.21
   naive-ui: ^2.27.0
   pinia: ^2.0.12
@@ -50,12 +53,15 @@ dependencies:
 devDependencies:
   '@intlify/vite-plugin-vue-i18n': registry.npmmirror.com/@intlify/vite-plugin-vue-i18n/3.3.1_vite@2.9.0+vue-i18n@9.1.9
   '@moomfe/eslint-config': registry.npmmirror.com/@moomfe/eslint-config/2.0.2_eslint@8.12.0+typescript@4.6.3
+  '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/4.2.0
+  '@types/fs-extra': registry.npmmirror.com/@types/fs-extra/9.0.13
   '@types/lodash-es': registry.npmmirror.com/@types/lodash-es/4.17.6
   '@types/node': registry.npmmirror.com/@types/node/17.0.23
   '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/2.3.1_vite@2.9.0+vue@3.2.31
   '@vue/compiler-sfc': registry.npmmirror.com/@vue/compiler-sfc/3.2.31
   cross-env: registry.npmmirror.com/cross-env/7.0.3
   eslint: registry.npmmirror.com/eslint/8.12.0
+  fs-extra: registry.npmmirror.com/fs-extra/10.0.1
   sass: registry.npmmirror.com/sass/1.49.10
   typescript: registry.npmmirror.com/typescript/4.6.3
   unocss: registry.npmmirror.com/unocss/0.30.8
@@ -545,6 +551,14 @@ packages:
     version: 2.0.0
     engines: {node: '>= 10'}
     dev: false
+
+  registry.npmmirror.com/@types/fs-extra/9.0.13:
+    resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/fs-extra/-/fs-extra-9.0.13.tgz}
+    name: '@types/fs-extra'
+    version: 9.0.13
+    dependencies:
+      '@types/node': registry.npmmirror.com/@types/node/17.0.23
+    dev: true
 
   registry.npmmirror.com/@types/jest/27.4.1:
     resolution: {integrity: sha512-23iPJADSmicDVrWk+HT58LMJtzLAnB2AgIzplQuq/bSrGaxCrlvRFjGbXmamnnk/mAmCdLStiGqggu28ocUyiw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/jest/-/jest-27.4.1.tgz}
