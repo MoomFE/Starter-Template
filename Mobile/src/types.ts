@@ -34,4 +34,13 @@ export interface Settings{
     'error-hover': string
     'error-active': string
   }
+  /** 项目字体 */
+  fontFamily: {
+    /** 非衬线字体 */
+    sans: string
+    /** 衬线字体 */
+    serif: string
+    /** 等宽字体 */
+    mono: string
+  }
 }
