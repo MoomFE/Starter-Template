@@ -78,7 +78,7 @@ export default defineConfig(({ mode }) => {
           // 自动导入 @moomfe/small-utils 的组件
           {
             type: 'component',
-            resolve: name => (name.match(/^S[A-Z]/) ? { importName: name, path: `@moomfe/small-utils/components/${name}/index` } : null),
+            resolve: name => (name.match(/^S[A-Z]/) ? { importName: name, path: `@moomfe/small-utils/components/${name}` } : null),
           },
           // 自动导入 Vant 组件
           VantResolver({
