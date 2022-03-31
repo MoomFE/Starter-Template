@@ -6,6 +6,8 @@
       <router-view />
       <GetAppEnv />
     </NLoadingBarProvider>
+    <!-- 全局样式 ( 写入一些样式至 body 层 ) -->
+    <NGlobalStyle />
   </NConfigProvider>
 </template>
 

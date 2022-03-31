@@ -4,12 +4,19 @@ import { deepMerge } from '@moomfe/small-utils';
 import { useThemeStore } from '@/store/theme';
 import { settings } from '@/settings';
 
-/** 项目主题色 */
-const colors = settings.colors;
+const {
+  colors,
+  fontFamily,
+} = settings;
 
 /** 通用主题变量覆盖 */
 const commonOverrides: GlobalThemeOverrides = {
   common: {
+    /** 默认字体 */
+    fontFamily: fontFamily.sans,
+    /** 等宽字体 */
+    fontFamilyMono: fontFamily.mono,
+
     // Primary 颜色
     primaryColor: colors.primary,
     primaryColorHover: colors['primary-hover'],
