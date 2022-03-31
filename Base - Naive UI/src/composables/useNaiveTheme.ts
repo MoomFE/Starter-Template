@@ -2,12 +2,7 @@ import type { GlobalThemeOverrides } from 'naive-ui';
 import { darkTheme, dateZhCN, zhCN } from 'naive-ui';
 import { deepMerge } from '@moomfe/small-utils';
 import { useThemeStore } from '@/store/theme';
-import { settings } from '@/settings';
-import { fontFamily } from '@/shared/unocss.theme';
-
-const {
-  colors,
-} = settings;
+import { colors, fontFamily } from '@/shared/unocss.theme';
 
 /** 通用主题变量覆盖 */
 const commonOverrides: GlobalThemeOverrides = {
