@@ -2,7 +2,6 @@ import { resolve } from 'path';
 import { defineConfig, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss';
 import { outputFileSync } from 'fs-extra';
 import { dataToEsm } from '@rollup/pluginutils';
-import { settings } from './src/settings';
 
 export default defineConfig({
   shortcuts: [
