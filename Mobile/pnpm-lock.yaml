@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@iconify/json': ^2.1.22
   '@intlify/vite-plugin-vue-i18n': ^3.3.1
-  '@moomfe/eslint-config': ^2.0.2
+  '@moomfe/eslint-config': ^2.0.3
   '@moomfe/small-utils': ^3.8.0
   '@rollup/pluginutils': ^4.2.0
   '@types/fs-extra': ^9.0.13
@@ -55,7 +55,7 @@ dependencies:
 
 devDependencies:
   '@intlify/vite-plugin-vue-i18n': registry.npmmirror.com/@intlify/vite-plugin-vue-i18n/3.3.1_vite@2.9.0+vue-i18n@9.1.9
-  '@moomfe/eslint-config': registry.npmmirror.com/@moomfe/eslint-config/2.0.2_eslint@8.12.0+typescript@4.6.3
+  '@moomfe/eslint-config': registry.npmmirror.com/@moomfe/eslint-config/2.0.3_eslint@8.12.0+typescript@4.6.3
   '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/4.2.0
   '@types/fs-extra': registry.npmmirror.com/@types/fs-extra/9.0.13
   '@types/lodash-es': registry.npmmirror.com/@types/lodash-es/4.17.6
@@ -445,11 +445,11 @@ packages:
       '@intlify/shared': registry.npmmirror.com/@intlify/shared/9.1.9
     dev: false
 
-  registry.npmmirror.com/@moomfe/eslint-config/2.0.2_eslint@8.12.0+typescript@4.6.3:
-    resolution: {integrity: sha512-7rEUJ1fzjOYhstBsYLkza8h5RuZG/RSwBvG83bwuDQZUKHHQE9lzhj9GAEvfcx0lXPohRPflI5HUUOt/HNKnZA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@moomfe/eslint-config/-/eslint-config-2.0.2.tgz}
-    id: registry.npmmirror.com/@moomfe/eslint-config/2.0.2
+  registry.npmmirror.com/@moomfe/eslint-config/2.0.3_eslint@8.12.0+typescript@4.6.3:
+    resolution: {integrity: sha512-+oY1rt2ByddP3BHvHpwti7hUMJYvdS4piz+ngc57EZSMLw6awL2t9Ij/uzQbft9UtIU0XrcgB/FJkZW1/Bn9vw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@moomfe/eslint-config/-/eslint-config-2.0.3.tgz}
+    id: registry.npmmirror.com/@moomfe/eslint-config/2.0.3
     name: '@moomfe/eslint-config'
-    version: 2.0.2
+    version: 2.0.3
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
