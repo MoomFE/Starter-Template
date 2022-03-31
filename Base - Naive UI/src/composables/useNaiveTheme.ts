@@ -3,10 +3,10 @@ import { darkTheme, dateZhCN, zhCN } from 'naive-ui';
 import { deepMerge } from '@moomfe/small-utils';
 import { useThemeStore } from '@/store/theme';
 import { settings } from '@/settings';
+import { fontFamily } from '@/shared/unocss.theme';
 
 const {
   colors,
-  fontFamily,
 } = settings;
 
 /** 通用主题变量覆盖 */

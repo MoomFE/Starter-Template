@@ -11,10 +11,6 @@ export default defineConfig({
     ['bg-dynamic', 'bg-[#F7F8FA] dark:bg-[#101014]'],
   ],
   theme: {
-    // 字体
-    fontFamily: {
-      ...settings.fontFamily,
-    },
     // 颜色
     colors: {
       ...settings.colors,
