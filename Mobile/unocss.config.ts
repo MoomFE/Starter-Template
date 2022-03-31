@@ -50,7 +50,11 @@ export default defineConfig({
     // 始终生成一个 UnoCSS 主题样式配置文件, 方便在 JS 中引用
     outputFileSync(
       resolve(__dirname, './src/shared/unocss.theme.ts'),
-      dataToEsm(theme),
+      `/* eslint-disable */\n\n${dataToEsm(theme, {
+        preferConst: true,
+        indent: '  ',
+        objectShorthand: true,
+      })}`,
     );
   },
 });
