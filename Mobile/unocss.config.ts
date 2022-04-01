@@ -50,7 +50,10 @@ export default defineConfig({
     // 默认预设, 和 Tailwind 类似
     presetUno(),
     // 属性模式
-    presetAttributify(),
+    presetAttributify({
+      prefix: 'un:',
+      prefixedOnly: true,
+    }),
     // 图标预设
     presetIcons(),
   ],
