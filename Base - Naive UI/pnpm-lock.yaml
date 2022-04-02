@@ -4,7 +4,7 @@ specifiers:
   '@iconify/json': ^2.1.23
   '@intlify/vite-plugin-vue-i18n': ^3.3.1
   '@moomfe/eslint-config': ^2.0.3
-  '@moomfe/small-utils': ^3.9.3
+  '@moomfe/small-utils': ^3.9.5
   '@rollup/pluginutils': ^4.2.0
   '@types/fs-extra': ^9.0.13
   '@types/lodash-es': ^4.17.6
@@ -38,7 +38,7 @@ specifiers:
 
 dependencies:
   '@iconify/json': 2.1.23
-  '@moomfe/small-utils': 3.9.3_vue@3.2.31
+  '@moomfe/small-utils': 3.9.5_vue@3.2.31
   '@unocss/reset': 0.30.10
   '@vueuse/core': 8.2.3_vue@3.2.31
   '@vueuse/head': 0.7.5_vue@3.2.31
@@ -404,8 +404,8 @@ packages:
       - typescript
     dev: true
 
-  /@moomfe/small-utils/3.9.3_vue@3.2.31:
-    resolution: {integrity: sha512-ikX9vVHhdbjqYPqBGqlgO4LaTUltfxk8OEc80wFNA5XK4yYX9glhEUqVk+nYK3otJKmKefeef4Qi/ADpFAKJDQ==}
+  /@moomfe/small-utils/3.9.5_vue@3.2.31:
+    resolution: {integrity: sha512-o7w1GpfYnncJGR+WrM7apLI6kXxwforhx9o0DdL+EmHC/zihb2FdPfxSmNIVW3/mLPQYqvJ7UUUiARjn6JEM2Q==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
