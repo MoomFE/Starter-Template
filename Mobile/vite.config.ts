@@ -14,6 +14,7 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
 import generateSitemap from 'vite-ssg-sitemap';
+import { SmallUtilsComponentsResolver, optimizeDepsInclude } from '@moomfe/small-utils/vite-config';
 import { settings } from './src/settings';
 
 export default defineConfig(({ mode }) => {
@@ -76,10 +77,7 @@ export default defineConfig(({ mode }) => {
             resolve: importName => (['RouterLink', 'RouterView'].includes(importName) ? { importName, path: 'vue-router' } : null),
           },
           // 自动导入 @moomfe/small-utils 的组件
-          {
-            type: 'component',
-            resolve: name => (name.match(/^S[A-Z]/) ? { importName: name, path: `@moomfe/small-utils/components/${name}` } : null),
-          },
+          SmallUtilsComponentsResolver() as any,
           // 自动导入 Vant 组件
           VantResolver({
             // 在 main.ts 中引入 CSS, 否则可能会和 Tailwind Reset 样式冲突
@@ -132,6 +130,7 @@ export default defineConfig(({ mode }) => {
         '@vueuse/core',
         '@vueuse/head',
         'vant/es',
+        ...optimizeDepsInclude,
       ],
     },
     // 开发服务器选项
