@@ -4,7 +4,6 @@ import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import Vue from '@vitejs/plugin-vue';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
-import { createHtmlPlugin } from 'vite-plugin-html';
 import Unocss from 'unocss/vite';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
@@ -14,11 +13,10 @@ import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
 import generateSitemap from 'vite-ssg-sitemap';
 import { SmallUtilsComponentsResolver, optimizeDepsInclude } from '@moomfe/small-utils/vite-config';
-import { settings } from './src/settings';
 
 export default defineConfig(({ mode }) => {
   /** 是否是开发模式 */
-  const isDev = mode === 'development';
+  const isDev = mode === 'development'; // eslint-disable-line @typescript-eslint/no-unused-vars
   /** 环境变量 */
   const env = loadEnv(mode, process.cwd(), ['VITE_', 'APP_']);
 
@@ -43,16 +41,6 @@ export default defineConfig(({ mode }) => {
       }),
       // 页面布局系统
       Layouts(),
-      // 使 index.html 可以使用 ejs 语法
-      createHtmlPlugin({
-        minify: !isDev,
-        inject: {
-          data: {
-            isDev,
-            ...settings,
-          },
-        },
-      }),
       // 原子化 CSS 引擎
       Unocss(),
       // 将图标作为图标组件可进行导入
