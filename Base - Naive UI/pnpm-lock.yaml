@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@iconify/json': ^2.1.24
+  '@iconify/json': ^2.1.25
   '@intlify/vite-plugin-vue-i18n': ^3.4.0
   '@moomfe/eslint-config': ^2.0.3
   '@moomfe/small-utils': ^3.9.6
@@ -36,7 +36,6 @@ specifiers:
   vue-router: ^4.0.14
 
 dependencies:
-  '@iconify/json': 2.1.24
   '@moomfe/small-utils': 3.9.6_vue@3.2.31
   '@unocss/reset': 0.30.11
   '@vueuse/core': 8.2.4_vue@3.2.31
@@ -50,6 +49,7 @@ dependencies:
   vue-router: 4.0.14_vue@3.2.31
 
 devDependencies:
+  '@iconify/json': 2.1.25
   '@intlify/vite-plugin-vue-i18n': 3.4.0_vite@2.9.1+vue-i18n@9.1.9
   '@moomfe/eslint-config': 2.0.3_eslint@8.12.0+typescript@4.6.3
   '@rollup/pluginutils': 4.2.0
@@ -253,15 +253,16 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify/json/2.1.24:
-    resolution: {integrity: sha512-95t2iGcRXddPpijHgrODtMlu9PYi+KGZHmEWH5PzU6tyq90W1ihCOwfesaSBajgJLvwmDDNA2Bb4TGfjNceYlQ==}
+  /@iconify/json/2.1.25:
+    resolution: {integrity: sha512-yrWcRQ+nqgIZCNtDyT2kVzvkD3NplAlq64Dqix2Y0q2XbuvZx7FOYnjWWnuc9LW6IaxLB3tHuLiuZp7XkK1gJw==}
     dependencies:
       '@iconify/types': 1.1.0
       pathe: 0.2.0
-    dev: false
+    dev: true
 
   /@iconify/types/1.1.0:
     resolution: {integrity: sha512-Jh0llaK2LRXQoYsorIH8maClebsnzTcve+7U3rQUSnC11X4jtPnFuyatqFLvMxZ8MLG8dB4zfHsbPfuvxluONw==}
+    dev: true
 
   /@iconify/utils/1.0.32:
     resolution: {integrity: sha512-m+rnw7qKHq/XF7DAi4BcFoEAcXBfqqMgQJh8brGEHeqE/RUvgDMjmxsHgWnVpFsG+VmjGyAiI7nwXdliCwEU0Q==}
@@ -3270,6 +3271,7 @@ packages:
 
   /pathe/0.2.0:
     resolution: {integrity: sha512-sTitTPYnn23esFR3RlqYBWn4c45WGeLcsKzQiUpXJAyfcWkolvlYpV8FLo7JishK946oQwMFUCHXQ9AjGPKExw==}
+    dev: true
 
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
