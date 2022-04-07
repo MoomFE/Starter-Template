@@ -11,12 +11,12 @@
   "dependencies": {
     "@moomfe/small-utils": "^3.9.6",
     "@unocss/reset": "^0.30.11",
-    "@vueuse/core": "^8.2.4",
+    "@vueuse/core": "^8.2.5",
     "@vueuse/head": "^0.7.5",
     "lodash-es": "^4.17.21",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.13",
-    "vite-ssg": "^0.19.1",
+    "vite-ssg": "^0.19.2",
     "vue": "^3.2.31",
     "vue-i18n": "^9.1.9",
     "vue-router": "^4.0.14"
@@ -24,7 +24,7 @@
   "devDependencies": {
     "@iconify/json": "^2.1.25",
     "@intlify/vite-plugin-vue-i18n": "^3.4.0",
-    "@moomfe/eslint-config": "^2.0.3",
+    "@moomfe/eslint-config": "^2.0.5",
     "@rollup/pluginutils": "^4.2.0",
     "@types/fs-extra": "^9.0.13",
     "@types/lodash-es": "^4.17.6",
