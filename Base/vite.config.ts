@@ -59,6 +59,11 @@ export default defineConfig(({ mode }) => {
         resolvers: [
           // 自动导入图标组件
           IconsResolver({ prefix: 'i' }),
+          // 自动导入 vue-router 的路由组件 ( 主要是为了将路由组件添加到 components.d.ts 中, 方便使用 )
+          {
+            type: 'component',
+            resolve: importName => (['RouterLink', 'RouterView'].includes(importName) ? { importName, path: 'vue-router' } : null),
+          },
           // 自动导入 @moomfe/small-utils 的组件
           SmallUtilsComponentsResolver() as any,
         ],
