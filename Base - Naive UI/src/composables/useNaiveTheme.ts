@@ -1,7 +1,7 @@
 import type { GlobalThemeOverrides } from 'naive-ui';
 import { darkTheme, dateZhCN, zhCN } from 'naive-ui';
 import { deepMerge } from '@moomfe/small-utils';
-import { useThemeStore } from '@/store/theme';
+import { useThemeStore } from '@/stores/theme';
 import { colors, fontFamily, fontSize } from '@/shared/unocss.theme';
 
 /** 通用主题变量覆盖 */

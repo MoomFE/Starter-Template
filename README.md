@@ -72,7 +72,7 @@
   - **utils**: 工具方法
   - **modules**: 项目依赖类库的配置
   - **workers**: 存放独立的 Web Worker 应用
-  - **store**: 存储状态
+  - **stores**: 存储状态
   - **composables**: 组合式函数
   - **components**: 公共组件 ( 相对独立的组件, 离开当前项目也能使用的组件 )
   - **components-private**: 私有组件 ( 只能在当前项目中使用的组件, 比如说包含了业务代码的组件 )
