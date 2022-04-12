@@ -32,8 +32,8 @@
       "name": "Workers"
     },
     {
-      "path": "src\\store",
-      "name": "Store"
+      "path": "src\\stores",
+      "name": "Stores"
     },
     {
       "path": "src\\composables",
@@ -82,7 +82,7 @@
       "src/pages": true,
       "src/router": true,
       "src/shared": true,
-      "src/store": true,
+      "src/stores": true,
       "src/styles": true,
       "src/utils": true,
       "src/workers": true
