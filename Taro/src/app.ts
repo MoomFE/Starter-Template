@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 
-import './styles/unocss.css';
+import '@/styles/unocss.css';
 
 const App = createApp({
 

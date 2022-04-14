@@ -1,3 +1,5 @@
+const path = require('path');
+
 const config = {
   projectName: 'Taro',
   date: '2022-4-12',
@@ -9,6 +11,11 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
+  alias: {
+    '~': path.resolve(__dirname, '../src'),
+    '@': path.resolve(__dirname, '../src'),
+    '@@': path.resolve(__dirname, '..'),
+  },
   plugins: ['taro-plugin-pinia'],
   framework: 'vue3',
   mini: {
