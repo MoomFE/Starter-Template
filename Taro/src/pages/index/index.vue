@@ -1,17 +1,9 @@
 <template>
-  <view class="index">
-    <Counter />
-  </view>
+  <div>123</div>
 </template>
 
 <script>
-import './index.scss'
-import Counter from '../../components/Counter.vue'
-
-export default {
-  name: 'Index',
-  components: {
-    Counter
-  }
-}
+  export default {
+    name: 'Index',
+  };
 </script>
