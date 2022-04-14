@@ -16,6 +16,9 @@
     "resolveJsonModule": true,
     "noUnusedLocals": true,
     "forceConsistentCasingInFileNames": true,
+    "types": [
+      "@tarojs/taro/types/index"
+    ],
     "paths": {
       "~/*": ["./src/*"],
       "@/*": ["./src/*"],
