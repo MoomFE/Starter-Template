@@ -1,0 +1,9 @@
+/* layer: default */
+.visible{visibility:visible;}
+.resize{resize:both;}
+.px{padding-left:1rem;padding-right:1rem;}
+.blur{--un-blur:var(--un-empty,/*!*/ /*!*/);--un-brightness:var(--un-empty,/*!*/ /*!*/);--un-contrast:var(--un-empty,/*!*/ /*!*/);--un-drop-shadow:var(--un-empty,/*!*/ /*!*/);--un-grayscale:var(--un-empty,/*!*/ /*!*/);--un-hue-rotate:var(--un-empty,/*!*/ /*!*/);--un-invert:var(--un-empty,/*!*/ /*!*/);--un-saturate:var(--un-empty,/*!*/ /*!*/);--un-sepia:var(--un-empty,/*!*/ /*!*/);--un-filter:var(--un-blur) var(--un-brightness) var(--un-contrast) var(--un-drop-shadow) var(--un-grayscale) var(--un-hue-rotate) var(--un-invert) var(--un-saturate) var(--un-sepia);}
+.blur{--un-blur:blur(8px);filter:var(--un-filter);}
+.ease-in{transition-timing-function:cubic-bezier(0.4, 0, 1, 1);}
+.ease-in-out{transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);}
+.ease-out{transition-timing-function:cubic-bezier(0, 0, 0.2, 1);}
