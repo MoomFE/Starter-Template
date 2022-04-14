@@ -1,13 +1,6 @@
 {
-  "name": "Taro",
-  "version": "1.0.0",
   "private": true,
-  "description": "基础项目模板 - Taro",
-  "templateInfo": {
-    "name": "vue3-pinia",
-    "typescript": true,
-    "css": "sass"
-  },
+  "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "scripts": {
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
@@ -24,15 +17,17 @@
     "dev:h5": "npm run build:h5 -- --watch",
     "dev:rn": "npm run build:rn -- --watch",
     "dev:qq": "npm run build:qq -- --watch",
-    "dev:quickapp": "npm run build:quickapp -- --watch"
+    "dev:quickapp": "npm run build:quickapp -- --watch",
+    "build": "npm run build:h5",
+    "serve": "npm run dev:h5",
+    "dev": "npm run serve",
+    "lint": "eslint . --fix"
   },
   "browserslist": [
     "last 3 versions",
     "Android >= 4.1",
     "ios >= 8"
   ],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
     "@tarojs/components": "3.4.4",
