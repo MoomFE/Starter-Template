@@ -2,17 +2,17 @@
   "private": true,
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "scripts": {
-    "build:weapp": "taro build --type weapp",
-    "dev:weapp": "npm run build:weapp -- --watch",
-
+    "------------------------ build ------------------------": "-",
     "build:h5": "taro build --type h5",
-    "dev:h5": "npm run build:h5 -- --watch",
-
     "build:rn": "taro build --type rn",
-    "dev:rn": "npm run build:rn -- --watch",
-
+    "build:weapp": "taro build --type weapp",
+    "------------------------ serve ------------------------": "-",
+    "serve:h5": "npm run build:h5 -- --watch",
+    "serve:rn": "npm run build:rn -- --watch",
+    "serve:weapp": "npm run build:weapp -- --watch",
+    "------------------------ 常用 ------------------------": "-",
     "build": "npm run build:h5",
-    "serve": "npm run dev:h5",
+    "serve": "npm run serve:h5",
     "dev": "npm run serve",
     "lint": "eslint . --fix"
   },
