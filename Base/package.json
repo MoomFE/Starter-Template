@@ -2,8 +2,7 @@
   "private": true,
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "scripts": {
-    "dev": "pnpm run serve",
-    "serve": "pnpm install && vite --host",
+    "dev": "pnpm install && vite --host",
     "build": "pnpm install && cross-env SSG=true vite-ssg build",
     "preview": "pnpm install && cross-env SSG=true vite-ssg build && vite preview --host",
     "lint": "eslint . --fix"
