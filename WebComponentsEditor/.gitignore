@@ -1,0 +1,11 @@
+.DS_Store
+
+node_modules
+dist
+
+components.d.ts
+auto-imports.d.ts
+.eslintrc-auto-import.json
+
+*.local
+*.log
