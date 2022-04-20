@@ -97,19 +97,6 @@ export default defineConfig(({ mode }) => {
         generateSitemap({ hostname: env.APP_HOSTNAME });
       },
     },
-    // 依赖预构建优化选项
-    optimizeDeps: {
-      entries: [
-        'src/**/*.{js,ts,vue}',
-      ],
-      include: [
-        'vue',
-        'vue-router',
-        '@vueuse/core',
-        '@vueuse/head',
-        ...optimizeDepsInclude,
-      ],
-    },
     // 开发服务器选项
     server: {
       port: 666,
