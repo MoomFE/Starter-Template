@@ -13,7 +13,7 @@
     "@vueuse/core": "^8.2.6",
     "@vueuse/head": "^0.7.6",
     "lodash-es": "^4.17.21",
-    "naive-ui": "^2.28.0",
+    "naive-ui": "^2.28.1",
     "pinia": "^2.0.13",
     "vite-ssg": "^0.19.2",
     "vue": "^3.2.33",
@@ -38,10 +38,10 @@
     "unocss": "^0.31.6",
     "unplugin-auto-import": "^0.7.1",
     "unplugin-icons": "^0.14.1",
-    "unplugin-vue-components": "0.18.5",
+    "unplugin-vue-components": "0.19.3",
     "vite": "^2.9.5",
-    "vite-plugin-pages": "^0.22.0",
+    "vite-plugin-pages": "^0.23.0",
     "vite-plugin-vue-layouts": "^0.6.0",
-    "vite-ssg-sitemap": "^0.2.3"
+    "vite-ssg-sitemap": "^0.2.4"
   }
 }
