@@ -4,10 +4,6 @@
       "path": "."
     },
     {
-      "path": "locales",
-      "name": "Locales"
-    },
-    {
       "path": "src\\assets",
       "name": "Assets"
     },
@@ -52,6 +48,10 @@
       "name": "Components Private"
     },
     {
+      "path": "src\\web-components",
+      "name": "Web Components"
+    },
+    {
       "path": "src\\layouts",
       "name": "Layouts"
     },
@@ -75,7 +75,6 @@
     "breadcrumbs.enabled": false,
     "files.exclude": {
       "*.code-workspace": true,
-      "locales": true,
       "node_modules": true,
       "src/assets": true,
       "src/components": true,
@@ -90,6 +89,7 @@
       "src/stores": true,
       "src/styles": true,
       "src/utils": true,
+      "src/web-components": true,
       "src/workers": true
     },
     "typescript.tsdk": "node_modules/typescript/lib",
