@@ -13,7 +13,7 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
 import generateSitemap from 'vite-ssg-sitemap';
-import { SmallUtilsComponentsResolver, optimizeDepsInclude } from '@moomfe/small-utils/vite-config';
+import { SmallUtilsComponentsResolver } from '@moomfe/small-utils/vite-config';
 
 export default defineConfig(({ mode }) => {
   /** 是否是开发模式 */
