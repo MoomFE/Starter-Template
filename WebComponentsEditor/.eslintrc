@@ -1,3 +1,12 @@
 {
-  "extends": "@moomfe"
+  "extends": "@moomfe",
+  "overrides": [
+    {
+      "files": ["src/web-components/**/*.vue"],
+      "rules": {
+        "import/first": "off",
+        "import/order": "off"
+      }
+    }
+  ]
 }
