@@ -1,10 +1,11 @@
 <template>
   <div>
-    123
+    <st-memory-info />
   </div>
 </template>
 
 <script lang="ts" setup>
+  import '@/web-components/memory-info/index';
 
 </script>
 
