@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "@moomfe/small-utils": "^3.9.7",
-    "@unocss/reset": "^0.31.6",
-    "@vueuse/core": "^8.2.6",
+    "@unocss/reset": "^0.31.12",
+    "@vueuse/core": "^8.3.0",
     "@vueuse/head": "^0.7.6",
     "lodash-es": "^4.17.21",
     "nprogress": "^0.2.0",
@@ -22,7 +22,7 @@
     "vue-router": "^4.0.14"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.29",
+    "@iconify/json": "^2.1.30",
     "@intlify/vite-plugin-vue-i18n": "^3.4.0",
     "@moomfe/eslint-config": "^2.0.5",
     "@rollup/pluginutils": "^4.2.1",
@@ -37,7 +37,7 @@
     "fs-extra": "^10.1.0",
     "sass": "^1.50.1",
     "typescript": "^4.6.3",
-    "unocss": "^0.31.6",
+    "unocss": "^0.31.12",
     "unplugin-auto-import": "^0.7.1",
     "unplugin-icons": "^0.14.1",
     "unplugin-vue-components": "0.19.3",
