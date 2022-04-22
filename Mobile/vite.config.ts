@@ -39,6 +39,7 @@ export default defineConfig(({ mode }) => {
       // 以文件系统为基础的路由
       Pages({
         dirs: path.resolve(__dirname, './src/pages'),
+        extensions: ['vue'],
         exclude: ['**/components'],
       }),
       // 页面布局系统
