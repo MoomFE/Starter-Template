@@ -108,7 +108,7 @@ export default defineConfig(({ mode }) => {
         Pages({
           dirs: path.resolve(__dirname, './src/pages'),
           extensions: ['vue'],
-          exclude: ['**/components'],
+          exclude: ['**/components', '**/composables'],
         }),
         // 页面布局系统
         Layouts(),
