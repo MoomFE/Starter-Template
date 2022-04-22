@@ -10,7 +10,12 @@
     <!-- 组件展示区 -->
     <div class="w-full h-full overflow-hidden">
       <n-tabs type="card" size="large" closable>
-        <n-tab-pane name="noop" tab="无组件预览" :closable="false" disabled />
+        <template v-if="tabs.length">
+          <template v-for="tab in tabs" :key="tab.key">
+            <n-tab-pane :name="tab.key" :tab="tab.title" />
+          </template>
+        </template>
+        <n-tab-pane v-else name="noop" tab="无组件预览" :closable="false" disabled />
       </n-tabs>
     </div>
   </div>
@@ -19,14 +24,15 @@
 <script lang="ts" setup>
   import type { VNodeChild } from 'vue';
   import type { SelectOption } from 'naive-ui';
+  import type { Tab } from './type';
 
   /** 所有组件信息 */
   const webComponentsInfo = Object.values(import.meta.globEager('@/web-components/*/info.ts'));
   /** 所有组件信息 - 下拉框选项 */
-  const webComponentsOptions = webComponentsInfo.map(({ name, tag }) => ({ label: name, value: tag }));
+  const webComponentsOptions = webComponentsInfo.map(({ name, tag }) => ({ label: tag, value: name }));
 
   /** 所有的选项卡信息 */
-  const tabs = [];
+  const tabs: Tab[] = [];
 
   /** 渲染下拉框 Label */
   function renderOptionLabel(option: SelectOption): VNodeChild {
