@@ -22,6 +22,7 @@ specifiers:
   sass: ^1.50.1
   typescript: ^4.6.3
   unocss: ^0.31.12
+  unocss-preset-scrollbar: ^0.0.1
   unplugin-auto-import: ^0.7.1
   unplugin-icons: ^0.14.1
   unplugin-vue-components: 0.19.3
@@ -60,6 +61,7 @@ devDependencies:
   sass: 1.50.1
   typescript: 4.6.3
   unocss: 0.31.12_vite@2.9.5
+  unocss-preset-scrollbar: 0.0.1_unocss@0.31.12
   unplugin-auto-import: 0.7.1_@vueuse+core@8.3.1+vite@2.9.5
   unplugin-icons: 0.14.1_373ff0796f2ad1831080f280f76c13f4
   unplugin-vue-components: 0.19.3_vite@2.9.5+vue@3.2.33
@@ -554,6 +556,10 @@ packages:
       unconfig: 0.3.3
     dev: true
 
+  /@unocss/core/0.30.13:
+    resolution: {integrity: sha512-NaFLCiqpTryFUHC/talm/wIeo1D1xw7k9LGTxRtqmD9uIlx1sVpJAMHd3HRecYeTpHTsvzFgBPFpgrOCBST6dw==}
+    dev: true
+
   /@unocss/core/0.31.12:
     resolution: {integrity: sha512-2dOf0yYXXWi+bhS0x+3DppQtImUREVu7CSFkrPULOioImWHryLfiORAdHpPd4MnUqBFLqtC68+7un00HPJVx3g==}
     dev: true
@@ -578,6 +584,12 @@ packages:
       '@unocss/core': 0.31.12
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@unocss/preset-mini/0.30.13:
+    resolution: {integrity: sha512-CjwWbInmfGjYO7gLt1Ks4+A6jFON4jYT8PqjsQpkN/1AGGdgKQEBBCeo9I/MQw6jyHXZwfvabQPqxVHrvimXTw==}
+    dependencies:
+      '@unocss/core': 0.30.13
     dev: true
 
   /@unocss/preset-mini/0.31.12:
@@ -3717,6 +3729,15 @@ packages:
   /universalify/2.0.0:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
+
+  /unocss-preset-scrollbar/0.0.1_unocss@0.31.12:
+    resolution: {integrity: sha512-Gupfv1dqTExL7C6ZHTzXqA61ehzdHJXyQrcAvgFVJE/DrqX8BBjEeJSy4lCpaTXnjlyGXyFszDpCe0Gw13vnSA==}
+    peerDependencies:
+      unocss: ^0.30.6
+    dependencies:
+      '@unocss/preset-mini': 0.30.13
+      unocss: 0.31.12_vite@2.9.5
+    dev: true
 
   /unocss/0.31.12_vite@2.9.5:
     resolution: {integrity: sha512-6kdml6/qocMikH9O2m/dfMlO/lc1Ug3MdVyavMD3hsX1Ovd/AOWuCtI6fqxKM6HF4krpNJWDQ1nvUICkwJ757g==}
