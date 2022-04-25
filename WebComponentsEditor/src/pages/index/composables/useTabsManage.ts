@@ -3,11 +3,6 @@ import { type SelectOption } from 'naive-ui';
 import { uniqueId } from 'lodash-es';
 import { type Tab } from '../type';
 
-/** 所有组件信息 */
-const componentsInfo = Object.values(import.meta.globEager('@/web-components/*/info.ts'));
-/** 所有组件信息 - 下拉框选项 */
-const componentsOptions = componentsInfo.map(({ name, tag }) => ({ label: name, value: tag }));
-
 /** 渲染下拉框 Label */
 function renderOptionLabel(option: SelectOption): VNodeChild {
   return [
@@ -49,8 +44,6 @@ export function useTabsManage() {
   }
 
   return {
-    componentsInfo,
-    componentsOptions,
     renderOptionLabel,
     activeTab,
     tabs,

@@ -18,7 +18,7 @@
       <n-tabs
         v-model:value="activeTab"
         :class="{ 'hidden-tabs-pad-border': tabs.length }"
-        type="card" closable
+        type="card" closable animated
         @close="closeTab"
       >
         <template v-if="tabs.length">
@@ -36,6 +36,7 @@
 
 <script lang="ts" setup>
   import { useTabPaneHeight, useTabsManage } from './composables/useTabsManage';
+  import { componentsOptions } from '@/shared/components';
 
   /** 选项卡容器 */
   const tabsWrapRef = ref<HTMLElement>();
@@ -44,7 +45,7 @@
   const componentsSelectValue = ref([]);
 
   /** 选项卡管理 */
-  const { activeTab, tabs, createTab, closeTab, componentsOptions, renderOptionLabel } = useTabsManage();
+  const { activeTab, tabs, createTab, closeTab, renderOptionLabel } = useTabsManage();
   /** 选项卡面板的高度 */
   const tabPaneHeight = useTabPaneHeight(tabsWrapRef);
 </script>
