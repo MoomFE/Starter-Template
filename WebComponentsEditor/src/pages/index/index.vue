@@ -3,12 +3,14 @@
     <!-- 操作区 -->
     <div class="flex items-center gap-2">
       <n-select
+        v-model:value="componentsSelectValue"
         class="!w-72"
-        :options="webComponentsOptions"
-        :render-label="renderOptionLabel"
-        placeholder="请选择组件" clearable multiple
+        :options="componentsOptions" :render-label="renderOptionLabel"
+        placeholder="请选择组件" max-tag-count="responsive" clearable multiple
       />
-      <n-button type="primary" @click="createTab([])">新增</n-button>
+      <n-button type="primary" :disabled="!componentsSelectValue.length" @click="createTab(componentsSelectValue)">
+        新增
+      </n-button>
     </div>
 
     <!-- 组件展示区 -->
@@ -21,8 +23,8 @@
       >
         <template v-if="tabs.length">
           <template v-for="tab in tabs" :key="tab.key">
-            <n-tab-pane class="tab-pane-shadow !p-3" :name="tab.key" :tab="tab.title" :style="{ height: tabPaneHeight }">
-              123
+            <n-tab-pane class="tab-pane-shadow !p-3 !pr-2" :name="tab.key" :tab="tab.title" :style="{ height: tabPaneHeight }" display-directive="show:lazy">
+              <iframe class="w-full h-full" src="/frame" :name="tab.key" frameborder="0" />
             </n-tab-pane>
           </template>
         </template>
@@ -35,13 +37,15 @@
 <script lang="ts" setup>
   import { useTabPaneHeight, useTabsManage } from './composables/useTabsManage';
 
+  /** 选项卡容器 */
   const tabsWrapRef = ref<HTMLElement>();
 
-  const {
-    activeTab, tabs, createTab, closeTab,
-    webComponentsOptions, renderOptionLabel,
-  } = useTabsManage();
+  /** 操作区选中的组件列表 */
+  const componentsSelectValue = ref([]);
 
+  /** 选项卡管理 */
+  const { activeTab, tabs, createTab, closeTab, componentsOptions, renderOptionLabel } = useTabsManage();
+  /** 选项卡面板的高度 */
   const tabPaneHeight = useTabPaneHeight(tabsWrapRef);
 </script>
 
