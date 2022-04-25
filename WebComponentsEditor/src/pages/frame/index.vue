@@ -1,24 +1,23 @@
 <template>
-  {{ tab }}
+  <template v-for="tag in tab?.components" :key="tag">
+    <component :is="tag" />
+  </template>
 </template>
 
 <script lang="ts" setup>
   import { type Tab } from '../index/type';
+  import { components } from '@/shared/components';
 
   /** 所有的选项卡信息 */
   const tabs = useLocalStorage<Tab[]>('st-tabs', []);
   /** 当前选项卡信息 */
   const tab = computed(() => tabs.value.find(({ key }) => key === window.name));
 
-  /** 所有的组件列表 */
-  // const allComponents = Object.fromEntries(
-  //   Object.entries(import.meta.glob('@/web-components/**/index.{js,ts}')).map(([path, component]) => {
-  //     return [
-  //       path.split('/').reverse()[1],
-  //       component,
-  //     ];
-  //   }),
-  // );
+  watchEffect(() => {
+    tab.value?.components.forEach((name) => {
+      components[name]?.index();
+    });
+  });
 </script>
 
 <route lang="yaml">
