@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@iconify/json': ^2.1.32
   '@moomfe/eslint-config': ^2.0.6
-  '@moomfe/small-utils': ^3.11.0
+  '@moomfe/small-utils': ^3.12.0
   '@rollup/pluginutils': ^4.2.1
   '@types/fs-extra': ^9.0.13
   '@types/lodash-es': ^4.17.6
@@ -35,7 +35,7 @@ specifiers:
   vue-router: ^4.0.14
 
 dependencies:
-  '@moomfe/small-utils': 3.11.0_vue@3.2.33
+  '@moomfe/small-utils': 3.12.0_vue@3.2.33
   '@unocss/reset': 0.31.16
   '@vueuse/core': 8.3.1_vue@3.2.33
   '@vueuse/head': 0.7.6_vue@3.2.33
@@ -291,8 +291,8 @@ packages:
       - typescript
     dev: true
 
-  /@moomfe/small-utils/3.11.0_vue@3.2.33:
-    resolution: {integrity: sha512-AuIFwr0Z6tVwhjoEoFGgtKBdKyE0/5VBj0pPqcEOarFxas+nWvCOVZ6BMvUEHmZz14mEuQ1kQ7biKrObgctzRg==}
+  /@moomfe/small-utils/3.12.0_vue@3.2.33:
+    resolution: {integrity: sha512-cMjFTWHjeTiTSOFjtoYOtcd27wT6kwHFNrWRzSkE+F7qVgBBzGgh1Uqkn3nHzVNOCIanvOooPlAnTcrq6KyIhA==}
     peerDependencies:
       '@vue/composition-api': '>=1.1.0'
       vue: '>=2.6.0 || >=3.2.0'
@@ -912,8 +912,8 @@ packages:
       es-shim-unscopables: 1.0.0
     dev: true
 
-  /async-validator/4.1.0:
-    resolution: {integrity: sha512-FjmiC/asUPkfsi3taDPtpRVhxxCIiS4EWeR6OjOjppKaHsh3l4J13s7uQ++1zfl84mRaOFxjz7UDIxwy9l9zAQ==}
+  /async-validator/4.1.1:
+    resolution: {integrity: sha512-p4DO/JXwjs8klJyJL8Q2oM4ks5fUTze/h5k10oPPKMiLe1fj3G1QMzPHNmN1Py4ycOk7WlO2DcGXv1qiESJCZA==}
     dev: false
 
   /asynckit/0.4.0:
@@ -2903,7 +2903,7 @@ packages:
       '@css-render/vue3-ssr': 0.15.9_vue@3.2.33
       '@types/lodash': 4.14.182
       '@types/lodash-es': 4.17.6
-      async-validator: 4.1.0
+      async-validator: 4.1.1
       css-render: 0.15.9
       date-fns: 2.28.0
       date-fns-tz: 1.3.3_date-fns@2.28.0
