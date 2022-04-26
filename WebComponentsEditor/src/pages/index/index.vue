@@ -31,9 +31,9 @@
         </template>
         <!-- 无组件预览时 -->
         <n-tab-pane v-else name="noop" tab="无组件预览" :closable="false" disabled />
-        <!-- 组件参数选择 -->
+        <!-- 组件测试数据选择 -->
         <template v-if="activeTabData" #suffix>
-          <n-select class="!w-36" size="small" :options="genTabDataOptions(activeTabData)" />
+          <n-select v-model:value="activeTab!.data" class="!w-36" size="small" placeholder="选择测试数据" :options="genTabDataOptions(activeTabData)" clearable />
         </template>
       </n-tabs>
     </div>
@@ -49,7 +49,7 @@
   const tabsWrapRef = ref<HTMLElement>();
 
   /** 选项卡管理 */
-  const { activeTabId, activeTabData, tabs, createTab, closeTab } = useTabsManage();
+  const { activeTab, activeTabId, activeTabData, tabs, createTab, closeTab } = useTabsManage();
   /** 选项卡面板的高度 */
   const tabPaneHeight = useTabPaneHeight(tabsWrapRef);
 

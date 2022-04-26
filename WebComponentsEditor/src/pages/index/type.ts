@@ -6,4 +6,6 @@ export interface Tab {
   id: string
   /** 选项卡内的组件 */
   component: string
+  /** 当前选中的测试数据 */
+  data?: string
 }

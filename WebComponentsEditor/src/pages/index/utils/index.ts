@@ -33,6 +33,7 @@ export function useTabPaneHeight(tabsWrapRef: Ref<HTMLElement | undefined>) {
   });
 }
 
+/** 生成测试数据下拉框选项 */
 export function genTabDataOptions(data: any) {
   return Object.keys(data).map(key => ({ label: key, value: key }));
 }

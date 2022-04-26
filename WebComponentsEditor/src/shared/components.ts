@@ -48,7 +48,7 @@ export const components: Components = {};
 
 // 保存所有的组件相关信息
 Object.entries(componentsInfo).forEach(([name, info]) => {
-  // index.ts 和 info.ts 必须同时存在
+  // index.ts 和 info.ts 必须同时存在, 才承认这是个组件
   if (!componentsIndex[name]) return;
 
   components[info.tag] = {
