@@ -7,5 +7,5 @@ export interface Tab {
   /** 选项卡名称 */
   title: string
   /** 选项卡内的组件 */
-  components: string[]
+  component: string
 }

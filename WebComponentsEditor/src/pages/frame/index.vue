@@ -1,7 +1,5 @@
 <template>
-  <template v-for="tag in tab?.components" :key="tag">
-    <component :is="tag" />
-  </template>
+  <component :is="tab?.component" />
 </template>
 
 <script lang="ts" setup>
@@ -14,9 +12,10 @@
   const tab = computed(() => tabs.value.find(({ key }) => key === window.name));
 
   watchEffect(() => {
-    tab.value?.components.forEach((name) => {
-      components[name]?.index();
-    });
+    const component = tab.value?.component;
+
+    if (component)
+      components[component]?.index();
   });
 </script>
 

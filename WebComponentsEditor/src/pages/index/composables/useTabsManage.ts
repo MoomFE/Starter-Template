@@ -3,14 +3,7 @@ import { type SelectOption } from 'naive-ui';
 import { uniqueId } from 'lodash-es';
 import { type Tab } from '../type';
 
-/** 渲染下拉框 Label */
-function renderOptionLabel(option: SelectOption): VNodeChild {
-  return [
-    h('span', { class: 'text-sm' }, option.value as string),
-    h('span', { class: 'text-xs color-gray-400' }, ` ( ${option.label} )`),
-  ];
-}
-
+/** 选项卡管理 */
 export function useTabsManage() {
   /** 所有的选项卡信息 */
   const tabs = useLocalStorage<Tab[]>('st-tabs', []);
@@ -20,14 +13,14 @@ export function useTabsManage() {
   let index = 0;
 
   /** 创建一个新选项卡 */
-  function createTab(components: string[]) {
+  function createTab(component: string) {
     const key = `tab-${uniqueId()}`;
     const title = `选项卡 ${++index}`;
 
     tabs.value.push({
       key,
       title,
-      components,
+      component,
     });
 
     activeTab.value = key;
@@ -44,7 +37,6 @@ export function useTabsManage() {
   }
 
   return {
-    renderOptionLabel,
     activeTab,
     tabs,
     createTab,
@@ -65,4 +57,12 @@ export function useTabPaneHeight(tabsWrapRef: Ref<HTMLElement | undefined>) {
   return computed(() => {
     return `${tabsWrapHeight.value - tabNavHeight.value}px`;
   });
+}
+
+/** 渲染下拉框 Label */
+export function renderOptionLabel(option: SelectOption): VNodeChild {
+  return [
+    h('span', { class: 'text-sm' }, option.value as string),
+    h('span', { class: 'text-xs color-gray-400' }, ` ( ${option.label} )`),
+  ];
 }
