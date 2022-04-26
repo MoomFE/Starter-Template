@@ -16,11 +16,12 @@
     <!-- 组件展示区 -->
     <div ref="tabsWrapRef" class="w-full h-full overflow-hidden">
       <n-tabs
-        v-model:value="activeTab"
+        v-model:value="activeTabId"
         :class="{ 'hidden-tabs-pad-border': tabs.length }"
         type="card" closable animated
         @close="closeTab"
       >
+        <!-- 所有的组建预览区 -->
         <template v-if="tabs.length">
           <template v-for="tab in tabs" :key="tab.id">
             <n-tab-pane class="tab-pane-shadow !p-3 !pr-2" :name="tab.id" :tab="renderTabTitle(tab.component)" :style="{ height: tabPaneHeight }" display-directive="show:lazy">
@@ -28,26 +29,32 @@
             </n-tab-pane>
           </template>
         </template>
+        <!-- 无组件预览时 -->
         <n-tab-pane v-else name="noop" tab="无组件预览" :closable="false" disabled />
+        <!-- 组件参数选择 -->
+        <template v-if="activeTabData" #suffix>
+          <n-select class="!w-36" size="small" :options="genTabDataOptions(activeTabData)" />
+        </template>
       </n-tabs>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-  import { renderOptionLabel, renderTabTitle, useTabPaneHeight, useTabsManage } from './composables/useTabsManage';
+  import { useTabsManage } from './composables/useTabsManage';
+  import { genTabDataOptions, renderOptionLabel, renderTabTitle, useTabPaneHeight } from './utils';
   import { componentsOptions } from '@/shared/components';
 
   /** 选项卡容器 */
   const tabsWrapRef = ref<HTMLElement>();
 
-  /** 操作区选中的组件列表 */
-  const componentsSelectValue = ref();
-
   /** 选项卡管理 */
-  const { activeTab, tabs, createTab, closeTab } = useTabsManage();
+  const { activeTabId, activeTabData, tabs, createTab, closeTab } = useTabsManage();
   /** 选项卡面板的高度 */
   const tabPaneHeight = useTabPaneHeight(tabsWrapRef);
+
+  /** 操作区选中的组件列表 */
+  const componentsSelectValue = ref();
 </script>
 
 <route lang="yaml">
