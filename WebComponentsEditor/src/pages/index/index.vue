@@ -22,9 +22,9 @@
         @close="closeTab"
       >
         <template v-if="tabs.length">
-          <template v-for="tab in tabs" :key="tab.key">
-            <n-tab-pane class="tab-pane-shadow !p-3 !pr-2" :name="tab.key" :tab="tab.title" :style="{ height: tabPaneHeight }" display-directive="show:lazy">
-              <iframe class="w-full h-full" src="/frame" :name="tab.key" frameborder="0" />
+          <template v-for="tab in tabs" :key="tab.id">
+            <n-tab-pane class="tab-pane-shadow !p-3 !pr-2" :name="tab.id" :tab="renderTabTitle(tab.component)" :style="{ height: tabPaneHeight }" display-directive="show:lazy">
+              <iframe class="w-full h-full" src="/frame" :name="tab.id" frameborder="0" />
             </n-tab-pane>
           </template>
         </template>
@@ -35,7 +35,7 @@
 </template>
 
 <script lang="ts" setup>
-  import { renderOptionLabel, useTabPaneHeight, useTabsManage } from './composables/useTabsManage';
+  import { renderOptionLabel, renderTabTitle, useTabPaneHeight, useTabsManage } from './composables/useTabsManage';
   import { componentsOptions } from '@/shared/components';
 
   /** 选项卡容器 */

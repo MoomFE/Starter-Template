@@ -9,7 +9,7 @@
   /** 所有的选项卡信息 */
   const tabs = useLocalStorage<Tab[]>('st-tabs', []);
   /** 当前选项卡信息 */
-  const tab = computed(() => tabs.value.find(({ key }) => key === window.name));
+  const tab = computed(() => tabs.value.find(tab => tab.id === window.name));
 
   watchEffect(() => {
     const component = tab.value?.component;
