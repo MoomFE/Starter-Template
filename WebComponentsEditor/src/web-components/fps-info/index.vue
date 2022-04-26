@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center">
-    <div class="text-left" un:grid="~ cols-[auto_1fr] gap-x-2">
-      <div>FPS:</div>
+    <div un:text="left sm" un:grid="~ cols-[auto_1fr] gap-x-2">
+      <div un:text="gray">FPS:</div>
       <div>{{ fps }}</div>
     </div>
   </div>
