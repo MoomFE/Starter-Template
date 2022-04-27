@@ -2,6 +2,8 @@ import { type Ref, type VNodeChild } from 'vue';
 import { type SelectOption } from 'naive-ui';
 import { components } from '@/shared/components';
 
+// @unocss-include
+
 /** 渲染下拉框 Label */
 export function renderOptionLabel(option: SelectOption): VNodeChild {
   return [
