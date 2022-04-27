@@ -1,4 +1,5 @@
 .DS_Store
+.vite-ssg-temp
 
 node_modules
 dist
