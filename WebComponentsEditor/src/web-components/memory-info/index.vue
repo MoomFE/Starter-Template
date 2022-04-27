@@ -17,17 +17,20 @@
 </template>
 
 <script lang="ts" setup>
-  const props = withDefaults(defineProps<{ unit: 'KB' | 'MB' }>(), {
-    unit: 'MB',
-  });
+  const props = defineProps<{ unit: 'KB' | 'MB' }>();
 
   const { isSupported, memory } = useMemory();
+
+  const unit = refDefault(
+    toRef(props, 'unit'),
+    'MB',
+  );
 
   function size(b: number) {
     const KB = b / 1024;
 
-    if (props.unit === 'KB') return `${KB.toFixed(2)} KB`;
-    if (props.unit === 'MB') return `${(KB / 1024).toFixed(2)} MB`;
+    if (unit.value === 'KB') return `${KB.toFixed(2)} KB`;
+    if (unit.value === 'MB') return `${(KB / 1024).toFixed(2)} MB`;
   }
 </script>
 
