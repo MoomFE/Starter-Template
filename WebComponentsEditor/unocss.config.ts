@@ -77,15 +77,4 @@ export default defineConfig({
       })}`,
     );
   },
-  include: [
-    /\.vue$/,
-    /\.vue\?vue/,
-    /\.svelte$/,
-    /\.[jt]s$/,
-    /\.[jt]sx$/,
-    /\.mdx?$/,
-  ],
-  exclude: [
-    /\.(css|postcss|sass|scss|less|stylus|styl)$/,
-  ],
 });
