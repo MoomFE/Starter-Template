@@ -1,5 +1,6 @@
 import { resolve } from 'path';
 import { defineConfig, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss';
+import { presetScrollbar } from 'unocss-preset-scrollbar';
 import { outputFileSync } from 'fs-extra';
 import { dataToEsm } from '@rollup/pluginutils';
 
@@ -56,6 +57,8 @@ export default defineConfig({
     }),
     // 图标预设
     presetIcons(),
+    // 滚动条
+    presetScrollbar(),
   ],
   transformers: [
     // 在 CSS 中使用 @apply 指令
