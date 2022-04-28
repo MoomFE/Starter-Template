@@ -95,6 +95,7 @@ export default defineConfig(({ mode }) => {
     ],
     // Vite SSG 选项
     ssgOptions: {
+      format: 'cjs',
       script: 'async',
       dirStyle: 'nested',
       formatting: 'minify',
