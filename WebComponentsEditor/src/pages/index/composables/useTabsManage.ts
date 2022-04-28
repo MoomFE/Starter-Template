@@ -11,7 +11,7 @@ export function useTabsManage() {
   /** 当前激活的选项卡 */
   const activeTab = computed(() => tabs.value.find(tab => tab.id === activeTabId.value));
   /** 当前激活的选项卡的测试数据 */
-  const activeTabData = computed(() => components[activeTab.value?.component as string].data);
+  const activeTabData = computed(() => components[activeTab.value?.component as string]?.data);
 
   /** 创建一个新选项卡 */
   function createTab(component: string) {
