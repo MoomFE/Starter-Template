@@ -9,7 +9,7 @@
   const props = defineProps({
     size: {
       type: String,
-      default: 'h-12 w-12',
+      default: 'size-12',
     },
   });
 </script>

@@ -25,6 +25,7 @@ specifiers:
   typescript: ^4.6.3
   unocss: ^0.32.0
   unocss-preset-scrollbar: ^0.1.0
+  unocss-preset-short: ^0.1.0
   unplugin-auto-import: ^0.7.1
   unplugin-icons: ^0.14.1
   unplugin-vue-components: 0.19.3
@@ -70,6 +71,7 @@ devDependencies:
   typescript: 4.6.3
   unocss: 0.32.0_vite@2.9.6
   unocss-preset-scrollbar: 0.1.0_unocss@0.32.0
+  unocss-preset-short: 0.1.0_unocss@0.32.0
   unplugin-auto-import: 0.7.1_@vueuse+core@8.3.1+vite@2.9.6
   unplugin-icons: 0.14.1_a14a97006e3f1f5e6af4c562ac507d64
   unplugin-vue-components: 0.19.3_vite@2.9.6+vue@3.2.33
@@ -3780,6 +3782,14 @@ packages:
       unocss: ^0.31.13
     dependencies:
       '@unocss/preset-mini': 0.31.17
+      unocss: 0.32.0_vite@2.9.6
+    dev: true
+
+  /unocss-preset-short/0.1.0_unocss@0.32.0:
+    resolution: {integrity: sha512-s6Ay3RELbUyhm5hiWlmbtsMo5Gd6yNGUorMBzkoOrwTZYh6Et9EKFtJA5KGJuRlGxsHUX/4N55pdbtJkSsDfQQ==}
+    peerDependencies:
+      unocss: ^0.31.0
+    dependencies:
       unocss: 0.32.0_vite@2.9.6
     dev: true
 
