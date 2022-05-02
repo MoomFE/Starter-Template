@@ -116,7 +116,7 @@
   },
   "extensions": {
     "recommendations": [
-      "johnsoncodehk.volar",
+      "vue.volar",
       "antfu.iconify",
       "antfu.unocss",
       "dbaeumer.vscode-eslint",
