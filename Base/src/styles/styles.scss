@@ -1,6 +1,7 @@
 body {
   @apply text-dynamic bg-dynamic;
   @apply transition-colors duration-colors;
+  @apply scrollbar scrollbar-rounded;
 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
