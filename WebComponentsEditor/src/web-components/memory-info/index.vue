@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts" setup>
-  const props = defineProps<{ unit: 'KB' | 'MB' }>();
+  const props = defineProps<{ unit?: 'KB' | 'MB' }>();
 
   const { isSupported, memory } = useMemory();
 
