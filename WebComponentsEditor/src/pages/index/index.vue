@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-screen p-3" un:grid="~ rows-[auto_1fr] gap-3">
+  <div class="size-screen p-3" un:grid="~ rows-[auto_1fr] gap-3">
     <!-- 操作区 -->
     <div class="flex items-center gap-2">
       <n-select
@@ -14,7 +14,7 @@
     </div>
 
     <!-- 组件展示区 -->
-    <div ref="tabsWrapRef" class="w-full h-full overflow-hidden">
+    <div ref="tabsWrapRef" class="size-full overflow-hidden">
       <n-tabs
         v-model:value="activeTabId"
         :class="{ 'hidden-tabs-pad-border': tabs.length }"
@@ -25,7 +25,7 @@
         <template v-if="tabs.length">
           <template v-for="tab in tabs" :key="tab.id">
             <n-tab-pane class="tab-pane-shadow !p-3 !pr-2" :name="tab.id" :tab="renderTabTitle(tab.component)" :style="{ height: tabPaneHeight }" display-directive="show:lazy">
-              <iframe class="w-full h-full" src="/frame" :name="tab.id" frameborder="0" />
+              <iframe class="size-full" src="/frame" :name="tab.id" frameborder="0" />
             </n-tab-pane>
           </template>
         </template>
