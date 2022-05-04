@@ -1,6 +1,6 @@
 import { resolve } from 'path';
 import { defineConfig, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss';
-import { presetShort } from 'unocss-preset-short';
+import { presetExtra } from 'unocss-preset-extra';
 import { presetScrollbar } from 'unocss-preset-scrollbar';
 import { outputFileSync } from 'fs-extra';
 import { dataToEsm } from '@rollup/pluginutils';
@@ -58,8 +58,8 @@ export default defineConfig({
     }),
     // 图标预设
     presetIcons(),
-    // 类名简写
-    presetShort(),
+    // 类名简写及额外一些样式预设
+    presetExtra(),
     // 滚动条
     presetScrollbar(),
   ],
