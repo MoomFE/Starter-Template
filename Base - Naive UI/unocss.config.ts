@@ -37,6 +37,7 @@ export default defineConfig({
     },
     // 断点
     breakpoints: {
+      'xs': '480px',
       'sm': '576px',
       'md': '768px',
       'lg': '1024px',
