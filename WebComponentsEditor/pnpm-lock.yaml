@@ -8,7 +8,6 @@ specifiers:
   '@types/fs-extra': ^9.0.13
   '@types/lodash': ^4.14.182
   '@types/node': ^17.0.31
-  '@unocss/reset': ^0.32.8
   '@vitejs/plugin-vue': ^2.3.1
   '@vue/compiler-sfc': ^3.2.33
   '@vueuse/core': ^8.3.1
@@ -37,7 +36,6 @@ specifiers:
 
 dependencies:
   '@moomfe/small-utils': 3.12.0_vue@3.2.33
-  '@unocss/reset': 0.32.8
   '@vueuse/core': 8.3.1_vue@3.2.33
   '@vueuse/head': 0.7.6_vue@3.2.33
   lodash: 4.17.21
@@ -631,6 +629,7 @@ packages:
 
   /@unocss/reset/0.32.8:
     resolution: {integrity: sha512-aIZ2XjcE25SvSCALHJ22o5uigE5Q54cDlcd47QhmFY4ZOkSSAGOB7HptjrMpLbt9p/ijtoRu9r1bfdFQ+YHNQg==}
+    dev: true
 
   /@unocss/scope/0.32.8:
     resolution: {integrity: sha512-plvRN/8DwTt4ps7zQwWk9JUTxfYwHfxX4ce20g7+1378R0IIFXBD+ZCazK5/+oxMxU6Qm+9S5/n77juhk7jvAw==}

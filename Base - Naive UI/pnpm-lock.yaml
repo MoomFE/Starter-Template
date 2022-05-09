@@ -9,7 +9,6 @@ specifiers:
   '@types/fs-extra': ^9.0.13
   '@types/lodash': ^4.14.182
   '@types/node': ^17.0.31
-  '@unocss/reset': ^0.32.8
   '@vitejs/plugin-vue': ^2.3.1
   '@vue/compiler-sfc': ^3.2.33
   '@vueuse/core': ^8.3.1
@@ -39,7 +38,6 @@ specifiers:
 
 dependencies:
   '@moomfe/small-utils': 3.12.0_vue@3.2.33
-  '@unocss/reset': 0.32.8
   '@vueuse/core': 8.3.1_vue@3.2.33
   '@vueuse/head': 0.7.6_vue@3.2.33
   lodash: 4.17.21
@@ -281,8 +279,8 @@ packages:
       - supports-color
     dev: true
 
-  /@intlify/bundle-utils/3.0.0_vue-i18n@9.1.10:
-    resolution: {integrity: sha512-y43Z5Q3ZJvxqtD8xUH6U3yrlZeay7ZTqkzv1GQ4b0mGQtk5uptOT9Ra4qvGuUv8QyPQsortrA/OHWUD5ax5ZNQ==}
+  /@intlify/bundle-utils/3.1.0_vue-i18n@9.1.10:
+    resolution: {integrity: sha512-ghlJ0kR2cCQ8D+poKknC0Xx0ncOt3J3os7CcIAqqIWVF7k6AtGoCDnIru+YzlZcvFRNmP9wEZ7jKliojCdAWNg==}
     engines: {node: '>= 12'}
     peerDependencies:
       petite-vue-i18n: '*'
@@ -374,7 +372,7 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/bundle-utils': 3.0.0_vue-i18n@9.1.10
+      '@intlify/bundle-utils': 3.1.0_vue-i18n@9.1.10
       '@intlify/shared': 9.2.0-beta.35
       '@rollup/pluginutils': 4.2.1
       debug: 4.3.4
@@ -749,6 +747,7 @@ packages:
 
   /@unocss/reset/0.32.8:
     resolution: {integrity: sha512-aIZ2XjcE25SvSCALHJ22o5uigE5Q54cDlcd47QhmFY4ZOkSSAGOB7HptjrMpLbt9p/ijtoRu9r1bfdFQ+YHNQg==}
+    dev: true
 
   /@unocss/scope/0.32.8:
     resolution: {integrity: sha512-plvRN/8DwTt4ps7zQwWk9JUTxfYwHfxX4ce20g7+1378R0IIFXBD+ZCazK5/+oxMxU6Qm+9S5/n77juhk7jvAw==}
