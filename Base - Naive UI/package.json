@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@moomfe/small-utils": "^3.12.0",
-    "@unocss/reset": "^0.32.8",
     "@vueuse/core": "^8.3.1",
     "@vueuse/head": "^0.7.6",
     "lodash": "^4.17.21",
