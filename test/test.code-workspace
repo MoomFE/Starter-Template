@@ -3,6 +3,10 @@
     {
       "path": "."
     },
+    {
+      "path": "cypress",
+      "name": "Cypress"
+    }
   ],
   "settings": {
     "editor.tabSize": 2,
@@ -19,7 +23,8 @@
     "breadcrumbs.enabled": false,
     "files.exclude": {
       "*.code-workspace": true,
-      "node_modules": true,
+      "cypress": true,
+      "node_modules": true
     },
     "typescript.tsdk": "node_modules/typescript/lib",
     "prettier.enable": false,
