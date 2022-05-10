@@ -1,4 +1,5 @@
-import { deepClone } from '@moomfe/small-utils';
+import { formatComponentsGlob } from '@/utils/formatComponentsGlob';
+import { deepCloneESModule } from '@/utils/deepCloneESModule';
 
 /** 组件注册文件引用 */
 type ComponentsIndex = () => Promise<any>;
@@ -20,28 +21,12 @@ type Components = Record<string, {
   data: any
 }>;
 
-/** 格式化导入文件的信息 */
-function format(files: Record<string, any>) {
-  return Object.fromEntries(
-    Object.entries(files).map(([path, value]) => {
-      return [path.split('/').reverse()[1], value];
-    }),
-  );
-}
-
-/** 深拷贝 ES Module  */
-function deepCloneESModule<T>(value: T): T {
-  if (value)
-    return deepClone(Object.fromEntries(Object.entries(value))) as any;
-  return value;
-}
-
 /** 所有组件注册文件引用 */
-const componentsIndex: Record<string, ComponentsIndex> = format(import.meta.glob('@/web-components/*/index.ts'));
+const componentsIndex: Record<string, ComponentsIndex> = formatComponentsGlob(import.meta.glob('@/web-components/*/index.ts'));
 /** 所有组件信息文件 */
-const componentsInfo: Record<string, ComponentsInfo> = format(import.meta.globEager('@/web-components/*/info.ts'));
+const componentsInfo: Record<string, ComponentsInfo> = formatComponentsGlob(import.meta.globEager('@/web-components/*/info.ts'));
 /** 所有组件的测试数据 */
-const componentsData: Record<string, any> = format(import.meta.globEager('@/web-components/*/data.ts'));
+const componentsData: Record<string, any> = formatComponentsGlob(import.meta.globEager('@/web-components/*/data.ts'));
 
 /** 所有组件相关信息 */
 export const components: Components = {};
