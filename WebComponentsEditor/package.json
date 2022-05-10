@@ -3,7 +3,8 @@
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "scripts": {
     "dev": "pnpm install && vite --host",
-    "build": "pnpm install && cross-env SSG=true vite-ssg build",
+    "build": "esno scripts/build.ts",
+    "build:editor": "pnpm install && cross-env SSG=true vite-ssg build",
     "preview": "pnpm install && cross-env SSG=true vite-ssg build && vite preview --host",
     "lint": "eslint . --fix"
   },
@@ -29,6 +30,8 @@
     "@vue/compiler-sfc": "^3.2.33",
     "cross-env": "^7.0.3",
     "eslint": "^8.15.0",
+    "esno": "^0.14.1",
+    "fast-glob": "^3.2.11",
     "fs-extra": "^10.1.0",
     "sass": "^1.51.0",
     "typescript": "^4.6.4",
