@@ -62,7 +62,7 @@ export default defineConfig(({ mode }) => {
           // 自动导入图标组件
           IconsResolver({ prefix: 'i' }),
           // 自动导入 @moomfe/small-utils 的组件
-          SmallUtilsComponentsResolver() as any,
+          SmallUtilsComponentsResolver(),
           // 自动导入 Vant 组件
           VantResolver({
             // 在 main.ts 中引入 CSS, 否则可能会和 Tailwind Reset 样式冲突

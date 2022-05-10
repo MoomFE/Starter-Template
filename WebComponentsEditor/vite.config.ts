@@ -71,7 +71,7 @@ export function createViteBaseConfig(options: CreateViteBaseConfigOptions = {}) 
           // 自动导入图标组件
           IconsResolver({ prefix: 'i' }),
           // 自动导入 @moomfe/small-utils 的组件
-          SmallUtilsComponentsResolver() as any,
+          SmallUtilsComponentsResolver(),
           // 自动导入 Naive UI 组件
           NaiveUiResolver(),
         ],

@@ -61,7 +61,7 @@ export default defineConfig(({ mode }) => {
           // 自动导入图标组件
           IconsResolver({ prefix: 'i' }),
           // 自动导入 @moomfe/small-utils 的组件
-          SmallUtilsComponentsResolver() as any,
+          SmallUtilsComponentsResolver(),
         ],
       }),
       // API 自动加载
