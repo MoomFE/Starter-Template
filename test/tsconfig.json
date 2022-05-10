@@ -16,20 +16,10 @@
     "resolveJsonModule": true,
     "noUnusedLocals": true,
     "forceConsistentCasingInFileNames": true,
-    "types": [
-      "vite/client",
-      "unplugin-icons/types/vue",
-      "vite-plugin-pages/client",
-      "vite-plugin-vue-layouts/client"
-    ],
-    "paths": {
-      "~/*": ["./src/*"],
-      "@/*": ["./src/*"],
-      "@@/*": ["./*"]
-    }
   },
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "cypress"
   ]
 }
