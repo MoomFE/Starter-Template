@@ -25,7 +25,5 @@
     app[AppLoadingBar] = useLoadingBar();
   };
 
-  useHead({
-    title: settings.title,
-  });
+  useTitle(settings.title);
 </script>

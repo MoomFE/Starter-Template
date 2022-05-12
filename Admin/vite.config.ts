@@ -12,14 +12,13 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
-import generateSitemap from 'vite-ssg-sitemap';
 import { SmallUtilsComponentsResolver, optimizeDepsInclude } from '@moomfe/small-utils/vite-config';
 
 export default defineConfig(({ mode }) => {
   /** 是否是开发模式 */
   const isDev = mode === 'development'; // eslint-disable-line @typescript-eslint/no-unused-vars
   /** 环境变量 */
-  const env = loadEnv(mode, process.cwd(), ['VITE_', 'APP_']);
+  const env = loadEnv(mode, process.cwd(), ['VITE_', 'APP_']); // eslint-disable-line @typescript-eslint/no-unused-vars
 
   return {
     // 环境变量前缀
@@ -75,7 +74,6 @@ export default defineConfig(({ mode }) => {
           'vue-router',
           'vue-i18n',
           '@vueuse/core',
-          '@vueuse/head',
         ],
         eslintrc: {
           enabled: true,
@@ -90,18 +88,6 @@ export default defineConfig(({ mode }) => {
         ],
       }),
     ],
-    // Vite SSG 选项
-    ssgOptions: {
-      format: 'cjs',
-      script: 'async',
-      dirStyle: 'nested',
-      formatting: 'minify',
-      includedRoutes: paths => paths.filter(path => !path.includes(':')),
-      onFinished: () => {
-        // 生成站点地图
-        generateSitemap({ hostname: env.APP_HOSTNAME });
-      },
-    },
     // 依赖预构建优化选项
     optimizeDeps: {
       entries: [
@@ -111,7 +97,6 @@ export default defineConfig(({ mode }) => {
         'vue',
         'vue-router',
         '@vueuse/core',
-        '@vueuse/head',
         'naive-ui',
         ...optimizeDepsInclude,
       ],
