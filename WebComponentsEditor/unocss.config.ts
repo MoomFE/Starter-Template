@@ -9,7 +9,7 @@ export default defineConfig({
   shortcuts: [
     // 动态颜色
     ['text-dynamic', 'text-[#333639] dark:text-[#E8E8E8]'],
-    ['bg-dynamic', 'bg-[#FFF] dark:bg-[#101014]'],
+    ['bg-dynamic', 'bg-white dark:bg-[#101014]'],
   ],
   theme: {
     // 颜色
