@@ -27,7 +27,7 @@ specifiers:
   unocss-preset-scrollbar: ^0.2.0
   unplugin-auto-import: ^0.7.1
   unplugin-icons: ^0.14.3
-  unplugin-vue-components: 0.19.3
+  unplugin-vue-components: ^0.19.5
   vant: ^3.4.9
   vite: ^2.9.9
   vite-plugin-pages: ^0.23.0
@@ -72,7 +72,7 @@ devDependencies:
   unocss-preset-scrollbar: 0.2.0_unocss@0.33.2
   unplugin-auto-import: 0.7.1_@vueuse+core@8.4.2+vite@2.9.9
   unplugin-icons: 0.14.3_5e4f8605adad45d4080e4c1fd5590bdb
-  unplugin-vue-components: 0.19.3_vite@2.9.9+vue@3.2.33
+  unplugin-vue-components: 0.19.5_vite@2.9.9+vue@3.2.33
   vite: 2.9.9_sass@1.51.0
   vite-plugin-pages: 0.23.0_5e4f8605adad45d4080e4c1fd5590bdb
   vite-plugin-vue-layouts: 0.6.0_1825d1f7eeb98fb9a08d64245f6b5253
@@ -3946,8 +3946,8 @@ packages:
       - webpack
     dev: true
 
-  /unplugin-vue-components/0.19.3_vite@2.9.9+vue@3.2.33:
-    resolution: {integrity: sha512-z/kpYJnqrJuWglDNs7fy0YRHr41oLc07y2TkP3by6DqPb1GG9xGC9SFigeFwd4J7GVTqyFVsnjoeup7uK7I2dA==}
+  /unplugin-vue-components/0.19.5_vite@2.9.9+vue@3.2.33:
+    resolution: {integrity: sha512-cIC+PdQEXmG+B1gmZGk4hws2xP+00C6pg3FD6ixEgRyW+WF+QXQW/60pc+hUhtDYs1PFE+23K3NY7yvYTnDDTA==}
     engines: {node: '>=14'}
     peerDependencies:
       '@babel/parser': ^7.15.8
