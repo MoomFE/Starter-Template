@@ -17,7 +17,7 @@ export function renderOptionLabel(option: SelectOption): VNodeChild {
  * @param component 选项卡内的组件
  */
 export function renderTabTitle(component: string) {
-  return () => renderOptionLabel({ label: components[component].info.name, value: component });
+  return () => renderOptionLabel({ label: components[component]?.info.name, value: component });
 }
 
 /** 选项卡面板的高度 */

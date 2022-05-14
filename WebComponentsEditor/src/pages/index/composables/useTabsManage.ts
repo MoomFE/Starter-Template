@@ -31,7 +31,7 @@ export function useTabsManage() {
 
     if (index > -1) {
       tabs.value.splice(index, 1);
-      activeTabId.value === id && (activeTabId.value = tabs.value[Math.min(index, tabs.value.length - 1)].id);
+      activeTabId.value === id && (activeTabId.value = tabs.value[Math.min(index, tabs.value.length - 1)]?.id);
     }
   }
 
