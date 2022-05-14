@@ -3,7 +3,6 @@
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import Vue from '@vitejs/plugin-vue';
-import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import Unocss from 'unocss/vite';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
@@ -72,20 +71,11 @@ export default defineConfig(({ mode }) => {
         imports: [
           'vue',
           'vue-router',
-          'vue-i18n',
           '@vueuse/core',
         ],
         eslintrc: {
           enabled: true,
         },
-      }),
-      // i18n 国际化
-      VueI18n({
-        runtimeOnly: true,
-        compositionOnly: true,
-        include: [
-          path.resolve(__dirname, 'locales/**'),
-        ],
       }),
     ],
     // 依赖预构建优化选项

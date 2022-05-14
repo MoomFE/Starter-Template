@@ -4,10 +4,6 @@
       "path": "."
     },
     {
-      "path": "locales",
-      "name": "Locales"
-    },
-    {
       "path": "src\\assets",
       "name": "Assets"
     },
@@ -75,7 +71,6 @@
     "breadcrumbs.enabled": false,
     "files.exclude": {
       "*.code-workspace": true,
-      "locales": true,
       "node_modules": true,
       "src/assets": true,
       "src/components": true,

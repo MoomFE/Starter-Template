@@ -4,25 +4,24 @@
   </div>
 
   <p class="mt-1">
-    {{ t('intro.hi', { name }) }}
+    你好，{{ name }}
   </p>
 
   <p class="text-sm opacity-50">
     <em>
-      {{ t('intro.dynamic-route') }}
+      动态路由演示
     </em>
   </p>
 
   <div class="mt-6">
     <NButton type="primary" @click="router.back()">
-      {{ t('button.back') }}
+      返回
     </NButton>
   </div>
 </template>
 
 <script lang="ts" setup>
   const router = useRouter();
-  const { t } = useI18n();
 
   interface Props{
     name: string
@@ -35,7 +34,7 @@
   });
 
   useTitle(
-    computed(() => t('intro.hi', { name: name.value })),
+    computed(() => `你好，${name.value}`),
   );
 </script>
 

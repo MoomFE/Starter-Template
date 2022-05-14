@@ -5,12 +5,12 @@
     </div>
 
     <div class="mt-1">
-      {{ t('not-found') }}
+      未找到页面
     </div>
 
     <div class="mt-6">
       <NButton type="primary" @click="router.back()">
-        {{ t('button.back') }}
+        返回
       </NButton>
     </div>
   </div>
@@ -18,5 +18,4 @@
 
 <script lang="ts" setup>
   const router = useRouter();
-  const { t } = useI18n();
 </script>
