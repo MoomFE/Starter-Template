@@ -8,4 +8,6 @@ export interface Tab {
   component: string
   /** 当前选中的测试数据 */
   data?: string
+  /** 重载数据使用 */
+  dataReloadCount?: number
 }

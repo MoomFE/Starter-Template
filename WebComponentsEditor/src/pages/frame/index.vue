@@ -1,6 +1,6 @@
 <template>
   <template v-if="tab">
-    <component :is="tab.component" v-bind="isReady ? data : {}" />
+    <component :is="tab.component" v-bind="isReady ? finalData : {}" />
   </template>
 </template>
 
@@ -16,14 +16,11 @@
   const tabs = useLocalStorage<Tab[]>('st-tabs', []);
   /** 当前选项卡信息 */
   const tab = computed(() => tabs.value.find(tab => tab.id === window.name));
-  /** 当前选项卡测试数据 - 支持使用函数返回测试数据 */
-  const data = computed(() => {
-    const result = components[tab.value?.component as string]?.data?.[tab.value?.data as string] || {};
-
-    if (isFunction(result))
-      return result();
-
-    return result;
+  /** 当前选项卡测试数据 */
+  const data = computed(() => components[tab.value?.component as string]?.data?.[tab.value?.data as string] || {});
+  /** 最终使用的选项卡数据 - 支持使用函数返回测试数据 */
+  const finalData = computed(() => {
+    return isFunction(data.value) ? data.value({ reloadCount: tab.value?.dataReloadCount ?? 0 }) : data.value;
   });
 
   // 加载组件

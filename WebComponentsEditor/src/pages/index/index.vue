@@ -33,6 +33,14 @@
         <n-tab-pane v-else name="noop" tab="无组件预览" :closable="false" disabled />
         <!-- 组件测试数据选择 -->
         <template v-if="activeTabData" #suffix>
+          <!-- 使用函数返回测试数据时, 重新运行函数生成测试数据 -->
+          <n-tooltip v-if="activeTab!.data && isFunction(activeTabData[activeTab!.data])">
+            <template #trigger>
+              <i class="cursor-pointer mr-2" un:i-mdi-reload @click="dataReload" />
+            </template>
+            <div un:text="sm">当前测试数据由函数返回, 点击重新运行函数生成测试数据</div>
+          </n-tooltip>
+          <!-- 组件测试数据选择下拉框 -->
           <n-select v-model:value="activeTab!.data" class="!w-36" size="small" placeholder="选择测试数据" :options="genTabDataOptions(activeTabData)" clearable />
         </template>
       </n-tabs>
@@ -41,6 +49,7 @@
 </template>
 
 <script lang="ts" setup>
+  import { isFunction } from '@moomfe/small-utils';
   import { useTabsManage } from './composables/useTabsManage';
   import { genTabDataOptions, renderOptionLabel, renderTabTitle, useTabPaneHeight } from './utils';
   import { componentsOptions } from '@/shared/components';
@@ -55,6 +64,11 @@
 
   /** 操作区选中的组件列表 */
   const componentsSelectValue = ref();
+
+  /** 重载数据 */
+  function dataReload() {
+    activeTab.value!.dataReloadCount = (activeTab.value!.dataReloadCount ?? 0) + 1;
+  }
 </script>
 
 <route lang="yaml">
