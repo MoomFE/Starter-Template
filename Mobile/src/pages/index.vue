@@ -1,5 +1,5 @@
 <template>
-  <Logo />
+  <Logo class="mx-auto" />
 
   <p class="mt-2">
     {{ t('intro.title') }}
