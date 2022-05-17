@@ -3,10 +3,7 @@
     <div class="w-full min-h-screen items-center justify-center" un:flex="~ grow">
       <div class="w-96 max-w-full" un:p="x-3 y-6">
         <!-- Logo -->
-        <div class="flex justify-center items-center gap-5">
-          <Logo class="!mx-0" />
-          <div class="text-3xl">{{ settings.title }}</div>
-        </div>
+        <LogoTitle class="gap-5 text-3xl" />
         <!-- Form -->
         <NForm
           ref="formRef" class="mt-10" label-placement="left" size="large"
