@@ -3,8 +3,11 @@
   <NConfigProvider :theme="theme" :theme-overrides="themeOverrides" :locale="zhCN" :date-locale="dateZhCN" abstract>
     <!-- 加载条 ( 页面加载进度 ) -->
     <NLoadingBarProvider>
-      <router-view />
-      <GetAppEnv />
+      <!-- 信息弹窗 -->
+      <NMessageProvider>
+        <router-view />
+        <GetAppEnv />
+      </NMessageProvider>
     </NLoadingBarProvider>
     <!-- 全局样式 ( 写入一些样式至 body 层 ) -->
     <NGlobalStyle />
