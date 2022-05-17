@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@iconify/json': ^2.1.44
   '@moomfe/eslint-config': ^2.0.6
-  '@moomfe/small-utils': ^3.13.1
+  '@moomfe/small-utils': ^3.14.0
   '@rollup/pluginutils': ^4.2.1
   '@types/fs-extra': ^9.0.13
   '@types/lodash': ^4.14.182
@@ -31,7 +31,7 @@ specifiers:
   vue-router: ^4.0.15
 
 dependencies:
-  '@moomfe/small-utils': 3.13.1_vue@3.2.33
+  '@moomfe/small-utils': 3.14.0_vue@3.2.33
   '@vueuse/core': 8.5.0_vue@3.2.33
   lodash: 4.17.21
   naive-ui: 2.28.4_vue@3.2.33
@@ -283,8 +283,8 @@ packages:
       - typescript
     dev: true
 
-  /@moomfe/small-utils/3.13.1_vue@3.2.33:
-    resolution: {integrity: sha512-mBsaCdW/1/aBvEj8x/+w6KwVdyTibzhI0yG4hXEXWFmBb8FOiW3oT4XNhEYu1QUpGTyGBcH0rVXFxEJKddjdLg==}
+  /@moomfe/small-utils/3.14.0_vue@3.2.33:
+    resolution: {integrity: sha512-lhCJYVAkl1qIVnuv642WRQBJAskhZV2P3sjZ39ot5kLbJKjecpZ85OJ3UnMZvp9eyk8Re4nfk65dffGcXn8HQg==}
     peerDependencies:
       '@vue/composition-api': '>=1.1.0'
       vue: '>=2.6.0 || >=3.2.0'
