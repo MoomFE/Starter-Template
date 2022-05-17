@@ -1,5 +1,5 @@
 <template>
-  <Logo />
+  123
 </template>
 
 <script lang="ts" setup>
@@ -8,4 +8,6 @@
 
 <route lang="yaml">
 name: Index
+meta:
+  layout: admin
 </route>
