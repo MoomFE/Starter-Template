@@ -5,5 +5,5 @@ import type { Settings } from '@/types';
  */
 export const settings: Settings = {
   /** 项目名称 */
-  title: 'Admin',
+  title: 'NaiveUI Admin',
 };
