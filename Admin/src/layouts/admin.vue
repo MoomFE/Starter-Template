@@ -13,10 +13,12 @@
     <!-- 右侧区域 -->
     <n-layout>
       <!-- 顶部菜单栏 -->
-      <n-layout-header>123</n-layout-header>
+      <n-layout-header>
+        <Navbar />
+      </n-layout-header>
       <!-- 内容区域 -->
-      <n-layout-content>
-        456
+      <n-layout-content embedded>
+        <router-view />
       </n-layout-content>
     </n-layout>
   </n-layout>
@@ -24,5 +26,6 @@
 
 <script lang="ts" setup>
   import AsideMenu from './admin-components/AsideMenu/index.vue';
+  import Navbar from './admin-components/Navbar/index.vue';
 
 </script>
