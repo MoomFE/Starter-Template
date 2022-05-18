@@ -14,13 +14,13 @@
     <n-layout ref="rootRef">
       <div class="h-full" un:flex="~ col">
         <!-- 顶部菜单栏 -->
-        <n-layout-header bordered>
+        <n-layout-header class="z-1">
           <Navbar />
         </n-layout-header>
         <!-- 内容区域 -->
         <div ref="contentRef" class="h-full flex-grow overflow-hidden">
           <n-scrollbar class="h-full">
-            <div class="flex" :style="{ minHeight: `${contentHeight}px` }">
+            <div class="flex" un:bg="gray-100 dark:black" :style="{ minHeight: `${contentHeight}px` }">
               <div class="w-full min-h-full flex-grow">
                 <router-view />
               </div>
@@ -39,3 +39,9 @@
   const contentRef = ref();
   const contentHeight = useElementSize(contentRef).height;
 </script>
+
+<style lang="scss">
+  .n-layout-header{
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  }
+</style>
