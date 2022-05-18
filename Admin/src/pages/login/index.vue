@@ -39,7 +39,6 @@
 <script lang="ts" setup>
   import { useMessage } from 'naive-ui';
   import { onceRun } from '@moomfe/small-utils';
-  import { settings } from '@/settings';
   import { defineFormValidateRules } from '@/utils/defineFormValidateRules';
   import { useAuthStore } from '@/stores/auth';
 
@@ -85,4 +84,6 @@
 
 <route lang="yaml">
 name: Login
+meta:
+  title: 登录
 </route>

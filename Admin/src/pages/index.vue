@@ -10,4 +10,5 @@
 name: Index
 meta:
   layout: admin
+  title: 首页
 </route>
