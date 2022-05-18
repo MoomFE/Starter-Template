@@ -2,7 +2,7 @@ import type { GlobalThemeOverrides } from 'naive-ui';
 import { darkTheme, dateZhCN, zhCN } from 'naive-ui';
 import { deepMerge } from '@moomfe/small-utils';
 import { useThemeStore } from '@/stores/theme';
-import { colors, fontFamily, fontSize } from '@/shared/unocss.theme';
+import { colors, fontFamily } from '@/shared/unocss.theme';
 
 /** 通用主题变量覆盖 */
 const commonOverrides: GlobalThemeOverrides = {
@@ -11,14 +11,6 @@ const commonOverrides: GlobalThemeOverrides = {
     fontFamily: fontFamily.sans,
     // 等宽字体
     fontFamilyMono: fontFamily.mono,
-
-    // 字体大小
-    fontSizeTiny: fontSize.xs[0],
-    fontSizeSmall: fontSize.sm[0],
-    fontSize: fontSize.base[0],
-    fontSizeMedium: fontSize.base[0],
-    fontSizeLarge: fontSize.lg[0],
-    fontSizeHuge: fontSize.xl[0],
 
     // Primary 颜色
     primaryColor: colors.primary,
@@ -45,24 +37,6 @@ const commonOverrides: GlobalThemeOverrides = {
     errorColorHover: colors['error-hover'],
     errorColorPressed: colors['error-active'],
     errorColorSuppl: colors.error,
-  },
-  Input: {
-    // 字体大小 - 跟通用字体大小比要小一号
-    fontSizeTiny: fontSize.xs[0],
-    fontSizeSmall: fontSize.xs[0],
-    fontSizeMedium: fontSize.sm[0],
-    fontSizeLarge: fontSize.base[0],
-  },
-  Button: {
-    // 字体大小 - 跟通用字体大小比要小一号
-    fontSizeTiny: fontSize.xs[0],
-    fontSizeSmall: fontSize.xs[0],
-    fontSizeMedium: fontSize.sm[0],
-    fontSizeLarge: fontSize.base[0],
-  },
-  Menu: {
-    // 字体大小 - 跟通用字体大小比要小一号
-    fontSize: fontSize.sm[0],
   },
 };
 
