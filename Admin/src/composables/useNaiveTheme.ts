@@ -60,6 +60,10 @@ const commonOverrides: GlobalThemeOverrides = {
     fontSizeMedium: fontSize.sm[0],
     fontSizeLarge: fontSize.base[0],
   },
+  Menu: {
+    // 字体大小 - 跟通用字体大小比要小一号
+    fontSize: fontSize.sm[0],
+  },
 };
 
 /** 亮色主题变量覆盖 */
