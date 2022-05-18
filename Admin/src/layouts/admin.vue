@@ -10,16 +10,24 @@
       <AsideMenu />
     </n-layout-sider>
 
-    <!-- 右侧区域 -->
-    <n-layout>
-      <!-- 顶部菜单栏 -->
-      <n-layout-header>
-        <Navbar />
-      </n-layout-header>
-      <!-- 内容区域 -->
-      <n-layout-content embedded>
-        <router-view />
-      </n-layout-content>
+    <!-- 主内容区域 -->
+    <n-layout ref="rootRef">
+      <div class="h-full" un:flex="~ col">
+        <!-- 顶部菜单栏 -->
+        <n-layout-header bordered>
+          <Navbar />
+        </n-layout-header>
+        <!-- 内容区域 -->
+        <div ref="contentRef" class="h-full flex-grow overflow-hidden">
+          <n-scrollbar class="h-full">
+            <div class="flex" :style="{ minHeight: `${contentHeight}px` }">
+              <div class="w-full min-h-full flex-grow">
+                <router-view />
+              </div>
+            </div>
+          </n-scrollbar>
+        </div>
+      </div>
     </n-layout>
   </n-layout>
 </template>
@@ -28,4 +36,6 @@
   import AsideMenu from './admin-components/AsideMenu/index.vue';
   import Navbar from './admin-components/Navbar/index.vue';
 
+  const contentRef = ref();
+  const contentHeight = useElementSize(contentRef).height;
 </script>
