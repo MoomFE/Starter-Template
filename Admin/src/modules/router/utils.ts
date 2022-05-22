@@ -26,7 +26,7 @@ export function filterRouter(routes: RouteRecordRaw[]) {
  * @returns
  */
 export function generatorMenu(routes: RouteRecordRaw[], isChildren = false): MenuMixedOption[] {
-  return filterRouter(routes).map((route) => {
+  return filterRouter(routes).sort(sort).map((route) => {
     const isRoot = isRootRoute(route);
     const info = isRoot ? route.children![0] : route;
     const menuItem: MenuMixedOption = {
@@ -40,4 +40,11 @@ export function generatorMenu(routes: RouteRecordRaw[], isChildren = false): Men
 
     return menuItem;
   });
+}
+
+/**
+ * 排序菜单
+ */
+function sort(a: RouteRecordRaw, b: RouteRecordRaw) {
+  return (a.meta?.sort as number || 0) - (b.meta?.sort as number || 0);
 }
