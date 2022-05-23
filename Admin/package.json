@@ -8,7 +8,7 @@
     "lint": "eslint . --fix"
   },
   "dependencies": {
-    "@moomfe/small-utils": "^3.14.2",
+    "@moomfe/small-utils": "^3.14.3",
     "@vueuse/core": "^8.5.0",
     "lodash": "^4.17.21",
     "naive-ui": "^2.28.4",
@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.1.44",
-    "@moomfe/eslint-config": "^2.0.6",
+    "@moomfe/eslint-config": "^2.0.7",
     "@rollup/pluginutils": "^4.2.1",
     "@types/fs-extra": "^9.0.13",
     "@types/lodash": "^4.14.182",
