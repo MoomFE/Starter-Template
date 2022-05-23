@@ -63,7 +63,7 @@
   const isLoading = ref(false);
 
   /** 登录 */
-  const login = onceRun(async() => {
+  const login = onceRun(async () => {
     await formRef.value.validate();
 
     const loadingMessage = message.loading('登录中...');

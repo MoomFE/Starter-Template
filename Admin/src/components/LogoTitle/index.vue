@@ -8,7 +8,7 @@
 <script lang="ts" setup>
   import { settings } from '@/settings';
 
-  interface Props{
+  interface Props {
     logoSize?: string
   }
 

@@ -38,6 +38,6 @@
   import reset from '@unocss/reset/tailwind.css?raw';
 
   export default {
-    styles: [reset, `@unocss-placeholder`], // eslint-disable-line quotes
+    styles: [reset, `@unocss-placeholder`], // eslint-disable-line @typescript-eslint/quotes
   };
 </script>

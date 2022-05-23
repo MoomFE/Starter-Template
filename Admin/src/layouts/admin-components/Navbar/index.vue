@@ -10,7 +10,6 @@
 </template>
 
 <script lang="ts" setup>
-
   const route = useRoute();
 
   /** 面包屑 */

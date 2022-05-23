@@ -14,7 +14,7 @@ export const useAuthStore = defineStore('auth', () => {
   const isLogin = computed(() => !!info.username);
 
   /** 登录 */
-  const login = onceRun(async(data: any) => {
+  const login = onceRun(async (data: any) => {
     await delay(
       random(360, 1000),
     );
@@ -23,7 +23,7 @@ export const useAuthStore = defineStore('auth', () => {
       info.username = data.username;
   });
 
-  const logout = onceRun(async() => {
+  const logout = onceRun(async () => {
     await delay(
       random(120, 360),
     );

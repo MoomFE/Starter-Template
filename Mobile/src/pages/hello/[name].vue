@@ -21,14 +21,14 @@
 </template>
 
 <script lang="ts" setup>
-  const router = useRouter();
-  const { t } = useI18n();
-
-  interface Props{
+  interface Props {
     name: string
   }
 
   const props = defineProps<Props>();
+
+  const router = useRouter();
+  const { t } = useI18n();
 
   const name = computed(() => {
     return decodeURIComponent(props.name);

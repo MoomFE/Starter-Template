@@ -13,10 +13,10 @@
 </template>
 
 <script lang="ts" setup>
-  interface Props{
+  interface Props {
     disabled?: boolean
   }
 
-  const emit = defineEmits(['click']);
   const props = defineProps<Props>();
+  const emit = defineEmits(['click']);
 </script>
