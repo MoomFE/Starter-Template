@@ -46,5 +46,8 @@ export function generatorMenu(routes: RouteRecordRaw[], isChildren = false): Men
  * 排序菜单
  */
 function sort(a: RouteRecordRaw, b: RouteRecordRaw) {
-  return (a.meta?.sort as number || 0) - (b.meta?.sort as number || 0);
+  const aInfo = isRootRoute(a) ? a.children![0] : a;
+  const bInfo = isRootRoute(b) ? b.children![0] : b;
+
+  return (aInfo.meta?.sort as number || 0) - (bInfo.meta?.sort as number || 0);
 }
