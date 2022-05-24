@@ -23,7 +23,7 @@ specifiers:
   sass: ^1.51.0
   typescript: ^4.6.4
   unocss: ^0.33.5
-  unocss-preset-extra: ^0.1.0
+  unocss-preset-extra: ^0.1.1
   unocss-preset-scrollbar: ^0.2.0
   unplugin-auto-import: ^0.7.1
   unplugin-icons: ^0.14.3
@@ -66,7 +66,7 @@ devDependencies:
   sass: 1.51.0
   typescript: 4.6.4
   unocss: 0.33.5_vite@2.9.9
-  unocss-preset-extra: 0.1.0_unocss@0.33.5
+  unocss-preset-extra: 0.1.1_unocss@0.33.5
   unocss-preset-scrollbar: 0.2.0_unocss@0.33.5
   unplugin-auto-import: 0.7.1_4xyn6ao5ngwbgzbefoyccvabvi
   unplugin-icons: 0.14.3_lzhymbnnvvc5icaojqp5kwil3m
@@ -3930,10 +3930,10 @@ packages:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
 
-  /unocss-preset-extra/0.1.0_unocss@0.33.5:
-    resolution: {integrity: sha512-kJ0zIcC/dzWyqP7fsg+qKYPF2YI9gwpnjsxUqeyc1+xFC5TVuQ09fhlXqq+195l4LvzkLHBK1vT4z5vWnDmGXw==}
+  /unocss-preset-extra/0.1.1_unocss@0.33.5:
+    resolution: {integrity: sha512-iIb63VGKyv6KZ7MAFZWZnK9ybvSX4D8ug3bMP7PqeFaBVd/jNz70hiYeEy2TRIgLhZ4D2L4SSoHkp6lwH/LFKA==}
     peerDependencies:
-      unocss: ^0.31.0
+      unocss: '>= 0.31.0 < 1'
     dependencies:
       unocss: 0.33.5_vite@2.9.9
     dev: true
