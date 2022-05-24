@@ -20,7 +20,7 @@
         <!-- 内容区域 -->
         <div ref="contentRef" class="h-full flex-grow overflow-hidden">
           <n-scrollbar class="h-full">
-            <div class="flex" un:bg="gray-100 dark:black" :style="{ minHeight: `${contentHeight}px` }">
+            <div class="flex transition-colors duration-colors" un:bg="gray-100 dark:black" :style="{ minHeight: `${contentHeight}px` }">
               <div class="w-full min-h-full flex-grow">
                 <router-view />
               </div>
