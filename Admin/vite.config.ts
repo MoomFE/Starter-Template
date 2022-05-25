@@ -3,6 +3,7 @@
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import Vue from '@vitejs/plugin-vue';
+import VueJsx from '@vitejs/plugin-vue-jsx';
 import Unocss from 'unocss/vite';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
@@ -34,6 +35,8 @@ export default defineConfig(({ mode }) => {
     plugins: [
       // Vue 3 支持
       Vue(),
+      // JSX 支持
+      VueJsx(),
       // 以文件系统为基础的路由
       Pages({
         dirs: path.resolve(__dirname, './src/pages'),

@@ -4,6 +4,7 @@ import path from 'path';
 import type { UserConfig } from 'vite';
 import { defineConfig, loadEnv } from 'vite';
 import Vue from '@vitejs/plugin-vue';
+import VueJsx from '@vitejs/plugin-vue-jsx';
 import Unocss from 'unocss/vite';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
@@ -50,6 +51,8 @@ export function createViteBaseConfig(options: CreateViteBaseConfigOptions = {}) 
           },
         },
       }),
+      // JSX 支持
+      VueJsx(),
       // 原子化 CSS 引擎 ( 供 Web Components 使用 )
       Unocss({
         mode: 'shadow-dom',
