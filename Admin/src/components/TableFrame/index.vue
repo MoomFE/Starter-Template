@@ -1,18 +1,16 @@
 <template>
-  <div class="size-full p-2.5">
-    <n-card class="size-full" content-style="padding: 0" :bordered="false">
-      <div class="size-full p-4" un:flex="~ col gap-4">
-        <!-- 头部区域 -->
-        <div v-if="slot.header">
-          <slot name="header" />
-        </div>
-        <!-- 表格区域 -->
-        <div class="size-full flex-grow">
-          <slot />
-        </div>
+  <BasicCard class="size-full" :card-props="{ class: 'size-full' }">
+    <div class="size-full p-4" un:flex="~ col gap-4">
+      <!-- 头部区域 -->
+      <div v-if="slot.header">
+        <slot name="header" />
       </div>
-    </n-card>
-  </div>
+      <!-- 表格区域 -->
+      <div class="size-full flex-grow">
+        <slot />
+      </div>
+    </div>
+  </BasicCard>
 </template>
 
 <script lang="ts" setup>
