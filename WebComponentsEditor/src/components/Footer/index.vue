@@ -14,8 +14,6 @@
 </template>
 
 <script lang="ts" setup>
-  import { useThemeStore } from '@/stores/theme';
-
   const router = useRouter();
   const theme = useThemeStore();
 </script>

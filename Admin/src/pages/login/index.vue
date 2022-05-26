@@ -40,7 +40,6 @@
   import { useMessage } from 'naive-ui';
   import { onceRun } from '@moomfe/small-utils';
   import { defineFormValidateRules } from '@/utils/defineFormValidateRules';
-  import { useAuthStore } from '@/stores/auth';
 
   const router = useRouter();
   const auth = useAuthStore();

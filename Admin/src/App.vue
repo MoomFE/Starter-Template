@@ -16,7 +16,6 @@
 
 <script lang="ts" setup>
   import { useLoadingBar } from 'naive-ui';
-  import { useNaiveTheme } from '@/composables/useNaiveTheme';
   import { app } from '@/shared/env';
   import { settings } from '@/settings';
 
