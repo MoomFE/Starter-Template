@@ -76,6 +76,10 @@ export default defineConfig(({ mode }) => {
           'vue-router',
           '@vueuse/core',
         ],
+        dirs: [
+          path.resolve(__dirname, './src/composables'),
+          path.resolve(__dirname, './src/stores'),
+        ],
         eslintrc: {
           enabled: true,
         },

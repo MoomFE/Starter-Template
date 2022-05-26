@@ -83,6 +83,10 @@ export default defineConfig(({ mode }) => {
           '@vueuse/core',
           '@vueuse/head',
         ],
+        dirs: [
+          path.resolve(__dirname, './src/composables'),
+          path.resolve(__dirname, './src/stores'),
+        ],
         eslintrc: {
           enabled: true,
         },
