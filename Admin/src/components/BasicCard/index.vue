@@ -13,7 +13,7 @@
   export default defineComponent({
     render() {
       return (
-        <div class="m-2.5" { ...this.$attrs }>
+        <div class="st-basic-card" { ...this.$attrs }>
           <NCard headerStyle="padding: 0" contentStyle="padding: 0" footerStyle="padding: 0" bordered={ false } { ...this.cardProps }>
             {{ ...this.$slots }}
           </NCard>
@@ -22,3 +22,13 @@
     },
   });
 </script>
+
+<style lang="scss" scoped>
+  .st-basic-card {
+    @apply p-2.5;
+
+    + .st-basic-card {
+      @apply pt-0;
+    }
+  }
+</style>
