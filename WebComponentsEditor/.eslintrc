@@ -4,8 +4,8 @@
     {
       "files": ["src/web-components/**/*.vue"],
       "rules": {
-        "import/first": "off",
-        "import/order": "off"
+        "quotes": "off",
+        "@typescript-eslint/quotes": "off"
       }
     }
   ]
