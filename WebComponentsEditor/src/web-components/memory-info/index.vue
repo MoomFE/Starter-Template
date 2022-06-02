@@ -17,6 +17,8 @@
 </template>
 
 <script lang="ts" setup>
+  import reset from '@unocss/reset/tailwind.css?raw';
+
   const props = defineProps<{ unit?: 'KB' | 'MB' }>();
 
   const { isSupported, memory } = useMemory();
@@ -35,9 +37,7 @@
 </script>
 
 <script lang="ts">
-  import reset from '@unocss/reset/tailwind.css?raw';
-
   export default {
-    styles: [reset, `@unocss-placeholder`], // eslint-disable-line @typescript-eslint/quotes
+    styles: [reset, `@unocss-placeholder`],
   };
 </script>
