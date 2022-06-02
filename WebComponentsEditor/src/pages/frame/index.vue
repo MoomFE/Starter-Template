@@ -1,7 +1,11 @@
 <template>
-  <template v-if="tab">
-    <component :is="tab.component" v-bind="isReady ? finalData : {}" />
-  </template>
+  <div class="min-h-screen flex">
+    <div class="w-full flex-grow">
+      <template v-if="tab">
+        <component :is="tab.component" v-bind="isReady ? finalData : {}" />
+      </template>
+    </div>
+  </div>
 </template>
 
 <script lang="ts" setup>
