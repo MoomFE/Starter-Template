@@ -98,7 +98,7 @@ packages:
       eslint-plugin-import: 2.26.0_xsmuhwqsfrjm7m3kqio7zoeziq
       eslint-plugin-jsonc: 2.3.0_eslint@8.16.0
       eslint-plugin-markdown: 2.2.1_eslint@8.16.0
-      eslint-plugin-n: 15.2.0_eslint@8.16.0
+      eslint-plugin-n: 15.2.1_eslint@8.16.0
       eslint-plugin-promise: 6.0.0_eslint@8.16.0
       eslint-plugin-unicorn: 42.0.0_eslint@8.16.0
       eslint-plugin-yml: 1.0.0_eslint@8.16.0
@@ -173,7 +173,7 @@ packages:
       eslint-plugin-html: 6.2.0
       eslint-plugin-import: 2.26.0_xsmuhwqsfrjm7m3kqio7zoeziq
       eslint-plugin-jsonc: 2.3.0_eslint@8.16.0
-      eslint-plugin-n: 15.2.0_eslint@8.16.0
+      eslint-plugin-n: 15.2.1_eslint@8.16.0
       eslint-plugin-promise: 6.0.0_eslint@8.16.0
       eslint-plugin-unicorn: 42.0.0_eslint@8.16.0
       eslint-plugin-vue: 9.1.0_eslint@8.16.0
@@ -1379,8 +1379,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001344
-      electron-to-chromium: 1.4.143
+      caniuse-lite: 1.0.30001346
+      electron-to-chromium: 1.4.144
       escalade: 3.1.1
       node-releases: 2.0.5
       picocolors: 1.0.0
@@ -1391,8 +1391,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /builtins/4.1.0:
-    resolution: {integrity: sha512-1bPRZQtmKaO6h7qV1YHXNtr6nCK28k0Zo95KM4dXfILcZZwoHJBN1m3lfLv9LPkcOZlrSr+J1bzMaZFO98Yq0w==}
+  /builtins/5.0.1:
+    resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
     dependencies:
       semver: 7.3.7
     dev: true
@@ -1426,8 +1426,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /caniuse-lite/1.0.30001344:
-    resolution: {integrity: sha512-0ZFjnlCaXNOAYcV7i+TtdKBp0L/3XEU2MF/x6Du1lrh+SRX4IfzIVL4HNJg5pB2PmFb8rszIGyOvsZnqqRoc2g==}
+  /caniuse-lite/1.0.30001346:
+    resolution: {integrity: sha512-q6ibZUO2t88QCIPayP/euuDREq+aMAxFE5S70PkrLh0iTDj/zEhgvJRKC2+CvXY6EWc6oQwUR48lL5vCW6jiXQ==}
     dev: true
 
   /chalk/2.4.2:
@@ -1776,8 +1776,8 @@ packages:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
     dev: true
 
-  /electron-to-chromium/1.4.143:
-    resolution: {integrity: sha512-2hIgvu0+pDfXIqmVmV5X6iwMjQ2KxDsWKwM+oI1fABEOy/Dqmll0QJRmIQ3rm+XaoUa/qKrmy5h7LSTFQ6Ldzg==}
+  /electron-to-chromium/1.4.144:
+    resolution: {integrity: sha512-R3RV3rU1xWwFJlSClVWDvARaOk6VUO/FubHLodIASDB3Mc2dzuWvNdfOgH9bwHUTqT79u92qw60NWfwUdzAqdg==}
     dev: true
 
   /emoji-regex/8.0.0:
@@ -2436,13 +2436,13 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-n/15.2.0_eslint@8.16.0:
-    resolution: {integrity: sha512-lWLg++jGwC88GDGGBX3CMkk0GIWq0y41aH51lavWApOKcMQcYoL3Ayd0lEdtD3SnQtR+3qBvWQS3qGbR2BxRWg==}
+  /eslint-plugin-n/15.2.1_eslint@8.16.0:
+    resolution: {integrity: sha512-uMG50pvKqXK9ab163bSI5OpyZR0F5yIB0pEC4ciGpBLrXVjVDOlx5oTq8GQULWzbelJt7wL5Rw4T+FfAff5Cxg==}
     engines: {node: '>=12.22.0'}
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
-      builtins: 4.1.0
+      builtins: 5.0.1
       eslint: 8.16.0
       eslint-plugin-es: 4.1.0_eslint@8.16.0
       eslint-utils: 3.0.0_eslint@8.16.0
@@ -2450,7 +2450,7 @@ packages:
       is-core-module: 2.9.0
       minimatch: 3.1.2
       resolve: 1.22.0
-      semver: 6.3.0
+      semver: 7.3.7
     dev: true
 
   /eslint-plugin-promise/6.0.0_eslint@8.16.0:
