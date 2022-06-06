@@ -19,6 +19,8 @@ import { SmallUtilsComponentsResolver, optimizeDepsInclude } from '@moomfe/small
 import VirtualPublic from './scripts/plugins/virtual-public';
 
 interface CreateViteBaseConfigOptions {
+  /** 当前模式 */
+  mode: string
   /** 需要额外插入的 vite 插件 */
   plugins?: UserConfig['plugins']
 }
@@ -27,7 +29,7 @@ interface CreateViteBaseConfigOptions {
  * 创建一个基础的 vite 配置
  *  - 当前 Editor 项目和 Web Components 的公用配置
  */
-export function createViteBaseConfig(options: CreateViteBaseConfigOptions = {}) {
+export function createViteBaseConfig(options: CreateViteBaseConfigOptions) {
   const plugins = options.plugins || [];
 
   return defineConfig({
@@ -45,7 +47,7 @@ export function createViteBaseConfig(options: CreateViteBaseConfigOptions = {}) 
     plugins: [
       ...plugins,
       // 对 Web Components 组件使用的 public 资源进行虚拟路径替换
-      VirtualPublic(),
+      VirtualPublic(options),
       // Vue 3 支持
       Vue({
         template: {
@@ -112,6 +114,7 @@ export default defineConfig(({ mode }) => {
   return deepMerge(
     // 基础配置
     createViteBaseConfig({
+      mode,
       // 当前 Editor 项目专用 vite 插件
       plugins: [
         // 以文件系统为基础的路由

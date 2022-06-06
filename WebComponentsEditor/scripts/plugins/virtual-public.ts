@@ -1,12 +1,17 @@
 import { resolve } from 'path';
 import { type PluginOption, normalizePath } from 'vite';
 
+interface VirtualPublicOption {
+  /** 当前模式 */
+  mode: string
+}
+
 /**
  * 对 Web Components 组件使用的 public 资源进行虚拟路径替换
  */
-export default function VirtualPublic(): PluginOption {
+export default function VirtualPublic(options: VirtualPublicOption): PluginOption {
   const virtualModuleId = 'virtual:public';
-  const isDev = process.env.NODE_ENV === 'development';
+  const isDev = options.mode === 'development';
   const dir = normalizePath(
     resolve(process.cwd(), './src/web-components'),
   );
