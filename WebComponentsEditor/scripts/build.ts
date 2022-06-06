@@ -31,21 +31,20 @@ Object.entries(componentsInfo).forEach(([name]) => {
 });
 
 // 打包所有单个组件
-Object.entries(components).forEach(([_name, path]) => {
-  const name = camelCase(_name);
+Object.entries(components).forEach(([name, path]) => {
   const viteBaseConfig = createViteBaseConfig();
   const viteExtraConfig: InlineConfig = {
     configFile: false,
     publicDir: false,
     build: {
       minify: true,
-      outDir: outDirPath,
+      outDir: resolve(outDirPath, name),
       emptyOutDir: false,
       lib: {
         entry: resolve(srcPath, path),
         formats: ['iife'],
-        name,
-        fileName: () => `${name}.js`,
+        name: camelCase(name),
+        fileName: () => 'index.js',
       },
     },
   };
