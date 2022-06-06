@@ -16,6 +16,7 @@ import Layouts from 'vite-plugin-vue-layouts';
 import generateSitemap from 'vite-ssg-sitemap';
 import { deepMerge } from '@moomfe/small-utils';
 import { SmallUtilsComponentsResolver, optimizeDepsInclude } from '@moomfe/small-utils/vite-config';
+import VirtualPublic from './scripts/plugins/virtual-public';
 
 interface CreateViteBaseConfigOptions {
   /** 需要额外插入的 vite 插件 */
@@ -43,6 +44,8 @@ export function createViteBaseConfig(options: CreateViteBaseConfigOptions = {}) 
     // 插件
     plugins: [
       ...plugins,
+      // 对 Web Components 组件使用的 public 资源进行虚拟路径替换
+      VirtualPublic(),
       // Vue 3 支持
       Vue({
         template: {

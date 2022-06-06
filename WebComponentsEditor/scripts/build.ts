@@ -34,8 +34,9 @@ Object.entries(componentsInfo).forEach(([name]) => {
 Object.entries(components).forEach(([name, path]) => {
   const viteBaseConfig = createViteBaseConfig();
   const viteExtraConfig: InlineConfig = {
+    base: './',
     configFile: false,
-    publicDir: false,
+    publicDir: resolve(rootPath, 'public', name),
     build: {
       minify: true,
       outDir: resolve(outDirPath, name),
