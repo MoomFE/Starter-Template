@@ -1218,18 +1218,15 @@ export const preflightBase = {
   "--un-translate-x": 0,
   "--un-translate-y": 0,
   "--un-translate-z": 0,
-  "--un-transform": "translateX(var(--un-translate-x)) translateY(var(--un-translate-y)) translateZ(var(--un-translate-z)) rotate(var(--un-rotate)) rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y)) rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y)) scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y)) scaleZ(var(--un-scale-z))",
   "--un-pan-x": "var(--un-empty,/*!*/ /*!*/)",
   "--un-pan-y": "var(--un-empty,/*!*/ /*!*/)",
   "--un-pinch-zoom": "var(--un-empty,/*!*/ /*!*/)",
-  "--un-touch-action": "var(--un-pan-x) var(--un-pan-y) var(--un-pinch-zoom)",
   "--un-scroll-snap-strictness": "proximity",
   "--un-ordinal": "var(--un-empty,/*!*/ /*!*/)",
   "--un-slashed-zero": "var(--un-empty,/*!*/ /*!*/)",
   "--un-numeric-figure": "var(--un-empty,/*!*/ /*!*/)",
   "--un-numeric-spacing": "var(--un-empty,/*!*/ /*!*/)",
   "--un-numeric-fraction": "var(--un-empty,/*!*/ /*!*/)",
-  "--un-font-variant-numeric": "var(--un-ordinal) var(--un-slashed-zero) var(--un-numeric-figure) var(--un-numeric-spacing) var(--un-numeric-fraction)",
   "--un-border-spacing-x": 0,
   "--un-border-spacing-y": 0,
   "--un-ring-offset-shadow": "0 0 #0000",
@@ -1250,7 +1247,6 @@ export const preflightBase = {
   "--un-invert": "var(--un-empty,/*!*/ /*!*/)",
   "--un-saturate": "var(--un-empty,/*!*/ /*!*/)",
   "--un-sepia": "var(--un-empty,/*!*/ /*!*/)",
-  "--un-filter": "var(--un-blur) var(--un-brightness) var(--un-contrast) var(--un-drop-shadow) var(--un-grayscale) var(--un-hue-rotate) var(--un-invert) var(--un-saturate) var(--un-sepia)",
   "--un-backdrop-blur": "var(--un-empty,/*!*/ /*!*/)",
   "--un-backdrop-brightness": "var(--un-empty,/*!*/ /*!*/)",
   "--un-backdrop-contrast": "var(--un-empty,/*!*/ /*!*/)",
@@ -1259,8 +1255,7 @@ export const preflightBase = {
   "--un-backdrop-invert": "var(--un-empty,/*!*/ /*!*/)",
   "--un-backdrop-opacity": "var(--un-empty,/*!*/ /*!*/)",
   "--un-backdrop-saturate": "var(--un-empty,/*!*/ /*!*/)",
-  "--un-backdrop-sepia": "var(--un-empty,/*!*/ /*!*/)",
-  "--un-backdrop-filter": "var(--un-backdrop-blur) var(--un-backdrop-brightness) var(--un-backdrop-contrast) var(--un-backdrop-grayscale) var(--un-backdrop-hue-rotate) var(--un-backdrop-invert) var(--un-backdrop-opacity) var(--un-backdrop-saturate) var(--un-backdrop-sepia)"
+  "--un-backdrop-sepia": "var(--un-empty,/*!*/ /*!*/)"
 };
 export const animation = {
   keyframes: {
