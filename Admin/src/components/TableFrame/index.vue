@@ -1,6 +1,6 @@
 <template>
   <BasicCard class="size-full" :card-props="{ class: 'size-full' }">
-    <div class="size-full p-4" un:flex="~ col gap-4">
+    <div class="size-full p-3" un:flex="~ col gap-3">
       <!-- 头部区域 -->
       <div v-if="slot.header">
         <slot name="header" />
