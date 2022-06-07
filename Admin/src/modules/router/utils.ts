@@ -1,5 +1,6 @@
 import type { RouteRecordRaw } from 'vue-router';
 import type { MenuMixedOption } from 'naive-ui/es/menu/src/interface';
+import * as icons from './icons';
 import { renderIcon } from '@/utils/render';
 import IconList from '~icons/ant-design/appstore-outlined';
 
@@ -32,7 +33,7 @@ export function generatorMenu(routes: RouteRecordRaw[], isChildren = false): Men
     const menuItem: MenuMixedOption = {
       key: info.name as string,
       label: info.meta?.title || info.name,
-      icon: renderIcon(isChildren ? null : IconList),
+      icon: renderIcon(icons[info.meta?.icon as keyof typeof icons] || (isChildren ? null : IconList)),
     };
 
     if (info.children?.length)

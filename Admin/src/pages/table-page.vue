@@ -7,4 +7,5 @@ name: TablePage
 meta:
   layout: admin
   title: 表格页面
+  icon: FluentTextBulletListSquare20Regular
 </route>
