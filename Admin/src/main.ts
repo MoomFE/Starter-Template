@@ -1,4 +1,3 @@
-import { isBrowser } from '@moomfe/small-utils';
 import App from './App.vue';
 import router from '@/modules/router/install';
 
@@ -7,7 +6,7 @@ import 'uno.css';
 import '@/styles/styles.scss';
 
 // 修复 Naive UI 和 Tailwind Reset 的样式冲突
-isBrowser && document.head.insertAdjacentHTML('beforeend', '<meta name="naive-ui-style" />');
+document.head.insertAdjacentHTML('beforeend', '<meta name="naive-ui-style" />');
 
 const app = createApp(App);
 

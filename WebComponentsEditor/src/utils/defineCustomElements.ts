@@ -1,5 +1,4 @@
 import { defineCustomElement } from 'vue';
-import { isBrowser } from '@moomfe/small-utils';
 
 /**
  * 定义自定义组件
@@ -7,6 +6,6 @@ import { isBrowser } from '@moomfe/small-utils';
  * @param component Vue 组件对象
  */
 export function defineCustomElements(tag: string, component: any) {
-  if (isBrowser && !customElements.get(tag))
+  if (!customElements.get(tag))
     customElements.define(tag, defineCustomElement(component));
 }
