@@ -21,6 +21,7 @@
 <style lang="scss" scoped>
   // 屏蔽面包屑默认样式
   .n-breadcrumb :deep(.n-breadcrumb-item:not(:last-child)) .n-breadcrumb-item__link{
+    background-color: transparent !important;
     color: var(--n-separator-color);
     cursor: auto;
   }
