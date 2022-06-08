@@ -4,18 +4,16 @@
   "scripts": {
     "dev": "pnpm install && vite --host",
     "build": "esno scripts/build.ts",
-    "build:editor": "pnpm install && cross-env SSG=true vite-ssg build",
-    "preview": "pnpm install && cross-env SSG=true vite-ssg build && vite preview --host",
+    "build:editor": "pnpm install && vite build",
+    "preview": "pnpm install && vite build && vite preview --host",
     "lint": "eslint . --fix"
   },
   "dependencies": {
     "@moomfe/small-utils": "^3.14.5",
     "@vueuse/core": "^8.6.0",
-    "@vueuse/head": "^0.7.6",
     "lodash": "^4.17.21",
     "naive-ui": "^2.30.0",
     "pinia": "^2.0.14",
-    "vite-ssg": "^0.20.1",
     "vue": "^3.2.36",
     "vue-router": "^4.0.15"
   },
@@ -29,7 +27,6 @@
     "@vitejs/plugin-vue": "^2.3.3",
     "@vitejs/plugin-vue-jsx": "^1.3.10",
     "@vue/compiler-sfc": "^3.2.36",
-    "cross-env": "^7.0.3",
     "eslint": "^8.17.0",
     "esno": "^0.16.3",
     "fast-glob": "^3.2.11",
@@ -44,7 +41,6 @@
     "unplugin-vue-components": "^0.19.6",
     "vite": "^2.9.9",
     "vite-plugin-pages": "^0.23.0",
-    "vite-plugin-vue-layouts": "^0.6.0",
-    "vite-ssg-sitemap": "^0.2.7"
+    "vite-plugin-vue-layouts": "^0.6.0"
   }
 }

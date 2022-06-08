@@ -13,7 +13,6 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
-import generateSitemap from 'vite-ssg-sitemap';
 import { deepMerge } from '@moomfe/small-utils';
 import { SmallUtilsComponentsResolver, optimizeDepsInclude } from '@moomfe/small-utils/vite-config';
 import VirtualPublic from './scripts/plugins/virtual-public';
@@ -89,7 +88,6 @@ export function createViteBaseConfig(options: CreateViteBaseConfigOptions = {}) 
           'vue',
           'vue-router',
           '@vueuse/core',
-          '@vueuse/head',
         ],
         dirs: [
           path.resolve(__dirname, './src/composables'),
@@ -107,7 +105,7 @@ export default defineConfig(({ mode }) => {
   /** 是否是开发模式 */
   const isDev = mode === 'development'; // eslint-disable-line @typescript-eslint/no-unused-vars
   /** 环境变量 */
-  const env = loadEnv(mode, process.cwd(), ['VITE_', 'APP_']);
+  const env = loadEnv(mode, process.cwd(), ['VITE_', 'APP_']); // eslint-disable-line @typescript-eslint/no-unused-vars
 
   return deepMerge(
     // 基础配置
@@ -128,18 +126,6 @@ export default defineConfig(({ mode }) => {
     }),
     // 当前 Editor 项目专用配置
     {
-      // Vite SSG 选项
-      ssgOptions: {
-        format: 'cjs',
-        script: 'async',
-        dirStyle: 'nested',
-        formatting: 'minify',
-        includedRoutes: paths => paths.filter(path => !path.includes(':')),
-        onFinished: () => {
-        // 生成站点地图
-          generateSitemap({ hostname: env.APP_HOSTNAME });
-        },
-      },
       // 依赖预构建优化选项
       optimizeDeps: {
         entries: [
@@ -149,7 +135,6 @@ export default defineConfig(({ mode }) => {
           'vue',
           'vue-router',
           '@vueuse/core',
-          '@vueuse/head',
           'naive-ui',
           ...optimizeDepsInclude,
         ],
