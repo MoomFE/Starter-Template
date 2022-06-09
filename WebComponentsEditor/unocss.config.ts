@@ -10,6 +10,8 @@ export default defineConfig({
     // 动态颜色
     ['text-dynamic', 'text-[#333639] dark:text-[#E8E8E8]'],
     ['bg-dynamic', 'bg-white dark:bg-[#101014]'],
+    // 根节点
+    ['root', 'font-sans text-base transition-colors duration-colors'],
   ],
   theme: {
     // 颜色

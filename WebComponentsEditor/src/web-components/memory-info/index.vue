@@ -1,6 +1,6 @@
 <template>
   <template v-if="isSupported && memory">
-    <div class="flex justify-center">
+    <div class="root flex justify-center">
       <div un:text="left sm" un:grid="~ cols-[auto_1fr] gap-(x-3 y-1)">
         <div un:text="gray">Used:</div>
         <div>{{ size(memory.usedJSHeapSize) }}</div>
