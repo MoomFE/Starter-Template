@@ -19,11 +19,8 @@ export function filterRouter(routes: RouteRecordRaw[]) {
     .filter((route) => {
       return !['/', '/:all(.*)*', '/login'].includes(route.path);
     })
-    .map((route) => {
-      return isRootRoute(route) ? route.children![0] : route;
-    })
     .filter((route) => {
-      return route.meta?.hidden !== true;
+      return (isRootRoute(route) ? route.children![0] : route).meta?.hidden !== true;
     });
 }
 
@@ -35,14 +32,15 @@ export function filterRouter(routes: RouteRecordRaw[]) {
  */
 export function generatorMenu(routes: RouteRecordRaw[], isChildren = false): MenuMixedOption[] {
   return filterRouter(routes).sort(sort).map((route) => {
+    const info = isRootRoute(route) ? route.children![0] : route;
     const menuItem: MenuMixedOption = {
-      key: route.name as string,
-      label: route.meta?.title || route.name,
-      icon: renderIcon(icons[route.meta?.icon as keyof typeof icons] || (isChildren ? null : IconList)),
+      key: info.name as string,
+      label: info.meta?.title || info.name,
+      icon: renderIcon(icons[info.meta?.icon as keyof typeof icons] || (isChildren ? null : IconList)),
     };
 
-    if (route.children?.length)
-      menuItem.children = generatorMenu(route.children, true);
+    if (info.children?.length)
+      menuItem.children = generatorMenu(info.children, true);
 
     return menuItem;
   });
