@@ -7,8 +7,8 @@ import { components } from '@/shared/components';
 /** 渲染下拉框 Label */
 export function renderOptionLabel(option: SelectOption): VNodeChild {
   return [
-    h('span', { class: 'text-sm' }, option.value as string),
-    h('span', { class: 'text-xs color-gray-400 ml-1' }, `( ${option.label} )`),
+    h('span', { class: 'text-sm' }, option.label as string),
+    h('span', { class: 'text-xs color-gray-400 ml-1' }, `( ${option.value} )`),
   ];
 }
 
