@@ -1,5 +1,6 @@
 {
   "private": true,
+  "packageManager": "pnpm@7.3.0",
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "scripts": {
     "dev": "pnpm install && vite --host",
@@ -34,6 +35,7 @@
     "cross-env": "^7.0.3",
     "eslint": "^8.18.0",
     "fs-extra": "^10.1.0",
+    "pnpm": "^7.3.0",
     "sass": "^1.52.3",
     "typescript": "^4.7.4",
     "unocss": "^0.39.3",
