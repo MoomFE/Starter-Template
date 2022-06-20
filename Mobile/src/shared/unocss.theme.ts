@@ -1451,6 +1451,14 @@ export const animation = {
     "zoom-out-up": {
       "transform-origin": "center bottom"
     }
+  },
+  counts: {
+    spin: "infinite",
+    ping: "infinite",
+    pulse: "infinite",
+    "pulse-alt": "infinite",
+    bounce: "infinite",
+    "bounce-alt": "infinite"
   }
 };
 export const media = {
