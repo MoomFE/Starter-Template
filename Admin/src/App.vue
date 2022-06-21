@@ -15,17 +15,26 @@
 </template>
 
 <script lang="ts" setup>
-  import { useLoadingBar } from 'naive-ui';
+  import { useLoadingBar, useMessage } from 'naive-ui';
   import { app } from '@/shared/env';
   import { settings } from '@/settings';
 
   /** 主题相关 */
   const { theme, themeOverrides, zhCN, dateZhCN } = useNaiveTheme();
+  /** 当前路由信息 */
+  const route = useRoute();
 
   /** 获取当前应用的一些环境变量 */
   const GetAppEnv = () => {
     app.loadingBar = useLoadingBar();
+    app.message = useMessage();
   };
+
+  // 布局发生改变时, 移除上一个页面的信息弹窗
+  //  - 比如登录后的提示 / 退出登录时的提示
+  watch(() => route.meta.layout, () => {
+    useTimeoutFn(() => app.message?.destroyAll(), 360);
+  });
 
   useTitle(settings.title);
 </script>
