@@ -1,6 +1,6 @@
 import type { RouteComponent, RouteRecordRaw } from 'vue-router';
 import { isESModule, isFunction, isPlainObject, leastRun } from '@moomfe/small-utils';
-import { camelCase, upperFirst } from 'lodash';
+import { camelCase, upperFirst } from 'lodash-es';
 import { setupLayouts } from 'virtual:generated-layouts';
 import generatedRoutes from 'virtual:generated-pages';
 

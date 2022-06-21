@@ -2,7 +2,7 @@ import { resolve } from 'path';
 import fg from 'fast-glob';
 import fs from 'fs-extra';
 import { type InlineConfig, build, mergeConfig } from 'vite';
-import { camelCase } from 'lodash';
+import { camelCase } from 'lodash-es';
 import { createViteBaseConfig } from '../vite.config';
 import { formatComponentsGlob } from '../src/utils/formatComponentsGlob';
 
