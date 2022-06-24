@@ -9,7 +9,7 @@
     "lint": "eslint . --fix"
   },
   "dependencies": {
-    "@moomfe/small-utils": "^3.14.5",
+    "@moomfe/small-utils": "^5.1.0",
     "@vueuse/core": "^8.7.4",
     "lodash-es": "^4.17.21",
     "naive-ui": "^2.30.5",
