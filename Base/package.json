@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@7.3.0",
+  "packageManager": "pnpm@7.4.1",
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "scripts": {
     "dev": "pnpm install && vite --host",
@@ -15,13 +15,13 @@
     "lodash": "^4.17.21",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.14",
-    "vite-ssg": "^0.20.1",
+    "vite-ssg": "^0.20.2",
     "vue": "^3.2.37",
     "vue-i18n": "^9.1.10",
     "vue-router": "^4.0.16"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.66",
+    "@iconify/json": "^2.1.70",
     "@intlify/vite-plugin-vue-i18n": "^3.4.0",
     "@moomfe/eslint-config": "^2.0.9",
     "@rollup/pluginutils": "^4.2.1",
@@ -35,17 +35,17 @@
     "cross-env": "^7.0.3",
     "eslint": "^8.18.0",
     "fs-extra": "^10.1.0",
-    "pnpm": "^7.3.0",
+    "pnpm": "^7.4.1",
     "sass": "^1.53.0",
     "typescript": "^4.7.4",
-    "unocss": "^0.39.3",
+    "unocss": "^0.42.0",
     "unocss-preset-extra": "^0.1.1",
     "unocss-preset-scrollbar": "^0.2.1",
-    "unplugin-auto-import": "^0.9.1",
-    "unplugin-icons": "^0.14.5",
-    "unplugin-vue-components": "^0.19.9",
-    "vite": "^2.9.12",
-    "vite-plugin-pages": "^0.24.2",
+    "unplugin-auto-import": "^0.9.2",
+    "unplugin-icons": "^0.14.7",
+    "unplugin-vue-components": "^0.20.1",
+    "vite": "^2.9.13",
+    "vite-plugin-pages": "^0.25.0",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-ssg-sitemap": "^0.2.7"
   }
