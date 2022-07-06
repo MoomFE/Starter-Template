@@ -5,7 +5,7 @@
       <n-select
         v-model:value="componentsSelectValue"
         class="!w-72"
-        :options="componentsOptions" :render-label="renderOptionLabel"
+        :options="componentsOptions" :render-label="renderOptionLabel" :consistent-menu-width="false"
         placeholder="请选择组件" clearable
       />
       <n-button type="primary" :disabled="!componentsSelectValue" @click="createTab(componentsSelectValue)">
