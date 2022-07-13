@@ -23,9 +23,9 @@
       >
         <!-- 所有的组件预览区 -->
         <template v-if="tabs.length">
-          <template v-for="tab in tabs" :key="tab.id">
-            <n-tab-pane class="tab-pane-shadow !p-3" :name="tab.id" :tab="renderTabTitle(tab.component)" :style="{ height: tabPaneHeight }" display-directive="show:lazy">
-              <iframe class="size-full" src="/frame" :name="tab.id" frameborder="0" />
+          <template v-for="tab in tabs" :key="tab.id!">
+            <n-tab-pane class="tab-pane-shadow !p-3" :name="tab.id!" :tab="renderTabTitle(tab.component)" :style="{ height: tabPaneHeight }" display-directive="show:lazy">
+              <iframe class="size-full" src="/frame" :name="tab.id!" frameborder="0" />
             </n-tab-pane>
           </template>
         </template>

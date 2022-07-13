@@ -13,13 +13,20 @@
   import { type Tab } from '../index/type';
   import { components } from '@/shared/components';
 
+  interface Props {
+    /** 指定渲染的组件名称 */
+    component?: string
+  }
+
+  const props = defineProps<Props>();
+
   /** 组件是否加载完成 */
   const isReady = ref(false);
 
   /** 所有的选项卡信息 */
   const tabs = useLocalStorage<Tab[]>('st-tabs', []);
   /** 当前选项卡信息 */
-  const tab = computed(() => tabs.value.find(tab => tab.id === window.name));
+  const tab = computed(() => props.component ? ({ component: props.component } as Tab) : tabs.value.find(tab => tab.id === window.name));
   /** 当前选项卡测试数据 */
   const data = computed(() => components[tab.value?.component as string]?.data?.[tab.value?.data as string] || {});
   /** 最终使用的选项卡数据 - 支持使用函数返回测试数据 */
