@@ -1,5 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import Vue from '@vitejs/plugin-vue';
@@ -108,6 +106,10 @@ export default defineConfig(({ mode }) => {
         // 生成站点地图
         generateSitemap({ hostname: env.APP_HOSTNAME });
       },
+    },
+    // SSR 选项
+    ssr: {
+      noExternal: [/vue-i18n/],
     },
     // 依赖预构建优化选项
     optimizeDeps: {
