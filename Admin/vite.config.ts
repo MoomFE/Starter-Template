@@ -1,5 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import Vue from '@vitejs/plugin-vue';
@@ -12,7 +10,7 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
-import { SmallUtilsComponentsResolver, optimizeDepsInclude } from '@moomfe/small-utils/vite-config';
+import { SmallUtilsComponentsResolver } from '@moomfe/small-utils/vite-config';
 
 export default defineConfig(({ mode }) => {
   /** 是否是开发模式 */
@@ -85,19 +83,6 @@ export default defineConfig(({ mode }) => {
         },
       }),
     ],
-    // 依赖预构建优化选项
-    optimizeDeps: {
-      entries: [
-        'src/**/*.{js,ts,vue}',
-      ],
-      include: [
-        'vue',
-        'vue-router',
-        '@vueuse/core',
-        'naive-ui',
-        ...optimizeDepsInclude,
-      ],
-    },
     // 开发服务器选项
     server: {
       port: 666,

@@ -1,5 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
 import path from 'path';
 import type { UserConfig } from 'vite';
 import { defineConfig, loadEnv } from 'vite';
@@ -14,7 +12,7 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
 import { deepMerge } from '@moomfe/small-utils';
-import { SmallUtilsComponentsResolver, optimizeDepsInclude } from '@moomfe/small-utils/vite-config';
+import { SmallUtilsComponentsResolver } from '@moomfe/small-utils/vite-config';
 import VirtualPublic from './scripts/plugins/virtual-public';
 
 interface CreateViteBaseConfigOptions {
@@ -126,19 +124,6 @@ export default defineConfig(({ mode }) => {
     }),
     // 当前 Editor 项目专用配置
     {
-      // 依赖预构建优化选项
-      optimizeDeps: {
-        entries: [
-          'src/**/*.{js,ts,vue}',
-        ],
-        include: [
-          'vue',
-          'vue-router',
-          '@vueuse/core',
-          'naive-ui',
-          ...optimizeDepsInclude,
-        ],
-      },
       // 开发服务器选项
       server: {
         port: 666,

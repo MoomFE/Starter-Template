@@ -12,7 +12,7 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
 import generateSitemap from 'vite-ssg-sitemap';
-import { SmallUtilsComponentsResolver, optimizeDepsInclude } from '@moomfe/small-utils/vite-config';
+import { SmallUtilsComponentsResolver } from '@moomfe/small-utils/vite-config';
 
 export default defineConfig(({ mode }) => {
   /** 是否是开发模式 */
@@ -110,20 +110,6 @@ export default defineConfig(({ mode }) => {
     // SSR 选项
     ssr: {
       noExternal: [/vue-i18n/],
-    },
-    // 依赖预构建优化选项
-    optimizeDeps: {
-      entries: [
-        'src/**/*.{js,ts,vue}',
-      ],
-      include: [
-        'vue',
-        'vue-router',
-        '@vueuse/core',
-        '@vueuse/head',
-        'naive-ui',
-        ...optimizeDepsInclude,
-      ],
     },
     // 开发服务器选项
     server: {
