@@ -8,3 +8,7 @@
   const route = useRoute();
   const name = computed(() => route.params.name as string);
 </script>
+
+<route lang="yaml">
+name: Frame/Component
+</route>

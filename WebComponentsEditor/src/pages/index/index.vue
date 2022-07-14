@@ -11,6 +11,11 @@
       <n-button type="primary" :disabled="!componentsSelectValue" @click="createTab(componentsSelectValue)">
         新增
       </n-button>
+      <template v-if="componentsSelectValue">
+        <router-link class="no-underline!" :to="{ name: 'Frame/Component', params: { name: componentsSelectValue } }" target="_blank">
+          <n-button type="primary">新窗口打开</n-button>
+        </router-link>
+      </template>
     </div>
 
     <!-- 组件展示区 -->
