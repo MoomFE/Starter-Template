@@ -1,5 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import Vue from '@vitejs/plugin-vue';
@@ -118,6 +116,10 @@ export default defineConfig(({ mode }) => {
         '@vueuse/head',
         ...optimizeDepsInclude,
       ],
+    },
+    // SSR 选项
+    ssr: {
+      noExternal: [/vue-i18n/],
     },
     // 开发服务器选项
     server: {
