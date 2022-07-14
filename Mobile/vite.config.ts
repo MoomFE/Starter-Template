@@ -112,6 +112,10 @@ export default defineConfig(({ mode }) => {
         generateSitemap({ hostname: env.APP_HOSTNAME });
       },
     },
+    // SSR 选项
+    ssr: {
+      noExternal: [/vue-i18n/, /vant/],
+    },
     // 依赖预构建优化选项
     optimizeDeps: {
       entries: [
