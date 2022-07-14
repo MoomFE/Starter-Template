@@ -1,4 +1,5 @@
 import App from './App.vue';
+import type { UserModule } from './types';
 import router from '@/modules/router/install';
 
 import '@unocss/reset/tailwind.css';
@@ -12,7 +13,7 @@ const app = createApp(App);
 
 app.use(router);
 
-Object.values(import.meta.globEager('./modules/**/index.ts')).forEach(m => m.install?.({ app, router }));
+Object.values(import.meta.glob<{ install: UserModule }>('./modules/**/index.ts', { eager: true })).forEach(m => m.install?.({ app, router }));
 
 router.isReady().then(() => {
   app.mount('#app');
