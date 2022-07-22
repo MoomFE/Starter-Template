@@ -4,7 +4,7 @@
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "scripts": {
     "dev": "pnpm install && vite --host",
-    "build": "esno scripts/build.ts",
+    "build": "tsx scripts/build.ts",
     "build:editor": "pnpm install && vite build",
     "preview": "pnpm install && vite build && vite preview --host",
     "lint": "eslint . --fix"
@@ -29,11 +29,11 @@
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "@vue/compiler-sfc": "^3.2.37",
     "eslint": "^8.20.0",
-    "esno": "^0.16.3",
     "fast-glob": "^3.2.11",
     "fs-extra": "^10.1.0",
     "pnpm": "^7.5.2",
     "sass": "^1.53.0",
+    "tsx": "^3.8.0",
     "typescript": "^4.7.4",
     "unocss": "^0.44.4",
     "unocss-preset-extra": "^0.1.1",

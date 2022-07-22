@@ -13,7 +13,6 @@ specifiers:
   '@vue/compiler-sfc': ^3.2.37
   '@vueuse/core': ^8.9.4
   eslint: ^8.20.0
-  esno: ^0.16.3
   fast-glob: ^3.2.11
   fs-extra: ^10.1.0
   lodash-es: ^4.17.21
@@ -21,6 +20,7 @@ specifiers:
   pinia: ^2.0.16
   pnpm: ^7.5.2
   sass: ^1.53.0
+  tsx: ^3.8.0
   typescript: ^4.7.4
   unocss: ^0.44.4
   unocss-preset-extra: ^0.1.1
@@ -54,11 +54,11 @@ devDependencies:
   '@vitejs/plugin-vue-jsx': 2.0.0_vite@3.0.2+vue@3.2.37
   '@vue/compiler-sfc': 3.2.37
   eslint: 8.20.0
-  esno: 0.16.3
   fast-glob: 3.2.11
   fs-extra: 10.1.0
   pnpm: 7.5.2
   sass: 1.53.0
+  tsx: 3.8.0
   typescript: 4.7.4
   unocss: 0.44.4_vite@3.0.2
   unocss-preset-extra: 0.1.1_unocss@0.44.4
@@ -2287,13 +2287,6 @@ packages:
       v8-compile-cache: 2.3.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /esno/0.16.3:
-    resolution: {integrity: sha512-6slSBEV1lMKcX13DBifvnDFpNno5WXhw4j/ff7RI0y51BZiDqEe5dNhhjhIQ3iCOQuzsm2MbVzmwqbN78BBhPg==}
-    hasBin: true
-    dependencies:
-      tsx: 3.8.0
     dev: true
 
   /espree/9.3.2:
