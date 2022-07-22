@@ -4,7 +4,7 @@
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "scripts": {
     "dev": "pnpm install && vite --host",
-    "build": "tsx scripts/build.ts",
+    "build": "tsx scripts/fetchComponents.ts && tsx scripts/build.ts",
     "build:editor": "pnpm install && vite build",
     "preview": "pnpm install && vite build && vite preview --host",
     "lint": "eslint . --fix"
@@ -31,6 +31,7 @@
     "eslint": "^8.20.0",
     "fast-glob": "^3.2.11",
     "fs-extra": "^10.1.0",
+    "magic-string": "^0.26.2",
     "pnpm": "^7.5.2",
     "sass": "^1.53.0",
     "tsx": "^3.8.0",
