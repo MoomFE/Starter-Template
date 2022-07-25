@@ -51,6 +51,9 @@ const outDirPath = resolve(rootPath, 'dist');
       const viteExtraConfig: InlineConfig = {
         configFile: viteConfigPath ? resolve(srcPath, viteConfigPath) : false,
         publicDir: resolve(rootPath, 'public', name),
+        define: {
+          'process.env.NODE_ENV': JSON.stringify('production'),
+        },
         build: {
           minify: true,
           outDir: resolve(outDirPath, name),
