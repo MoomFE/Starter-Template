@@ -46,7 +46,7 @@ readFile(buildFilePath, 'utf8').then((code) => {
 
   // 将所有的组件信息放到对象中
   componentsCode += '\n';
-  componentsCode += 'const componentsInfo = {\n';
+  componentsCode += 'const componentsInfo: Record<string, { name: string; info: { name: string; tag: string }; indexPath: string; viteConfigPath?: string }> = {\n';
   Object.entries(components).forEach(([name, { index, viteConfig }]) => {
     componentsCode += `  ${camelCase(name)}: {\n`;
     componentsCode += `    name: '${name}',\n`;
@@ -55,7 +55,7 @@ readFile(buildFilePath, 'utf8').then((code) => {
     componentsCode += `    viteConfigPath: ${viteConfig ? `'${viteConfig}'` : undefined},\n`;
     componentsCode += '  },\n';
   });
-  componentsCode += '} as Record<string, { name: string; info: { name: string; tag: string }; indexPath: string; viteConfigPath?: string }>;';
+  componentsCode += '};';
 
   // 输出打包代码
   outputFile(

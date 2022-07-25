@@ -3,14 +3,14 @@ import fs from 'fs-extra';
 import prompts from 'prompts';
 import chalk from 'chalk';
 import { type InlineConfig, build, mergeConfig } from 'vite';
-import { camelCase, chunk } from 'lodash-es';
+import { camelCase } from 'lodash-es';
 import { createViteBaseConfig } from '../vite.config';
 
 // Get components info start
 import * as fpsInfoInfo from '@/web-components/fps-info/info';
 import * as memoryInfoInfo from '@/web-components/memory-info/info';
 
-const componentsInfo = {
+const componentsInfo: Record<string, { name: string; info: { name: string; tag: string }; indexPath: string; viteConfigPath?: string }> = {
   fpsInfo: {
     name: 'fps-info',
     info: fpsInfoInfo,
@@ -23,7 +23,7 @@ const componentsInfo = {
     indexPath: 'web-components/memory-info/index.ts',
     viteConfigPath: undefined,
   },
-} as Record<string, { name: string; info: { name: string; tag: string }; indexPath: string; viteConfigPath?: string }>;
+};
 // Get components info end
 
 const rootPath = resolve(__dirname, '../');
@@ -40,7 +40,7 @@ const outDirPath = resolve(rootPath, 'dist');
     instructions: false,
   });
 
-  if (response.value.length) {
+  if (response.value?.length) {
     // 清空代码输出目录
     await fs.emptyDir(outDirPath);
 
@@ -64,7 +64,7 @@ const outDirPath = resolve(rootPath, 'dist');
         },
       };
 
-      console.log(chalk.green(`- 开始打包 ${info.name} ( ${info.tag} ) 组件`));
+      console.log(`\n${chalk.green(`- 开始打包 ${chalk.blue(`${info.name} ( ${info.tag} )`)} 组件`)}`);
 
       await build(
         mergeConfig(viteBaseConfig, viteExtraConfig),
@@ -73,7 +73,7 @@ const outDirPath = resolve(rootPath, 'dist');
   }
   else {
     console.log(
-      chalk.red('没有选择任何组件'),
+      chalk.red('× 没有选择任何组件'),
     );
   }
 })();
