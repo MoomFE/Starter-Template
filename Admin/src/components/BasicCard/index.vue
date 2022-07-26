@@ -13,7 +13,7 @@
   export default defineComponent({
     render() {
       return (
-        <div class="st-basic-card" { ...this.$attrs }>
+        <div class="st-basic-card">
           <NCard headerStyle="padding: 0" contentStyle="padding: 0" footerStyle="padding: 0" bordered={ false } { ...this.cardProps }>
             {{ ...this.$slots }}
           </NCard>
