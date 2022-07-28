@@ -44,13 +44,7 @@ export function createViteBaseConfig(options: CreateViteBaseConfigOptions = {}) 
       // 对 Web Components 组件使用的 public 资源进行虚拟路径替换
       VirtualPublic(),
       // Vue 3 支持
-      Vue({
-        template: {
-          compilerOptions: {
-            isCustomElement: tag => tag.startsWith('st-'),
-          },
-        },
-      }),
+      Vue(),
       // JSX 支持
       VueJsx(),
       // 原子化 CSS 引擎 ( 供 Web Components 使用 )
