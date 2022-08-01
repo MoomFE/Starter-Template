@@ -15,6 +15,7 @@ specifiers:
   '@vue/compiler-sfc': ^3.2.37
   '@vueuse/core': ^9.0.2
   '@vueuse/head': ^0.7.8
+  '@vueuse/math': ^9.0.2
   cross-env: ^7.0.3
   eslint: ^8.20.0
   fs-extra: ^10.1.0
@@ -43,6 +44,7 @@ dependencies:
   '@moomfe/small-utils': 5.1.1_vue@3.2.37
   '@vueuse/core': 9.0.2_vue@3.2.37
   '@vueuse/head': 0.7.8_vue@3.2.37
+  '@vueuse/math': 9.0.2_vue@3.2.37
   lodash: 4.17.21
   nprogress: 0.2.0
   pinia: 2.0.17_j6bzmzd4ujpabbp5objtwxyjp4
@@ -1270,6 +1272,16 @@ packages:
       vue: '>=3'
     dependencies:
       vue: 3.2.37
+    dev: false
+
+  /@vueuse/math/9.0.2_vue@3.2.37:
+    resolution: {integrity: sha512-fh3dS+6pwgk+VW3BU4O0HCPqPpb2k3SYO/mhk5bcoZppOHi0Mf/qG6dpwf+fRQk4Ak2TfRZKy8fVmMpnGcNBUA==}
+    dependencies:
+      '@vueuse/shared': 9.0.2_vue@3.2.37
+      vue-demi: 0.13.6_vue@3.2.37
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
     dev: false
 
   /@vueuse/metadata/8.9.4:

@@ -12,6 +12,7 @@
     "@moomfe/small-utils": "^5.1.1",
     "@vueuse/core": "^9.0.2",
     "@vueuse/head": "^0.7.8",
+    "@vueuse/math": "^9.0.2",
     "lodash": "^4.17.21",
     "naive-ui": "^2.32.1",
     "pinia": "^2.0.17",

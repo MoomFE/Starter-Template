@@ -73,6 +73,7 @@ export default defineConfig(({ mode }) => {
           'vue',
           'vue-router',
           '@vueuse/core',
+          '@vueuse/math',
         ],
         dirs: [
           path.resolve(__dirname, './src/composables'),

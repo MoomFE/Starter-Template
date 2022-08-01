@@ -80,6 +80,7 @@ export function createViteBaseConfig(options: CreateViteBaseConfigOptions = {}) 
           'vue',
           'vue-router',
           '@vueuse/core',
+          '@vueuse/math',
         ],
         dirs: [
           path.resolve(__dirname, './src/composables'),

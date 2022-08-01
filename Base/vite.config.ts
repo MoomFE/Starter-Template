@@ -73,6 +73,7 @@ export default defineConfig(({ mode }) => {
           'vue-router',
           'vue-i18n',
           '@vueuse/core',
+          '@vueuse/math',
           '@vueuse/head',
         ],
         dirs: [

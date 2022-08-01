@@ -13,6 +13,7 @@ specifiers:
   '@vitejs/plugin-vue-jsx': ^2.0.0
   '@vue/compiler-sfc': ^3.2.37
   '@vueuse/core': ^9.0.2
+  '@vueuse/math': ^9.0.2
   chalk: ^5.0.1
   eslint: ^8.20.0
   fast-glob: ^3.2.11
@@ -41,6 +42,7 @@ specifiers:
 dependencies:
   '@moomfe/small-utils': 5.1.1_vue@3.2.37
   '@vueuse/core': 9.0.2_vue@3.2.37
+  '@vueuse/math': 9.0.2_vue@3.2.37
   lodash-es: 4.17.21
   naive-ui: 2.32.1_vue@3.2.37
   pinia: 2.0.17_j6bzmzd4ujpabbp5objtwxyjp4
@@ -1189,6 +1191,16 @@ packages:
     dependencies:
       '@types/web-bluetooth': 0.0.15
       '@vueuse/metadata': 9.0.2
+      '@vueuse/shared': 9.0.2_vue@3.2.37
+      vue-demi: 0.13.6_vue@3.2.37
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: false
+
+  /@vueuse/math/9.0.2_vue@3.2.37:
+    resolution: {integrity: sha512-fh3dS+6pwgk+VW3BU4O0HCPqPpb2k3SYO/mhk5bcoZppOHi0Mf/qG6dpwf+fRQk4Ak2TfRZKy8fVmMpnGcNBUA==}
+    dependencies:
       '@vueuse/shared': 9.0.2_vue@3.2.37
       vue-demi: 0.13.6_vue@3.2.37
     transitivePeerDependencies:
