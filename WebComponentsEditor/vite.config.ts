@@ -76,6 +76,7 @@ export function createViteBaseConfig(options: CreateViteBaseConfigOptions = {}) 
       // API 自动加载
       AutoImport({
         dts: path.resolve(__dirname, './types/auto-imports.d.ts'),
+        vueTemplate: true,
         imports: [
           'vue',
           'vue-router',
