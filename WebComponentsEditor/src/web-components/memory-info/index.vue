@@ -17,8 +17,6 @@
 </template>
 
 <script lang="ts" setup>
-  import reset from '@unocss/reset/tailwind.css?raw';
-
   const props = defineProps<{ unit?: 'KB' | 'MB' }>();
 
   const { isSupported, memory } = useMemory();
@@ -36,8 +34,6 @@
   }
 </script>
 
-<script lang="ts">
-  export default {
-    styles: [reset, `@unocss-placeholder`],
-  };
-</script>
+<style>
+  @import "@unocss/reset/tailwind.css";
+</style>

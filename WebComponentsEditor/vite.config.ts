@@ -14,6 +14,7 @@ import Layouts from 'vite-plugin-vue-layouts';
 import { deepMerge } from '@moomfe/small-utils';
 import { SmallUtilsComponentsResolver } from '@moomfe/small-utils/vite-config';
 import VirtualPublic from './scripts/plugins/virtual-public';
+import RemoveUnocssStyleScoped, { isCustomElementRE } from './scripts/plugins/remove-unocss-style-scoped';
 
 interface CreateViteBaseConfigOptions {
   /** 需要额外插入的 vite 插件 */
@@ -44,14 +45,18 @@ export function createViteBaseConfig(options: CreateViteBaseConfigOptions = {}) 
       // 对 Web Components 组件使用的 public 资源进行虚拟路径替换
       VirtualPublic(),
       // Vue 3 支持
-      Vue(),
+      Vue({
+        customElement: [isCustomElementRE],
+      }),
       // JSX 支持
       VueJsx(),
       // 原子化 CSS 引擎 ( 供 Web Components 使用 )
       Unocss({
-        mode: 'shadow-dom',
-        include: [path.resolve(__dirname, './src/web-components')],
+        mode: 'vue-scoped',
+        include: [isCustomElementRE],
       }),
+      // 移除 Unocss 为 Web Components 添加的样式作用域标识
+      RemoveUnocssStyleScoped(),
       // 将图标作为图标组件可进行导入
       Icons({
         scale: 1,
