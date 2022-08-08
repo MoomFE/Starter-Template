@@ -11,6 +11,7 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
+import Inspect from 'vite-plugin-inspect';
 import { deepMerge } from '@moomfe/small-utils';
 import { SmallUtilsComponentsResolver } from '@moomfe/small-utils/vite-config';
 import VirtualPublic from './scripts/plugins/virtual-public';
@@ -121,6 +122,8 @@ export default defineConfig(({ mode }) => {
         Layouts(),
         // 原子化 CSS 引擎
         Unocss(),
+        // 插件调试
+        Inspect(),
       ],
     }),
     // 当前 Editor 项目专用配置

@@ -10,6 +10,7 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
+import Inspect from 'vite-plugin-inspect';
 import { SmallUtilsComponentsResolver } from '@moomfe/small-utils/vite-config';
 
 export default defineConfig(({ mode }) => {
@@ -84,6 +85,8 @@ export default defineConfig(({ mode }) => {
           enabled: true,
         },
       }),
+      // 插件调试
+      Inspect(),
     ],
     // 开发服务器选项
     server: {

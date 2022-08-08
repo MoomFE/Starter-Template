@@ -11,6 +11,7 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
 import generateSitemap from 'vite-ssg-sitemap';
+import Inspect from 'vite-plugin-inspect';
 import { SmallUtilsComponentsResolver } from '@moomfe/small-utils/vite-config';
 
 export default defineConfig(({ mode }) => {
@@ -93,6 +94,8 @@ export default defineConfig(({ mode }) => {
           path.resolve(__dirname, 'locales/**'),
         ],
       }),
+      // 插件调试
+      Inspect(),
     ],
     // Vite SSG 选项
     ssgOptions: {

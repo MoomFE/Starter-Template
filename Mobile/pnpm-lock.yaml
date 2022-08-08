@@ -34,6 +34,7 @@ specifiers:
   unplugin-vue-components: ^0.22.0
   vant: ^3.5.4
   vite: ^3.0.4
+  vite-plugin-inspect: ^0.6.0
   vite-plugin-pages: ^0.25.0
   vite-plugin-vue-layouts: ^0.7.0
   vite-ssg: ^0.20.2
@@ -82,6 +83,7 @@ devDependencies:
   unplugin-icons: 0.14.8_drarq77wngniv3w6l3yoypch7m
   unplugin-vue-components: 0.22.0_vite@3.0.4+vue@3.2.37
   vite: 3.0.4_sass@1.54.3
+  vite-plugin-inspect: 0.6.0_vite@3.0.4
   vite-plugin-pages: 0.25.0_drarq77wngniv3w6l3yoypch7m
   vite-plugin-vue-layouts: 0.7.0_2idawcohe3eegwclkuflddhqau
   vite-ssg-sitemap: 0.3.1
@@ -4708,6 +4710,22 @@ packages:
       '@vant/use': 1.4.1
       vue: 3.2.37
     dev: false
+
+  /vite-plugin-inspect/0.6.0_vite@3.0.4:
+    resolution: {integrity: sha512-p2Ti5z+AscXx7JAW1nkU4bgiyKWW3O6D9UbaOEk+yz0v6R2E452OSukYhbs1zhqRnHL0W6ZsmG/lwz8aSQpSjg==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      vite: ^3.0.0
+    dependencies:
+      '@rollup/pluginutils': 4.2.1
+      debug: 4.3.4
+      kolorist: 1.5.1
+      sirv: 2.0.2
+      ufo: 0.8.5
+      vite: 3.0.4_sass@1.54.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /vite-plugin-pages/0.25.0_drarq77wngniv3w6l3yoypch7m:
     resolution: {integrity: sha512-q0SX2iSw0UrTnivkzsPb19ZxamShq1nE/e/CKOe8+uVg70/e14uJuzKnw7dZ2omPjmV9Lhks38nzJL6RDRGmeA==}
