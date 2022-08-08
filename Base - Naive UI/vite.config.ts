@@ -103,6 +103,10 @@ export default defineConfig(({ mode }) => {
       script: 'async',
       dirStyle: 'nested',
       formatting: 'minify',
+      crittersOptions: {
+        inlineFonts: false,
+        preloadFonts: false,
+      },
       includedRoutes: paths => paths.filter(path => !path.includes(':')),
       onFinished: () => {
         // 生成站点地图

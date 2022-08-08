@@ -32,6 +32,7 @@
     "@vitejs/plugin-vue": "^3.0.1",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "@vue/compiler-sfc": "^3.2.37",
+    "critters": "^0.0.16",
     "cross-env": "^7.0.3",
     "eslint": "^8.21.0",
     "fs-extra": "^10.1.0",
