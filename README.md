@@ -34,6 +34,9 @@
 > [WebComponentsEditor](./WebComponentsEditor/): Web Components 编辑器
 >   - 更加方便的开发及调试 [Web Components](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components)
 
+> [Admin](./Admin/): 基于 [Naive UI](https://www.naiveui.com/zh-CN/os-theme) 的后台管理系统模板
+>   - 目前仅是一个基础的实例
+
 <br>
 
 ## 预配置
@@ -81,14 +84,6 @@
   - **components-private**: 私有组件 ( 只能在当前项目中使用的组件, 比如说包含了业务代码的组件 )
   - **layouts**: 布局组件
   - **pages**: 页面
-
-<br>
-
-## 文件及文件夹命名规则
-
-- **组件**: 大驼峰, 符合 Vue 组件命名规范
-- **工具方法**: 小驼峰, 符合 JS 变量规范
-- **其他**: 短横线, 方便辨认
 
 <br>
 
