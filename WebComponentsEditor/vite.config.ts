@@ -15,7 +15,7 @@ import Inspect from 'vite-plugin-inspect';
 import { deepMerge } from '@moomfe/small-utils';
 import { SmallUtilsComponentsResolver } from '@moomfe/small-utils/vite-config';
 import VirtualPublic from './scripts/plugins/virtual-public';
-import RemoveUnocssStyleScoped, { isCustomElementRE } from './scripts/plugins/remove-unocss-style-scoped';
+import RemoveStyleScoped, { isCustomElementRE } from './scripts/plugins/remove-style-scoped';
 
 interface CreateViteBaseConfigOptions {
   /** 需要额外插入的 vite 插件 */
@@ -56,8 +56,8 @@ export function createViteBaseConfig(options: CreateViteBaseConfigOptions = {}) 
         mode: 'vue-scoped',
         include: [isCustomElementRE],
       }),
-      // 移除 Unocss 为 Web Components 添加的样式作用域标识
-      RemoveUnocssStyleScoped(),
+      // 移除 Web Components 组件的样式作用域标识
+      RemoveStyleScoped(),
       // 将图标作为图标组件可进行导入
       Icons({
         scale: 1,
