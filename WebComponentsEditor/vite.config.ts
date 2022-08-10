@@ -14,13 +14,11 @@ import Layouts from 'vite-plugin-vue-layouts';
 import Inspect from 'vite-plugin-inspect';
 import { deepMerge } from '@moomfe/small-utils';
 import { SmallUtilsComponentsResolver } from '@moomfe/small-utils/vite-config';
+import { dirname } from '@moomfe/small-utils/node-utils';
 import VirtualPublic from './scripts/plugins/virtual-public';
 import RemoveStyleScoped, { isCustomElementRE } from './scripts/plugins/remove-style-scoped';
 
-interface CreateViteBaseConfigOptions {
-  /** 需要额外插入的 vite 插件 */
-  plugins?: UserConfig['plugins']
-}
+const __dirname = dirname(import.meta);
 
 /**
  * 创建一个基础的 vite 配置
@@ -139,3 +137,8 @@ export default defineConfig(({ mode }) => {
     },
   );
 });
+
+interface CreateViteBaseConfigOptions {
+  /** 需要额外插入的 vite 插件 */
+  plugins?: UserConfig['plugins']
+}

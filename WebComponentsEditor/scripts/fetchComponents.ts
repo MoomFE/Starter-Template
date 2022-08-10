@@ -1,9 +1,12 @@
 import { resolve } from 'path';
-import { outputFile, readFile } from 'fs-extra';
+import fs from 'fs-extra';
+import { dirname } from '@moomfe/small-utils/node-utils';
 import { camelCase, escapeRegExp } from 'lodash-es';
 import fg from 'fast-glob';
 import MagicString from 'magic-string';
 import { formatComponentsGlob } from '@/utils/formatComponentsGlob';
+
+const __dirname = dirname(import.meta);
 
 const rootPath = resolve(__dirname, '../');
 const srcPath = resolve(rootPath, 'src');
@@ -31,7 +34,7 @@ Object.keys(componentsInfo).forEach((name) => {
 });
 
 // 读取打包代码
-readFile(buildFilePath, 'utf8').then((code) => {
+fs.readFile(buildFilePath, 'utf8').then((code) => {
   const s = new MagicString(code);
   const startFlag = '// Get components info start';
   const endFlag = '// Get components info end';
@@ -58,7 +61,7 @@ readFile(buildFilePath, 'utf8').then((code) => {
   componentsCode += '};';
 
   // 输出打包代码
-  outputFile(
+  fs.outputFile(
     buildFilePath,
     s
       .overwrite(startIndex, endIndex, `\n${componentsCode}\n`)

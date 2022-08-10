@@ -3,6 +3,7 @@ import fs from 'fs-extra';
 import prompts from 'prompts';
 import chalk from 'chalk';
 import { type InlineConfig, build, mergeConfig } from 'vite';
+import { dirname } from '@moomfe/small-utils/node-utils';
 import { camelCase } from 'lodash-es';
 import { createViteBaseConfig } from '../vite.config';
 
@@ -25,6 +26,8 @@ const componentsInfo: Record<string, { name: string; info: { name: string; tag: 
   },
 };
 // Get components info end
+
+const __dirname = dirname(import.meta);
 
 const rootPath = resolve(__dirname, '../');
 const srcPath = resolve(rootPath, 'src');
