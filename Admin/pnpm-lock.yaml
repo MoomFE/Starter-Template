@@ -22,7 +22,7 @@ specifiers:
   sass: ^1.54.9
   typescript: ^4.8.3
   unocss: ^0.45.18
-  unocss-preset-extra: ^0.4.1
+  unocss-preset-extra: ^0.4.3
   unocss-preset-scrollbar: ^0.2.1
   unplugin-auto-import: ^0.11.2
   unplugin-icons: ^0.14.9
@@ -60,7 +60,7 @@ devDependencies:
   sass: 1.54.9
   typescript: 4.8.3
   unocss: 0.45.18_vite@3.1.0
-  unocss-preset-extra: 0.4.1_unocss@0.45.18
+  unocss-preset-extra: 0.4.3_unocss@0.45.18
   unocss-preset-scrollbar: 0.2.1_unocss@0.45.18
   unplugin-auto-import: 0.11.2_re6csl7eeastiiyshsk3b5ioaa
   unplugin-icons: 0.14.9_6igbc34rdygfc6m44bomdw5yyu
@@ -3970,8 +3970,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unocss-preset-extra/0.4.1_unocss@0.45.18:
-    resolution: {integrity: sha512-OZEAR/vRoXJw34sb/Cyw521cd65nt0ug1AffnbDVlsDzJrEG6KWefhEq2y6gaugqDwuUe+so2rRNIX4AnDby7g==}
+  /unocss-preset-extra/0.4.3_unocss@0.45.18:
+    resolution: {integrity: sha512-22E70ah0ziSS9mOzyfxnC9DsWvlcyvRkZTu9Bq8m7Cis2O7T/riqJHdp95ybiSLNqhoq9nqUlfLkHpi7XCvZ6w==}
     peerDependencies:
       unocss: '>= 0.31.0 < 1'
     dependencies:
