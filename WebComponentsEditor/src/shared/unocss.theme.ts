@@ -1480,6 +1480,9 @@ export const media = {
   mouse: "(hover) and (pointer: fine)",
   hd_color: "(dynamic-range: high)"
 };
+export const supports = {
+  grid: "(display: grid)"
+};
 export default {
   width,
   height,
@@ -1515,5 +1518,6 @@ export default {
   ringWidth,
   preflightBase,
   animation,
-  media
+  media,
+  supports
 };
