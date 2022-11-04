@@ -72,13 +72,13 @@
 - **dist**: 打包后的代码
 - **src**: 源码
   - **assets**: 存放静态资源
-  - **styles**: 公共样式文件夹
-  - **shared**: 公用变量
+  - **styles**: 公共样式
+  - **shared**: 公用变量 or 函数
   - **lib**: 外部依赖库 ( 不满足需求需要重构时或者外部依赖库有 BUG 时, 从 node_modules 移至这里 )
-  - **utils**: 工具方法
+  - **utils**: 工具函数
   - **modules**: 项目依赖类库的配置
   - **workers**: 存放独立的 Web Worker 应用
-  - **stores**: 存储状态
+  - **stores**: 状态存储
   - **composables**: 组合式函数
   - **components**: 公共组件 ( 相对独立的组件, 离开当前项目也能使用的组件 )
   - **components-private**: 私有组件 ( 只能在当前项目中使用的组件, 比如说包含了业务代码的组件 )
