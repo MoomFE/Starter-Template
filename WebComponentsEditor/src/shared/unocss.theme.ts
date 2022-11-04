@@ -1257,6 +1257,17 @@ export const preflightBase = {
   "--un-backdrop-saturate": " ",
   "--un-backdrop-sepia": " "
 };
+export const aria = {
+  busy: "busy=\"true\"",
+  checked: "checked=\"true\"",
+  disabled: "disabled=\"true\"",
+  expanded: "expanded=\"true\"",
+  hidden: "hidden=\"true\"",
+  pressed: "pressed=\"true\"",
+  readonly: "readonly=\"true\"",
+  required: "required=\"true\"",
+  selected: "selected=\"true\""
+};
 export const animation = {
   keyframes: {
     pulse: "{0%, 100% {opacity:1} 50% {opacity:.5}}",
@@ -1517,6 +1528,7 @@ export default {
   duration,
   ringWidth,
   preflightBase,
+  aria,
   animation,
   media,
   supports
