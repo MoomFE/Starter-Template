@@ -8,7 +8,7 @@ import { dataToEsm } from '@rollup/pluginutils';
 export default defineConfig({
   shortcuts: [
     // 动态颜色
-    ['text-dynamic', 'text-[#333639] dark:text-[#E8E8E8]'],
+    ['text-dynamic', 'text-[#333639] dark:text-white dark:text-op-82'],
     ['bg-dynamic', 'bg-white dark:bg-[#101014]'],
     // 根节点
     ['root', 'font-sans text-base transition-colors duration-colors'],
