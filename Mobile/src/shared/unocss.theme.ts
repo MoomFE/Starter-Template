@@ -1257,6 +1257,20 @@ export const preflightBase = {
   "--un-backdrop-saturate": " ",
   "--un-backdrop-sepia": " "
 };
+export const containers = {
+  xs: "(min-width: 20rem)",
+  sm: "(min-width: 24rem)",
+  md: "(min-width: 28rem)",
+  lg: "(min-width: 32rem)",
+  xl: "(min-width: 36rem)",
+  "2xl": "(min-width: 42rem)",
+  "3xl": "(min-width: 48rem)",
+  "4xl": "(min-width: 56rem)",
+  "5xl": "(min-width: 64rem)",
+  "6xl": "(min-width: 72rem)",
+  "7xl": "(min-width: 80rem)",
+  prose: "(min-width: 65ch)"
+};
 export const aria = {
   busy: "busy=\"true\"",
   checked: "checked=\"true\"",
@@ -1528,6 +1542,7 @@ export default {
   duration,
   ringWidth,
   preflightBase,
+  containers,
   aria,
   animation,
   media,
