@@ -1,3 +1,6 @@
 [submodule "Base"]
 	path = Base
 	url = https://github.com/MoomFE-Starter-Template/Base.git
+[submodule "Base - Naive UI"]
+	path = Base - Naive UI
+	url = https://github.com/MoomFE-Starter-Template/Base-Naive-UI.git
