@@ -31,7 +31,7 @@
 >   - 使用 [Vant](https://vant-contrib.gitee.io/vant/#/zh-CN) 作为组件库
 >   - 移除主题切换, 如有需要可自行封装
 
-> [WebComponentsEditor](./WebComponentsEditor/): Web Components 编辑器
+> [Web-Components-Editor](./Web-Components-Editor/): Web Components 编辑器
 >   - 更加方便的开发及调试 [Web Components](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components)
 
 > [Admin](./Admin/): 基于 [Naive UI](https://www.naiveui.com/zh-CN/os-theme) 的后台管理系统模板

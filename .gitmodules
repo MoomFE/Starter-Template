@@ -7,3 +7,6 @@
 [submodule "Mobile"]
 	path = Mobile
 	url = https://github.com/MoomFE-Starter-Template/Mobile.git
+[submodule "Web-Components-Editor"]
+	path = Web-Components-Editor
+	url = https://github.com/MoomFE-Starter-Template/Web-Components-Editor.git
