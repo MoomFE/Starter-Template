@@ -1,21 +1,22 @@
-<h1 align="center">
-  前端项目快速启动模板
-</h1>
+<h1 align="center">前端项目快速启动模板</h1>
 
 <br>
 
 ## 特性
 
-- ⚡️ [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.io), [Vue 3](https://github.com/vuejs/core) 优先 - 就是快！
+- ⚡️ [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io), [Vue 3](https://github.com/vuejs/core) 优先 - 就是快！
+- 📲 [组件自动加载](https://github.com/antfu/unplugin-vue-components)
+- 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
+- 🎨 [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的原子化 CSS 引擎
+- 😃 [各种图标集为你所用](https://github.com/iconify/icon-sets) - 120+ 图标集, 150000+ 图标为你所用, 从不妥协
+- 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 - 🗂 [基于文件的路由](https://github.com/hannoeru/vite-plugin-pages)
 - 📑 [布局系统](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
-- 🎨 [UnoCSS](https://github.com/unocss/unocss) - 原子化 CSS 引擎
-- 😃 [各种图标集为你所用](https://github.com/iconify/icon-sets) - 110+ 图标集, 110000+ 图标为你所用, 从不妥协
-- 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
-- 📲 [组件自动导入](https://github.com/antfu/unplugin-vue-components)
-- 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
+- 🌍 [I18n 国际化开箱即用](https://github.com/intlify/vue-i18n-next), 使用插件[自动加载](https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n)
 - 🖨 使用 [Vite SSG](https://github.com/antfu/vite-ssg) 进行服务端生成 ( SSG )
+- 🦔 使用 [critters](https://github.com/GoogleChromeLabs/critters) 的生成关键 CSS
+- 🌙 深色模式
 - 🦾 TypeScript 支持
 
 <br>
