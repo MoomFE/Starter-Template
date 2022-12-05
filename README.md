@@ -34,7 +34,7 @@
 > [🔗Web-Components-Editor](https://github.com/MoomFE-Starter-Template/Web-Components-Editor): Web Components 编辑器
 >   - 更加方便的开发及调试 [Web Components](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components)
 
-> [🔗Admin](./Admin/): 基于 [Naive UI](https://github.com/MoomFE-Starter-Template/Admin) 的后台管理系统模板
+> [🔗Admin](https://github.com/MoomFE-Starter-Template/Admin): 基于 [Naive UI](https://www.naiveui.com/zh-CN/os-theme) 的后台管理系统模板
 >   - 目前仅是一个基础的实例
 
 <br>
