@@ -13,7 +13,7 @@
 - 😃 [各种图标集为你所用](https://github.com/iconify/icon-sets) - 110+ 图标集, 110000+ 图标为你所用, 从不妥协
 - 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
-- 📲 [组件自动导入](https://github.com/antfu/unplugin-icons)
+- 📲 [组件自动导入](https://github.com/antfu/unplugin-vue-components)
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 - 🖨 使用 [Vite SSG](https://github.com/antfu/vite-ssg) 进行服务端生成 ( SSG )
 - 🦾 TypeScript 支持
@@ -29,7 +29,6 @@
 
 > [Mobile](https://github.com/MoomFE-Starter-Template/Mobile): 基于 [Base](./Base/) 创建的移动端项目模板
 >   - 使用 [Vant](https://vant-contrib.gitee.io/vant/#/zh-CN) 作为组件库
->   - 移除主题切换, 如有需要可自行封装
 
 > [Web-Components-Editor](https://github.com/MoomFE-Starter-Template/Web-Components-Editor): Web Components 编辑器
 >   - 更加方便的开发及调试 [Web Components](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components)
