@@ -13,3 +13,6 @@
 [submodule "Admin"]
 	path = Admin
 	url = https://github.com/MoomFE-Starter-Template/Admin.git
+[submodule "UniApp - Base"]
+	path = UniApp - Base
+	url = https://github.com/MoomFE-Starter-Template/UniApp-Base.git
